@@ -1,0 +1,44 @@
+---
+title: "Select Homework Solutions"
+editor: visual
+---
+
+## STAT 151A: Linear Modelling (Theory & Applications)
+
+STAT 151A at UC Berkeley focuses on modern statistical inference and linear modeling, emphasizing both theoretical foundations and practical applications. Topics include:
+
+-   **Matrix Formulation of Linear Regression**
+-   **Hypothesis Testing for Linear Models**
+-   **Model Assessment and Selection**
+-   **Regularization Methods (Ridge, LASSO, Elastic Net)**
+-   **Outlier Detection and Robust Regression**
+-   **Generalized Linear Models (GLMs)**
+
+Students learn to implement and interpret these models, assess assumptions, and address common pitfalls (e.g., confounding, omitted variables, high-leverage points).
+
+> Solutions written by Ajay Sharma to theoretical exercises assigned throughout the semester.
+
+-   [Homework 1](homework/STAT_151A_Homework_1_Solutions.pdf)\
+-   [Homework 2](homework/STAT_151A_Homework_2_Solutions.pdf)\
+-   [Homework 3](homework/STAT_151A_Homework_3_Solutions.pdf)\
+-   [Homework 4](homework/STAT_151A_Homework_4_Solutions.pdf)\
+-   [Homework 5](homework/STAT_151A_Homework_5_Solutions.pdf)\
+
+------------------------------------------------------------------------
+
+## STAT 154: Modern Statistical Prediction & Machine Learning
+
+STAT 154 at UC Berkeley covers a comprehensive set of foundational and advanced machine learning topics:
+
+-   **Core tasks:** Regression, classification, dimension reduction, and clustering.
+-   **Algorithms:** Solving linear systems, gradient descent, Newton’s method, power iteration for eigenvalue problems, and the EM algorithm.
+-   **Methods:** Kernel methods, regularization, sample splitting, resampling methods, and cross-validation.
+-   **Advanced topics:** Statistical learning and optimization theory; bagging and boosting; tree-based models; neural networks; Bayesian modeling; online learning and bandit problems..
+
+> Solutions written by Ajay Sharma to theoretical exercises assigned throughout the semester.
+
+-   [Homework 1](homework/STAT_154_HW_1_Solutions.pdf)
+-   [Homework 2](homework/STAT_154_HW_2_Solutions.pdf)
+-   [Homework 3](homework/STAT_154_HW_3_Solutions.pdf)
+-   [Homework 4](homework/STAT_154_HW_4_Solutions.pdf)
+-   [Homework 5](homework/STAT_154_HW_5_Solutions.pdf)

@@ -1,0 +1,159 @@
+---
+title: "Resume"
+format:
+  html:
+    css: []
+---
+
+<style>
+/* ——————————————————————————
+   Timeline container
+—————————————————————————— */
+.timeline {
+  position: relative;
+  margin: 2em 0;
+  padding-left: 1.5em;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: transparent;
+}
+
+/* ——————————————————————————
+   Section‐specific line colours
+—————————————————————————— */
+.timeline.education::before   { background: #0f9d58; }
+.timeline.experience::before  { background: #4285f4; }
+.timeline.volunteer::before   { background: #f4b400; }
+
+/* ——————————————————————————
+   Each block on the timeline
+—————————————————————————— */
+.timeline-item {
+  position: relative;
+  margin-bottom: 1.5em;
+  padding-left: 1.2em;
+  color: #000;
+}
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -0.25em;
+  top: 0.5em;
+  width: 0.75em;
+  height: 0.75em;
+  background: #fff;
+  border-radius: 50%;
+  border-width: 3px;
+  border-style: solid;
+}
+
+/* ——————————————————————————
+   Section‐specific marker colours
+—————————————————————————— */
+.timeline.education  .timeline-item::before { border-color: #0f9d58; }
+.timeline.experience .timeline-item::before { border-color: #4285f4; }
+.timeline.volunteer  .timeline-item::before { border-color: #f4b400; }
+
+/* ——————————————————————————
+   Section‐title colours
+—————————————————————————— */
+.timeline.education  > h2 { color: #0f9d58; }
+.timeline.experience > h2 { color: #4285f4; }
+.timeline.volunteer  > h2 { color: #f4b400; }
+
+/* ——————————————————————————
+   Dates styling
+—————————————————————————— */
+.date {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 0.5em;
+}
+</style>
+
+<div class="timeline education">
+## Education
+
+<div class="timeline-item">
+### University of California, Berkeley  
+**B.A. Statistics & B.A. Applied Mathematics (Data Science)**  
+<p class="date">August 2023 – May 2025 | Berkeley, CA</p>
+- **[Relevant Coursework](handwritten-notes.qmd):** CS 61A: Structure \& Interpretation of Computer Programs, CS 61B: Data Structures \& Algorithms, DATA 100: Principles \& Techniques of Data Science, STAT 133: Concepts in Computing with Data, STAT 151A: Linear Modelling (Theory \& Applications), STAT 154: Modern Statistical Prediction \& Machine Learning, STAT 165: Forecasting, UGBA 102: Financial Accounting, UGBA 104: Business Analytics.
+</div>
+</div>
+
+<div class="timeline experience">
+## Professional Experience
+
+<div class="timeline-item">
+### BLCK UNICRN (AI Researcher & Data Analyst Internship)  
+<p class="date">January 2025 – May 2025 | Berkeley, CA </p>
+- Collaborated with team to define the Ideal Customer Profile (ICP) for BLCK UNICRN by leveraging predictive analytics, clustering models, and AI-driven web scraping to identify high-value prospects.  
+- Contributed to the development and refinement of advanced AI functionalities, including retrieval-augmented generation (RAG), agent integration, and natural language processing (NLP) modules to enhance platform capabilities.  
+- Engaged in real-world AI development and integration within a fast-growing startup environment to provide insights and support a 2× growth within the sales and marketing division.  
+</div>
+
+<div class="timeline-item">
+### Beats by Dre (Consumer Insights & Data Analyst Internship)  
+<p class="date">June 2024 – August 2024 | Remote </p>
+- Leveraged Natural Language Processing (NLP) techniques in Python to analyze over 500 customer reviews from platforms such as Amazon, utilizing sentiment analysis to uncover key trends in consumer preferences and pain points.  
+- Conducted comprehensive data preprocessing (of large data bases), including text cleaning and tokenization to extract meaningful insights from unstructured data.  
+- Developed a customer segmentation strategy based on sentiment clustering, enabling the identification of 10 distinct customer segments, leading to tailored marketing campaigns and personalized product recommendations.  
+- Identified actionable insights on consumer metrics (e.g., sound quality, design, price sensitivity), contributing to a 15 % improvement in targeted marketing by refining campaign messaging and product positioning.  
+- Analyzed customer sentiment trends, defined satisfaction metrics, and identified key feature preference drivers, providing actionable feedback and decision-support for executives.  
+</div>
+
+<div class="timeline-item">
+### Success Chess School (Chess Instructor)  
+<p class="date">September 2021 – May 2023 | Fremont, CA </p>
+- Mentored 150+ students over the course of two years, emphasizing strategic thinking and sportsmanship, resulting in consistent performance improvement and higher student retention.  
+- Authored an instructional chess book tailored for beginners, integrating puzzles and detailed analyses of 15 fundamental openings to reinforce strategic learning and critical thinking.
+- Organized 10+ tournaments, leveraging a custom-built Excel-based matchmaking system that automatically paired participants by analyzing ELO ratings and skill levels (beginner, intermediate, advanced).
+- Conducted outreach, resulting in 20 % year-over-year (YoY) increase in registrations—all while fostering an engaging, supportive, and competitive academic environment.  
+</div>
+</div>
+
+<div class="timeline volunteer">
+## Volunteer & Leadership
+
+<div class="timeline-item">
+### American Allegiance of Education (Co-Founder)  
+<p class="date">May 2023 – October 2024 | Fremont, CA </p>
+- Co-founded the American Allegiance of Education, a non-profit organization dedicated to promoting education and innovation through technology-focused initiatives, including organizing international events for aspiring developers and students.  
+- Volunteered as a lead organizer for a global hackathon, coordinating efforts across teams to create an inclusive and engaging event that attracted 155 participants from multiple countries.  
+- Successfully raised \$16,419 in sponsorships and prizes by engaging with corporate sponsors and educational institutions, securing funding and resources that significantly increased the event’s impact and reach.  
+- Took the initiative to recruit and organize a panel of expert judges, creating volunteer opportunities for industry professionals to participate and evaluate innovative projects.  
+- Provided mentorship and guidance to participants throughout the hackathon, fostering a collaborative and supportive environment to help participants develop their skills and showcase their projects.  
+</div>
+
+<div class="timeline-item">
+### Washington High School (Math Center Volunteer)
+<p class="date">August 2018 – June 2021 | Fremont CA</p>
+- Taught range of subjects (Prealgebra-Precalculus, AP Calculus BC) after school and during free-block periods, adapting lessons to diverse learning needs.  
+- Helped design quizzes, assisted in exam corrections, and developed tailored exercises to reinforce learning—improving average student performance by at least one letter grade—all within a supportive, engaging environment.  
+</div>
+</div>
+
+<div class="timeline skills">
+## Skills
+
+<div class="timeline-item">
+- **Languages:**
+  - **Advanced:** Python, SQL, R  
+  - **Intermediate:** Java, C++, MATLAB
+- **Tools:** Git, Pandas, NumPy, scikit-learn, MS Office, LaTeX
+- **Statistical Methods:** Multivariate Data Analysis, Generalized Linear Models (GLMs), ANOVA, A/B Testing 
+</div>
+</div>
+
+<footer style="text-align:center; margin-top:3rem; font-size:2rem;">
+  <a href="resume.pdf" target="_blank" style="margin:0 1rem; text-decoration:none;">
+    <i class="bi bi-file-earmark-person" title="Résumé"></i>
+  </a>
+</footer>

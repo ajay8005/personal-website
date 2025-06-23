@@ -1,0 +1,67 @@
+---
+title: "Select Coursework"
+editor: visual
+---
+
+Below is a selection of courses I’ve completed at UC Berkeley, with descriptions from the official course catalog.
+
+## Computer Science (CDSS)
+
+-   **CS 61A: Structure & Interpretation of Computer Programs**\
+    An introduction to programming and computer science focused on abstraction techniques as means to manage program complexity. Techniques include procedural abstraction; control abstraction using recursion, higher-order functions, generators, and streams; data abstraction using interfaces, objects, classes, and generic operators; and language abstraction using interpreters and macros. The course exposes students to programming paradigms, including functional, object-oriented, and declarative approaches. It includes an introduction to asymptotic analysis of algorithms. There are several significant programming projects.
+
+-   **CS 61B: Data Structures & Algorithms**\
+    Fundamental dynamic data structures, including linear lists, queues, trees, and other linked structures; arrays strings, and hash tables. Storage management. Elementary principles of software engineering. Abstract data types. Algorithms for sorting and searching. Introduction to the Java programming language.
+
+## Data Science & Statistics (CDSS)
+
+-   **DATA 100: Principles & Techniques of Data Science**\
+    Students in Data 100 explore the data science lifecycle, including question formulation, data collection and cleaning, exploratory data analysis and visualization, statistical inference and prediction, and decision-making.​ The class focuses on quantitative critical thinking​ and key principles and techniques needed to carry out this cycle. These include languages for transforming, querying and analyzing data; algorithms for machine learning methods including regression, classification and clustering; principles behind creating informative data visualizations; statistical concepts of measurement error and prediction; and techniques for scalable data processing.
+
+-   **STAT 133: Concepts in Computing with Data**\
+    An introduction to computationally intensive applied statistics. Topics include organization and use of databases, visualization and graphics, statistical learning and data mining, model validation procedures, and the presentation of results. This course uses R as its primary computing language.
+
+-   **STAT 134: Probability Theory**\
+    An introduction to probability, emphasizing concepts and applications. Conditional expectation, independence, laws of large numbers. Discrete and continuous random variables. Central Limit Theorem. Selected topics such as the Poisson process, Markov chains, characteristic functions.
+
+-   **STAT 135: Mathematical Statistics**\
+    A comprehensive survey course in statistical theory and methodology. Topics include descriptive statistics, maximum likelihood estimation, non-parametric methods, introduction to optimality, goodness-of-fit tests, analysis of variance, bootstrap and computer-intensive methods and least squares estimation. The laboratory includes computer-based data-analytic applications to science and engineering.
+
+-   **STAT 151A: Linear Modelling (Theory & Applications)**\
+    A coordinated treatment of linear and generalized linear models and their application. Linear regression, analysis of variance and covariance, random effects, design and analysis of experiments, quality improvement, log-linear models for discrete multivariate data, model selection, robustness, graphical techniques, productive use of computers, in-depth case studies. This course uses Python as its primary computing language.
+
+-   **STAT 154: Modern Statistical Prediction & Machine Learning**\
+    Theory and practice of statistical prediction. Contemporary methods as extensions of classical methods. Topics: optimal prediction rules, the curse of dimensionality, empirical risk, linear regression and classification, basis expansions, regularization, splines, the bootstrap, model selection, classification and regression trees, boosting, support vector machines. Computational efficiency versus predictive performance. Emphasis on experience with real data and assessing statistical assumptions. This course uses Python as its primary computing language.
+
+-   **STAT 165: Forecasting**\
+    This practically-oriented class will provide students with tools to make good forecasts, including Fermi estimates, calibration training, base rates, scope sensitivity, and power laws. Other topics include: time series analysis, exponential smoothing, and forecast evaluation. This course uses Python as its primary computing language.
+
+## Mathematics (L&S)
+
+-   **MATH 110: Abstract Linear Algebra**\
+    Matrices, vector spaces, linear transformations, inner products, determinants. Eigenvectors. QR factorization. Quadratic forms and Rayleigh's principle. Jordan canonical form, applications. Linear functionals.
+
+-   **MATH 128A: Numerical Analysis**\
+    Programming for numerical calculations, round-off error, approximation and interpolation, numerical quadrature, and solution of ordinary differential equations. This courses used MATLAB as its primary programming language.
+
+-   **MATH 113: Abstract Algebra**\
+    Sets and relations. The integers, congruences, and the Fundamental Theorem of Arithmetic. Groups and their factor groups. Commutative rings, ideals, and quotient fields. The theory of polynomials: Euclidean algorithm and unique factorizations. The Fundamental Theorem of Algebra. Fields and field extensions.
+
+-   **MATH 104: Real Analysis**\
+    The real number system. Sequences, limits, and continuous functions in R and R. The concept of a metric space. Uniform convergence, interchange of limit operations. Infinite series. Mean value theorem and applications. The Riemann integral.
+
+-   **MATH H185: Honors Complex Analysis**\
+    Honors section corresponding to Math 185 for exceptional students with strong mathematical inclination and motivation. Emphasis is on rigor, depth, and hard problems.
+
+## Business (Berkeley Haas)
+
+-   **UGBA 102A: Financial Accounting**\
+    The identification, measurement, and reporting of financial effects of events on enterprises, with a particular emphasis on business organization. Preparation and interpretation of balance sheets, income statements, and statements of cash flows.
+
+-   **UGBA 104: Introduction to Business Analytics**\
+    This course provides an introduction to several quantitative methods used to facilitate complex decision-making in business, with applications in many different industries, at different levels in the organization, and with different scopes of decisions. The power of the methods covered in this class is further enhanced by implementing them in spreadsheet software, which allows complex problems to be approached and solved in a straightforward and understandable manner.
+
+## Environmental Economics & Policy (RCNR)
+
+-   **ENVECON 105: Data Tools for Sustainability & the Environment**\
+    This course introduces students to data analysis for use in addressing sustainable business and policy questions. By the end of this course, students will be able to analyze real-world data within the Jupyter/Python programming environment. It will focus on real-world applications such as the White House’s environmental justice proposals; emissions monitoring; and assessing plastic waste for the Government of Indonesia.

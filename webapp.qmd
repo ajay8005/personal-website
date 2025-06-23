@@ -1,0 +1,39 @@
+---
+title: "Web Applications"
+editor: visual
+---
+
+## S&P 500 Investment Simulator  
+**Live App:** [Explore the Simulator](https://ajay-sharma.shinyapps.io/InvestmentSimulator/)  
+
+**Quick:** Monte Carlo–powered tool for visualizing S&P 500 growth scenarios.  
+
+**Details:**  
+- View historical S&P 500 closing prices (1928–2023) on linear or log scales.  
+- Customize date ranges with an intuitive slider.  
+- Run hundreds or thousands of simulations by specifying initial investment, periodic contributions, expected return, volatility, and time horizon.  
+- Compare percentile-based outcomes (10th, 25th, median, 75th, 90th) and summary statistics (mean, standard deviation) to assess risk and reward.
+
+---
+
+## California Crash Data Explorer  
+**Live App:** [Open the Explorer](https://ajay-sharma.shinyapps.io/app3/)  
+
+**Quick:** Interactive dashboard for 2021–2022 California traffic-collision data.  
+
+**Details:**  
+- Filter crashes by county, severity, violation type, and hour of day using dropdowns and sliders.  
+- Visualize trends with bar charts (yearly counts, weekday patterns) and interactive Leaflet maps with clustered markers.  
+- Drill into individual incidents via a searchable data table showing date, location, severity, injuries, fatalities, and violation category.
+
+---
+
+## Harry Potter Text Sentiment Analysis  
+**Live App:** [Launch the Text Analysis](https://ajay-sharma.shinyapps.io/app2/)  
+
+**Quick:** Sentiment & TF-IDF analysis across all seven Harry Potter books.  
+
+**Details:**  
+- Compute TF-IDF scores to identify the most distinctive terms per chapter or book, with options to include/exclude stopwords.  
+- Run multiple lexicons (Bing, NRC, Afinn, Loughran) to chart emotional tone and intensity across the series.  
+- Interactive bar charts and tables let you compare sentiment by chapter/book and dive into the key words driving each score.

@@ -6,36 +6,30 @@ website:
   google-analytics: G-B8G2041HSB
   sidebar:
     style: docked
-    title: "Stat 210a"
+    title: "Ajay Sharma"
     logo: assets/stat_bear.png
     tools:
       - icon: github
-        href: https://github.com/berkeley-stat210a/fall-2024
+        href: https://github.com/ajay8005
+      - icon: linkedin
+        href: https://linkedin.com/in/asharma2718
     contents:
       - href: index.qmd
-        text: Home / Schedule
-      - section: "Course Logistics"
+        text: About Me
+      - href: resume.qmd
+      - section: "Projects"
         contents:
-          - faq.qmd
-          - syllabus.qmd
-          - calendar.qmd
-      - section: "Course Materials"
+          - webapp.qmd
+          - projects.qmd
+          - book.qmd
+      - section: "Berkeley Coursework"
         contents:
-          - handwritten-notes.qmd
-          - homework.qmd
-          - old-exams.qmd
-      - section: "Course Reader"
-        contents:
-          - reader/introduction.qmd
-          - reader/probability.qmd
-          - reader/estimation.qmd
-          - reader/exponential-families.qmd
-          - reader/sufficiency.qmd
-          - reader/completeness.qmd
-          - reader/unbiased-estimation.qmd
+          - berkeley-coursework.qmd
+          - homework-solutions.qmd
+      - href: contact.qmd
+        text: "Contact & Tutoring Services"
       - href: license.qmd
         text: License
-
 
 format:
   html:
@@ -43,4 +37,9 @@ format:
     css: assets/styles.css
     toc: true
     include-in-header:
-      file: siteimprove.html
+      - file: siteimprove.html
+      - |
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+        />

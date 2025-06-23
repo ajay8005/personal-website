@@ -1,0 +1,60 @@
+---
+title: "Data Science & Software"
+format:
+  html:
+    toc: true
+---
+
+Welcome to my projects showcase! Each of the following projects demonstrates a different set of skills in data science, machine learning, and software engineering. You can view a rendered explanation for each one directly on this page.
+
+## 🏠 House Price Predictor
+
+**Overview:**\
+A supervised learning project focused on predicting house prices using regression models and feature engineering.
+
+<embed src="House_Price_Predictor(1).pdf" type="application/pdf" width="100%" height="600px">
+
+------------------------------------------------------------------------
+
+## 📧 Ham & Spam Email Classifier
+
+**Overview:**\
+A machine learning classifier built to detect spam emails using natural language processing (NLP) and logistic regression.
+
+<embed src="Spam_and_Ham_Email_Classifier.pdf" type="application/pdf" width="100%" height="600px">
+
+------------------------------------------------------------------------
+
+## 🎮 2048 Game
+
+**Overview:**\
+A full implementation of the classic 2048 puzzle game with logic for tile merging, movement, and winning conditions.
+
+<embed src="2048.pdf" type="application/pdf" width="100%" height="600px">
+
+------------------------------------------------------------------------
+
+## 💧 Percolation Simulation
+
+**Overview:**\
+A simulation of percolation thresholds using union-find data structures. Useful for modeling fluid flow through porous media.
+
+<embed src="Percolation.pdf" type="application/pdf" width="100%" height="600px">
+
+------------------------------------------------------------------------
+
+## 🌐 NGordnet (WordNet-based Language Explorer)
+
+**Overview:**\
+An interactive system for exploring word frequencies, hierarchies, and semantic trends over time using WordNet data.
+
+<embed src="NGordnet__Wordnet_.pdf" type="application/pdf" width="100%" height="600px">
+
+------------------------------------------------------------------------
+
+## 🗺️ Build Your Own World (BYOW)
+
+**Overview:**\
+A tile-based game engine that allows procedurally generated maps, avatar movement, and save/load functionality.
+
+<embed src="BYOW.pdf" type="application/pdf" width="100%" height="600px">

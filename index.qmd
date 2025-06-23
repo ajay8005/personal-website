@@ -1,26 +1,43 @@
 ---
-title: "Statistics 210a: Theoretical Statistics"
-subtitle: "UC Berkeley, Fall 2024"
-listing:
-  - id: schedule
-    template: assets/schedule.ejs
-    contents: schedule.yml
-  - id: buttons
-    template: assets/buttons.ejs
-    contents: buttons.yml
+title: "Ajay Sharma"
+subtitle: "Double Major: Statistics & Applied Math (Data Science) • UC Berkeley ’25"
+format:
+  html:
+    theme: cosmo
 ---
 
+<div style="text-align: center;">
+![](assets/gradpic.jpg){width=70% .rounded}
+</div>
 
-::: callout-important
-## Course enrollment for undergraduates
 
-If you are an undergraduate who wants to take this course, please fill out the [permission code request form](https://docs.google.com/forms/d/e/1FAIpQLScWQLQ_gS7ZYdRZQrvhabRMO_zmdNR6JtHyTk3Vw30QtPbnJA/viewform?usp=sf_link) to let me know about your background. Anyone considering taking the course is encouraged to read the [frequently asked questions](faq.qmd) regarding preparation and review materials.
-:::
 
-::: {#buttons}
-:::
+## About Me
 
-## Schedule
+I’m Ajay Sharma, a statistician and machine‐learning enthusiast who loves turning data into insight. After earning my B.S. in Statistics & Applied Mathematics (Data Science) from UC Berkeley, I’ve spent my days studying theoretical statistics and developing predictive models—including exploratory analyses of financial time series—while teaching a wide range of courses: AP Calculus BC, AP Statistics, AP Computer Science A, college‐level Multivariable Calculus, Discrete Mathematics, Probability Theory… and even chess! I firmly believe that deep comprehension arises from blending theory and application, and I’m dedicated to translating advanced technical material into an approachable, inspiring form.
 
-::: {#schedule}
-:::
+When I’m not writing code or teaching, I work on my second book (course reader)—a dive into computational data analysis and a prelude to theoretical machine learning. Outside of work, you’ll often find me at the gym, on the running trail, or simply hanging out with friends and family. Whether I’m coaching students or planning my next data science project, I’m driven by curiosity, collaboration, and the joy of lifelong learning.
+
+- 🔭 Currently: Exploring statistical modeling, pedagogy, and teaching.
+- 📄 [Resume](resume.qmd) 
+- 💼 Projects: [Web Applications](webapp.qmd), [Data Science & Software](projects.qmd), [Books](books.qmd)  
+- 🎓 [Berkeley Coursework](berkeley-coursework.qmd)  
+- ✉️ [Contact Me](contact.qmd)
+
+
+
+
+<footer style="text-align:center; margin-top:3rem; font-size:2rem;">
+  <a href="resume.pdf" target="_blank"
+     style="margin:0 1rem; text-decoration:none;">
+    <i class="bi bi-file-earmark-person" title="Résumé"></i>
+  </a>
+  <a href="https://github.com/ajay8005" target="_blank"
+     style="margin:0 1rem; text-decoration:none;">
+    <i class="bi bi-github" title="GitHub"></i>
+  </a>
+  <a href="https://linkedin.com/in/asharma2718" target="_blank"
+     style="margin:0 1rem; text-decoration:none;">
+    <i class="bi bi-linkedin" title="LinkedIn"></i>
+  </a>
+</footer>
