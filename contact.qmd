@@ -19,7 +19,7 @@ title: "Contact & Tutoring Services"
 ---
 
 ## Tutoring Services & Discussion  
-Please feel free to set up an appointment so we can discuss, and to download a PDF of my [tutoring flyer](tutoring_flyer.pdf) for additional information!
+Please feel free to set up an appointment so we can discuss, and to download a PDF of my [tutoring flyer](tutoring flyer.pdf) for additional information!
 
 <!-- Calendly inline widget begin -->
 <div class="calendly-inline-widget"
