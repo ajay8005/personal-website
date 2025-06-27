@@ -123,7 +123,7 @@
     "href": "resume.html#skills-additional-info",
     "title": "Resume",
     "section": "Skills & Additional Info",
-    "text": "Skills & Additional Info\n\n\nLanguages:\n\nAdvanced: Python, SQL, R\n\nIntermediate: Java, C++, MATLAB\n\nTools: Git, Pandas, NumPy, scikit-learn, MS Office, LaTeX\nStatistical Methods: Multivariate Data Analysis, Generalized Linear Models (GLMs), ANOVA, A/B Testing\nCitizenship: U.S. Citizen",
+    "text": "Skills & Additional Info\n\n\nLanguages:\n\nAdvanced: Python, SQL, R\n\nIntermediate: Java, C++, MATLAB\n\nTools: Git, Pandas, NumPy, scikit-learn, MS Office, LaTeX\nStatistical Methods: Multivariate Data Analysis, Generalized Linear Models (GLMs), ANOVA, A/B Testing\nCitizenship: U.S.-born citizen",
     "crumbs": [
       "Resume"
     ]
@@ -1375,7 +1375,7 @@
     "href": "units/unit1.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 1: Intro",
     "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\nnp.float64(-0.0238028604531922)"
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\nnp.float64(-0.02521225933571547)"
   },
   {
     "objectID": "units/unit1.html#latex",
@@ -1424,7 +1424,7 @@
     "href": "units/unit3.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 3: More",
     "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\nnp.float64(0.17574737127415252)"
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\nnp.float64(0.10557388795957706)"
   },
   {
     "objectID": "units/unit3.html#latex",
