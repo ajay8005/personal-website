@@ -83,7 +83,7 @@
     "href": "resume.html",
     "title": "Resume",
     "section": "",
-    "text": "B.A. Statistics & B.A. Applied Mathematics (Data Science)\n\n\nAugust 2023 – May 2025 | Berkeley, CA\n\n\nRelevant Coursework: CS 61A: Structure & Interpretation of Computer Programs, CS 61B: Data Structures & Algorithms, DATA 100: Principles & Techniques of Data Science, STAT 133: Concepts in Computing with Data, STAT 151A: Linear Modelling (Theory & Applications), STAT 154: Modern Statistical Prediction & Machine Learning, STAT 165: Forecasting, UGBA 102: Financial Accounting, UGBA 104: Business Analytics.",
+    "text": "B.A. Statistics & B.A. Applied Mathematics (Data Science)\n\n\nAugust 2023 – May 2025 | Berkeley, CA\n\n\nRelevant Coursework: CS 61A: Structure & Interpretation of Computer Programs, CS 61B: Data Structures & Algorithms, DATA 100: Principles & Techniques of Data Science, STAT 133: Concepts in Computing with Data, STAT 151A: Linear Modelling (Theory & Applications), STAT 154: Modern Statistical Prediction & Machine Learning, STAT 165: Forecasting, UGBA 102A: Financial Accounting, UGBA 104: Business Analytics.",
     "crumbs": [
       "Resume"
     ]
@@ -93,7 +93,7 @@
     "href": "resume.html#education",
     "title": "Resume",
     "section": "",
-    "text": "B.A. Statistics & B.A. Applied Mathematics (Data Science)\n\n\nAugust 2023 – May 2025 | Berkeley, CA\n\n\nRelevant Coursework: CS 61A: Structure & Interpretation of Computer Programs, CS 61B: Data Structures & Algorithms, DATA 100: Principles & Techniques of Data Science, STAT 133: Concepts in Computing with Data, STAT 151A: Linear Modelling (Theory & Applications), STAT 154: Modern Statistical Prediction & Machine Learning, STAT 165: Forecasting, UGBA 102: Financial Accounting, UGBA 104: Business Analytics.",
+    "text": "B.A. Statistics & B.A. Applied Mathematics (Data Science)\n\n\nAugust 2023 – May 2025 | Berkeley, CA\n\n\nRelevant Coursework: CS 61A: Structure & Interpretation of Computer Programs, CS 61B: Data Structures & Algorithms, DATA 100: Principles & Techniques of Data Science, STAT 133: Concepts in Computing with Data, STAT 151A: Linear Modelling (Theory & Applications), STAT 154: Modern Statistical Prediction & Machine Learning, STAT 165: Forecasting, UGBA 102A: Financial Accounting, UGBA 104: Business Analytics.",
     "crumbs": [
       "Resume"
     ]
@@ -1375,7 +1375,7 @@
     "href": "units/unit1.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 1: Intro",
     "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\nnp.float64(0.0821488400288336)"
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\nnp.float64(-0.11071001935981771)"
   },
   {
     "objectID": "units/unit1.html#latex",
@@ -1424,7 +1424,7 @@
     "href": "units/unit3.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 3: More",
     "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\nnp.float64(0.032145318954795214)"
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\nnp.float64(0.047705064167577194)"
   },
   {
     "objectID": "units/unit3.html#latex",
