@@ -83,7 +83,7 @@
     "href": "resume.html",
     "title": "Resume",
     "section": "",
-    "text": "B.A. Statistics & B.A. Applied Mathematics (Data Science)\n\n\nAugust 2023 – May 2025 | Berkeley, CA\n\n\nRelevant Coursework: CS 61A: Structure & Interpretation of Computer Programs, CS 61B: Data Structures & Algorithms, DATA 100: Principles & Techniques of Data Science, STAT 133: Concepts in Computing with Data, STAT 151A: Linear Modelling (Theory & Applications), STAT 154: Modern Statistical Prediction & Machine Learning, STAT 165: Forecasting, UGBA 102A: Financial Accounting, UGBA 104: Business Analytics.",
+    "text": "B.A. Statistics, B.A. Applied Mathematics (Data Science)\n\n\nAugust 2023 – May 2025 | Berkeley, CA\n\n\nRelevant Coursework: CS 61A: Structure & Interpretation of Computer Programs, CS 61B: Data Structures & Algorithms, DATA 100: Principles & Techniques of Data Science, STAT 133: Concepts in Computing with Data, STAT 151A: Linear Modelling (Theory & Applications), STAT 154: Modern Statistical Prediction & Machine Learning, STAT 165: Forecasting, UGBA 102A: Financial Accounting, UGBA 104: Business Analytics.",
     "crumbs": [
       "Resume"
     ]
@@ -93,7 +93,7 @@
     "href": "resume.html#education",
     "title": "Resume",
     "section": "",
-    "text": "B.A. Statistics & B.A. Applied Mathematics (Data Science)\n\n\nAugust 2023 – May 2025 | Berkeley, CA\n\n\nRelevant Coursework: CS 61A: Structure & Interpretation of Computer Programs, CS 61B: Data Structures & Algorithms, DATA 100: Principles & Techniques of Data Science, STAT 133: Concepts in Computing with Data, STAT 151A: Linear Modelling (Theory & Applications), STAT 154: Modern Statistical Prediction & Machine Learning, STAT 165: Forecasting, UGBA 102A: Financial Accounting, UGBA 104: Business Analytics.",
+    "text": "B.A. Statistics, B.A. Applied Mathematics (Data Science)\n\n\nAugust 2023 – May 2025 | Berkeley, CA\n\n\nRelevant Coursework: CS 61A: Structure & Interpretation of Computer Programs, CS 61B: Data Structures & Algorithms, DATA 100: Principles & Techniques of Data Science, STAT 133: Concepts in Computing with Data, STAT 151A: Linear Modelling (Theory & Applications), STAT 154: Modern Statistical Prediction & Machine Learning, STAT 165: Forecasting, UGBA 102A: Financial Accounting, UGBA 104: Business Analytics.",
     "crumbs": [
       "Resume"
     ]
@@ -623,7 +623,7 @@
     "href": "index.html#about-me",
     "title": "Ajay Sharma",
     "section": "About Me",
-    "text": "About Me\nI’m Ajay Sharma, a statistician and machine‐learning enthusiast who loves turning data into insight. After earning my B.S. in Statistics & Applied Mathematics (Data Science) from UC Berkeley, I’ve spent my days studying theoretical statistics and developing predictive models—including exploratory analyses of financial time series—while teaching a wide range of courses: AP Calculus BC, AP Statistics, AP Computer Science A, college‐level Multivariable Calculus, Discrete Mathematics, Probability Theory… and even chess! I firmly believe that deep comprehension arises from blending theory and application, and I’m dedicated to translating advanced technical material into an approachable, inspiring form.\nWhen I’m not writing code or teaching, I work on my second book (course reader)—a dive into computational data analysis and a prelude to theoretical machine learning. Outside of work, you’ll often find me at the gym, on the running trail, or simply hanging out with friends and family. Whether I’m coaching students or planning my next data science project, I’m driven by curiosity, collaboration, and the joy of lifelong learning.\n\n🔭 Currently: Exploring statistical modeling, pedagogy, and teaching.\n📄 Resume\n💼 Projects: Web Applications, Data Science & Software, Books\n\n🎓 Berkeley Coursework\n\n✉️ Contact Me",
+    "text": "About Me\nI’m Ajay Sharma, a statistician and machine‐learning enthusiast who loves turning data into insight. After earning my B.A. in Statistics & Applied Mathematics (Data Science) from UC Berkeley, I’ve spent my days studying theoretical statistics and developing predictive models—including exploratory analyses of financial time series—while teaching a wide range of courses: AP Calculus BC, AP Statistics, AP Computer Science A, college‐level Multivariable Calculus, Discrete Mathematics, Probability Theory… and even chess! I firmly believe that deep comprehension arises from blending theory and application, and I’m dedicated to translating advanced technical material into an approachable, inspiring form.\nWhen I’m not writing code or teaching, I work on my second book (course reader)—a dive into computational data analysis and a prelude to theoretical machine learning. Outside of work, you’ll often find me at the gym, on the running trail, or simply hanging out with friends and family. Whether I’m coaching students or planning my next data science project, I’m driven by curiosity, collaboration, and the joy of lifelong learning.\n\n🔭 Currently: Exploring statistical modeling, pedagogy, and teaching.\n📄 Resume\n💼 Projects: Web Applications, Data Science & Software, Books\n\n🎓 Berkeley Coursework\n\n✉️ Contact Me",
     "crumbs": [
       "About Me"
     ]
@@ -1375,7 +1375,7 @@
     "href": "units/unit1.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 1: Intro",
     "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\nnp.float64(-0.15233957998724346)"
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\nnp.float64(0.022381409744596206)"
   },
   {
     "objectID": "units/unit1.html#latex",
@@ -1424,7 +1424,7 @@
     "href": "units/unit3.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 3: More",
     "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\nnp.float64(-0.13474881466451855)"
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\nnp.float64(0.06315120118466472)"
   },
   {
     "objectID": "units/unit3.html#latex",
