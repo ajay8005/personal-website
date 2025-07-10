@@ -623,7 +623,7 @@
     "href": "index.html#about-me",
     "title": "Ajay Sharma",
     "section": "About Me",
-    "text": "About Me\nI’m Ajay Sharma, a statistician and machine‐learning enthusiast who loves turning data into insight. After earning my B.A. in Statistics & Applied Mathematics (Data Science) from UC Berkeley, I’ve spent my days studying theoretical statistics and developing predictive models—including exploratory analyses of financial time series—while teaching a wide range of courses: AP Calculus BC, AP Statistics, AP Computer Science A, college‐level Multivariable Calculus, Discrete Mathematics, Probability Theory… and even chess! I firmly believe that deep comprehension arises from blending theory and application, and I’m dedicated to translating advanced technical material into an approachable, inspiring form.\nWhen I’m not writing code or teaching, I work on my second book (course reader)—a dive into computational data analysis and a prelude to theoretical machine learning. Outside of work, you’ll often find me at the gym, on the running trail, or simply hanging out with friends and family. Whether I’m coaching students or planning my next data science project, I’m driven by curiosity, collaboration, and the joy of lifelong learning.\n\n🔭 Currently: Exploring statistical modeling, pedagogy, and teaching.\n📄 Resume\n💼 Projects: Web Applications, Data Science & Software, Books\n\n🎓 Berkeley Coursework\n\n✉️ Contact Me",
+    "text": "About Me\nI’m Ajay Sharma, a statistician and machine‐learning enthusiast who loves turning data into insight. After earning my B.A. in Statistics & Applied Mathematics (Data Science) from UC Berkeley, I’ve spent my days studying theoretical statistics and developing predictive models—including exploratory analyses of financial time series—while teaching a wide range of courses: AP Calculus BC, AP Statistics, AP Computer Science A, college‐level Multivariable Calculus, Discrete Mathematics, Probability Theory… and even chess! I firmly believe that deep comprehension arises from blending theory and application, and I’m dedicated to translating advanced technical material into an approachable, inspiring form.\nWhen I’m not writing code or teaching, I work on my second book (course reader)—a dive into computational data analysis and a prelude to theoretical machine learning. Outside of work, you’ll often find me at the gym, on the running trail, or simply hanging out with friends and family. Whether I’m coaching students or planning my next data science project, I’m driven by curiosity, collaboration, and the joy of lifelong learning. Go Bears!\n\n🔭 Currently: Exploring statistical modeling, pedagogy, and teaching.\n📄 Resume\n💼 Projects: Web Applications, Data Science & Software, Books\n\n🎓 Berkeley Coursework\n\n✉️ Contact Me",
     "crumbs": [
       "About Me"
     ]
@@ -1375,7 +1375,7 @@
     "href": "units/unit1.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 1: Intro",
     "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\nnp.float64(0.022381409744596206)"
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\nnp.float64(0.010896692742305824)"
   },
   {
     "objectID": "units/unit1.html#latex",
@@ -1424,7 +1424,7 @@
     "href": "units/unit3.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 3: More",
     "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\nnp.float64(0.06315120118466472)"
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\nnp.float64(0.025511140146597402)"
   },
   {
     "objectID": "units/unit3.html#latex",
