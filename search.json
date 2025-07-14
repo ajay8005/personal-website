@@ -794,7 +794,7 @@
     "href": "homework-solutions.html#stat-154-modern-statistical-prediction-machine-learning",
     "title": "Select Homework Solutions",
     "section": "STAT 154: Modern Statistical Prediction & Machine Learning",
-    "text": "STAT 154: Modern Statistical Prediction & Machine Learning\nSTAT 154 at UC Berkeley covers a comprehensive set of foundational and advanced machine learning topics:\n\nCore tasks: Regression, classification, dimension reduction, and clustering.\nAlgorithms: Solving linear systems, gradient descent, Newton’s method, power iteration for eigenvalue problems, and the EM algorithm.\nMethods: Kernel methods, regularization, sample splitting, resampling methods, and cross-validation.\nAdvanced topics: Statistical learning and optimization theory; bagging and boosting; tree-based models; neural networks; Bayesian modeling; online learning and bandit problems..\n\n\nSolutions written by Ajay Sharma to theoretical exercises assigned throughout the semester. Computational exercises have not been shown. More to be added.\n\n\nHomework 1\nHomework 2\nHomework 3\nHomework 4\nHomework 5",
+    "text": "STAT 154: Modern Statistical Prediction & Machine Learning\nSTAT 154 at UC Berkeley covers a comprehensive set of foundational and advanced machine learning topics:\n\nCore tasks: Regression, classification, dimension reduction, and clustering.\nAlgorithms: Solving linear systems, gradient descent, Newton’s method, power iteration for eigenvalue problems, and the EM algorithm.\nMethods: Kernel methods, regularization, sample splitting, resampling methods, and cross-validation.\nAdvanced topics: Statistical learning and optimization theory; bagging and boosting; tree-based models; neural networks; Bayesian modeling; online learning and bandit problems..\n\n\nSolutions written by Ajay Sharma to theoretical exercises assigned throughout the semester. Computational exercises have not been shown. More to be posted soon.\n\n\nHomework 1\nHomework 2\nHomework 3\nHomework 4\nHomework 5",
     "crumbs": [
       "Berkeley Coursework",
       "Select Homework Solutions"
@@ -1375,7 +1375,7 @@
     "href": "units/unit1.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 1: Intro",
     "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\nnp.float64(0.018960822465641666)"
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\nnp.float64(0.001365287030764138)"
   },
   {
     "objectID": "units/unit1.html#latex",
@@ -1424,7 +1424,7 @@
     "href": "units/unit3.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 3: More",
     "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\nnp.float64(0.16706233838271026)"
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\nnp.float64(0.17096642366739842)"
   },
   {
     "objectID": "units/unit3.html#latex",
