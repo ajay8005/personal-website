@@ -113,7 +113,7 @@
     "href": "resume.html#volunteer-leadership",
     "title": "Resume",
     "section": "Volunteer & Leadership",
-    "text": "Volunteer & Leadership\n\nAmerican Allegiance of Education (Co-Founder)\n\nMay 2023 – October 2024 | Fremont, CA\n\n\nCo-founded the American Allegiance of Education, a non-profit organization dedicated to promoting education and innovation through technology-focused initiatives, including organizing international events for aspiring developers and students.\n\nVolunteered as a lead organizer for a global hackathon, coordinating efforts across teams to create an inclusive and engaging event that attracted 155 participants from multiple countries.\n\nSuccessfully raised $16,419 in sponsorships and prizes by engaging with corporate sponsors and educational institutions, securing funding and resources that significantly increased the event’s impact and reach.\n\nTook the initiative to recruit and organize a panel of expert judges, creating volunteer opportunities for industry professionals to participate and evaluate innovative projects.\n\nProvided mentorship and guidance to participants throughout the hackathon, fostering a collaborative and supportive environment to help participants develop their skills and showcase their projects.\n\n\n\n\nWashington High School (Math Center Volunteer)\n\nAugust 2018 – June 2021 | Fremont, CA\n\n\nTaught range of subjects (Prealgebra–Precalculus, AP Calculus BC) after school and during free-block periods, adapting lessons to diverse learning needs.\n\nHelped design quizzes, assisted in exam corrections, and developed tailored exercises to reinforce learning—improving average student performance by at least one letter grade—all within a supportive, engaging environment.",
+    "text": "Volunteer & Leadership\n\nAmerican Allegiance of Education (Co-Founder)\n\nMay 2023 – October 2024 | Fremont, CA\n\n\nCo-founded the American Allegiance of Education, a non-profit organization dedicated to promoting education and innovation through technology-focused initiatives, including organizing international events for aspiring developers and students.\n\nVolunteered as a lead organizer for a global hackathon, coordinating efforts across teams to create an inclusive and engaging event that attracted 155 participants from multiple countries.\n\nSuccessfully raised $16,419 in sponsorships and prizes by engaging with corporate sponsors and educational institutions (via cold emailing and calling) such as Demos, AoPS, Interview Cake, Interview Buddy, and Alphastar by crafting tailored sponsorship plans, cold-emailing, and calling companies. These resources significantly increased the event’s impact and reach.\n\nTook the initiative to recruit and organize a panel of 8 expert judges from MAANG, Fortune-500 firms (Amazon, Palo Alto Networks, etc.), and top schools (e.g., UC Berkeley), creating volunteer opportunities for industry professionals to participate and evaluate innovative projects.\n\nProvided mentorship and guidance to participants throughout the hackathon, fostering a collaborative and supportive environment to help participants develop their skills and showcase their projects.\n\n\n\n\nWashington High School (Math Center Volunteer)\n\nAugust 2018 – June 2021 | Fremont, CA\n\n\nTaught range of subjects (Prealgebra–Precalculus, AP Calculus BC) after school and during free-block periods, adapting lessons to diverse learning needs.\n\nHelped design quizzes, assisted in exam corrections, and developed tailored exercises to reinforce learning—improving average student performance by at least one letter grade—all within a supportive, engaging environment.",
     "crumbs": [
       "Resume"
     ]
@@ -1375,7 +1375,7 @@
     "href": "units/unit1.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 1: Intro",
     "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\nnp.float64(0.010896692742305824)"
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\nnp.float64(0.006316883553198554)"
   },
   {
     "objectID": "units/unit1.html#latex",
@@ -1424,7 +1424,7 @@
     "href": "units/unit3.html#evaluated-python-code-chunk-with-a-plot",
     "title": "Unit 3: More",
     "section": "Evaluated Python code chunk, with a plot",
-    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\nnp.float64(0.025511140146597402)"
+    "text": "Evaluated Python code chunk, with a plot\n\n\nCode\nimport numpy as np\nx = np.random.normal(size=100)\nimport matplotlib.pyplot as plt\nplt.hist(x)\nplt.show()\nnp.mean(x)\n\n\n\n\n\n\n\n\n\nnp.float64(0.13046455956651049)"
   },
   {
     "objectID": "units/unit3.html#latex",
