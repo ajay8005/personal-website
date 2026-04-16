@@ -362,11 +362,11 @@
     ]
   },
   {
-    "objectID": "homework-solutions.html#stat-154-modern-statistical-prediction-machine-learning",
-    "href": "homework-solutions.html#stat-154-modern-statistical-prediction-machine-learning",
+    "objectID": "homework-solutions.html#stat-154254-modern-statistical-prediction-machine-learning",
+    "href": "homework-solutions.html#stat-154254-modern-statistical-prediction-machine-learning",
     "title": "Select Homework Solutions",
-    "section": "STAT 154: Modern Statistical Prediction & Machine Learning",
-    "text": "STAT 154: Modern Statistical Prediction & Machine Learning\nSTAT 154 at UC Berkeley covers a comprehensive set of foundational and advanced machine learning topics:\n\nCore tasks: Regression, classification, dimension reduction, and clustering.\nAlgorithms: Solving linear systems, gradient descent, Newton’s method, power iteration for eigenvalue problems, and the EM algorithm.\nMethods: Kernel methods, regularization, sample splitting, resampling methods, and cross-validation.\nAdvanced topics: Statistical learning and optimization theory; bagging and boosting; tree-based models; neural networks; Bayesian modeling; online learning and bandit problems..\n\n\nSolutions written by Ajay Sharma to theoretical exercises assigned throughout the semester. Computational exercises have not been shown. More to be posted soon.\n\n\nHomework 1\nHomework 2\nHomework 3\nHomework 4\nHomework 5",
+    "section": "STAT 154/254: Modern Statistical Prediction & Machine Learning",
+    "text": "STAT 154/254: Modern Statistical Prediction & Machine Learning\nSTAT 154/254 at UC Berkeley covers a comprehensive set of foundational and advanced machine learning topics:\n\nCore tasks: Regression, classification, dimension reduction, and clustering.\nAlgorithms: Solving linear systems, gradient descent, Newton’s method, power iteration for eigenvalue problems, and the EM algorithm.\nMethods: Kernel methods, regularization, sample splitting, resampling methods, and cross-validation.\nAdvanced topics: Statistical learning and optimization theory, bagging and boosting, tree-based models, neural networks, Bayesian modeling, online learning and bandit problems.\n\n\nSolutions written by Ajay Sharma to theoretical exercises assigned throughout the semester. Computational exercises have not been shown. More to be posted soon.\n\n\nHomework 1\nHomework 2\nHomework 3\nHomework 4\nHomework 5",
     "crumbs": [
       "Berkeley Coursework",
       "Select Homework Solutions"
