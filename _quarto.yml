@@ -1,9 +1,19 @@
 project:
   type: website
+  render:
+    - index.qmd
+    - resume.qmd
+    - projects.qmd
+    - webapp.qmd
+    - book.qmd
+    - berkeley-coursework.qmd
+    - homework-solutions.qmd
+    - contact.qmd
+    - license.qmd
+    - data.qmd
 
 website:
   site-url: https://ajay8005.github.io/personal-website/
-  # google-analytics: G-B8G2041HSB
   sidebar:
     style: docked
     title: "Ajay Sharma"
