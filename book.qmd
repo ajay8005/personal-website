@@ -1,8 +1,70 @@
 ---
 title: "Books"
+format:
+  html:
+    theme: cosmo
+    toc: false
 ---
 
-## Updates
-To be posted shortly.
+<style>
+.book-box {
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 14px;
+  padding: 24px 22px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+}
 
+.cta-button {
+  display: inline-block;
+  background-color: #1a73e8;
+  color: white !important;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 12px;
+}
 
+.cta-button:hover {
+  background-color: #155dc1;
+  text-decoration: none;
+}
+
+.subtle {
+  color: #555;
+  font-size: 0.98rem;
+}
+</style>
+
+## 📚 Publications & Work in Progress
+
+<div class="book-box">
+
+### ♟️ *Chess Simplified: Foundations & Modern Chess Theory*
+
+A structured introduction to chess fundamentals, bridging classical principles with modern strategic thinking. Designed for beginners and intermediate players looking to build a strong foundation while developing deeper positional understanding.
+
+<div style="text-align: center;">
+  <a href="https://www.amazon.com/Chess-Simplified-Foundations-Modern-Theory/dp/B0GCNCN597" 
+     target="_blank" class="cta-button">
+     View on Amazon
+  </a>
+</div>
+
+</div>
+
+<div class="book-box">
+
+### 📊 *STAT 133 Course Reader (In Progress)*  
+**Computational Statistics with Applications to Machine Learning**
+
+Currently developing a course reader focused on practical statistical computing, bridging core statistical concepts with real-world applications in machine learning. Emphasis on intuition, implementation, and applied problem-solving.
+
+<div class="subtle">
+Planned topics include data manipulation, simulation, modeling, and applied statistical learning techniques.
+</div>
+
+</div>

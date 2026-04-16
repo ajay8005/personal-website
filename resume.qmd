@@ -82,9 +82,9 @@ format:
 
 <div class="timeline-item">
 ### University of California, Berkeley  
-**B.A. Statistics & B.A. Applied Mathematics (Data Science)**  
-<p class="date">August 2023 – May 2025 | Berkeley, CA</p>
-- **[Relevant Coursework](handwritten-notes.qmd):** CS 61A: Structure \& Interpretation of Computer Programs, CS 61B: Data Structures \& Algorithms, DATA 100: Principles \& Techniques of Data Science, STAT 133: Concepts in Computing with Data, STAT 151A: Linear Modelling (Theory \& Applications), STAT 154: Modern Statistical Prediction \& Machine Learning, STAT 165: Forecasting, UGBA 102: Financial Accounting, UGBA 104: Business Analytics.
+**B.A. Statistics & B.A. Applied Mathematics (Data Science Emphasis)**  
+<p class="date">August 2023 – August 2025 | Berkeley, CA</p>
+- **[Relevant Coursework](berkeley-coursework.qmd):** CS 61A: Structure & Interpretation of Computer Programs, CS 61B: Data Structures & Algorithms, DATA 100: Principles & Techniques of Data Science, STAT 133: Concepts in Computing, STAT 151A: Linear Modelling (Theory & Applications), STAT 154: Modern Statistical Prediction & Machine Learning, STAT 165: Forecasting, UGBA 102A: Financial Accounting, UGBA 104: Business Analytics.  
 </div>
 </div>
 
@@ -92,30 +92,46 @@ format:
 ## Professional Experience
 
 <div class="timeline-item">
-### BLCK UNICRN (AI Researcher & Data Analyst Internship)  
-<p class="date">January 2025 – May 2025 | Berkeley, CA </p>
-- Collaborated with team to define the Ideal Customer Profile (ICP) for BLCK UNICRN by leveraging predictive analytics, clustering models, and AI-driven web scraping to identify high-value prospects.  
-- Contributed to the development and refinement of advanced AI functionalities, including retrieval-augmented generation (RAG), agent integration, and natural language processing (NLP) modules to enhance platform capabilities.  
-- Engaged in real-world AI development and integration within a fast-growing startup environment to provide insights and support a 2× growth within the sales and marketing division.  
+### BASIS Independent- Math Instructor  
+<p class="date">August 2025 – Present | Fremont, CA</p>
+- Taught 100+ students across Algebra II, Geometry, and Pre-Calculus, developing structured lesson plans, assessments, and targeted interventions; applied data-informed instruction to track performance trends and improve outcomes, resulting in 81%+ of students exceeding standard on BASIS network’s high-stakes comprehensive exam.
+- Integrated LLM-powered learning workflows (e.g., GPT-5, Google Gemini) to generate adaptive practice problems, real-time feedback, and personalized explanations; combined with performance data to tailor instruction, increasing student engagement and participation by 20% within two weeks.
+- Designed and led three advanced math courses from the ground up, incorporating proof-based reasoning and college-level concepts; organized school-wide math competitions and enrichment programs, while collaborating with parents to reinforce learning strategies and drive sustained academic growth both in and out of the classroom.
 </div>
 
 <div class="timeline-item">
-### Beats by Dre (Consumer Insights & Data Analyst Internship)  
-<p class="date">June 2024 – August 2024 | Remote </p>
-- Leveraged Natural Language Processing (NLP) techniques in Python to analyze over 500 customer reviews from platforms such as Amazon, utilizing sentiment analysis to uncover key trends in consumer preferences and pain points.  
-- Conducted comprehensive data preprocessing (of large data bases), including text cleaning and tokenization to extract meaningful insights from unstructured data.  
-- Developed a customer segmentation strategy based on sentiment clustering, enabling the identification of 10 distinct customer segments, leading to tailored marketing campaigns and personalized product recommendations.  
-- Identified actionable insights on consumer metrics (e.g., sound quality, design, price sensitivity), contributing to a 15 % improvement in targeted marketing by refining campaign messaging and product positioning.  
-- Analyzed customer sentiment trends, defined satisfaction metrics, and identified key feature preference drivers, providing actionable feedback and decision-support for executives.  
+### BLCK UNICRN- AI & Business Analyst Intern
+<p class="date">January 2025 – May 2025 | Berkeley, CA</p>
+- Analyzed user behavior, conversion funnels, and engagement metrics across 50+ accounts and 120+ contacts; identified performance drivers and inefficiencies to inform product and outreach strategy, improving targeting precision and overall engagement outcomes.
+- Built and maintained a multi-source data pipeline (AI-powered web scraper) integrating 20+ inputs; implemented validation checks and consistency rules to improve data integrity and reporting reliability, reducing manual reconciliation and reporting time by 2+ hours per week.
+- Designed, tested, and iterated LLM prompts (GPT-5) using structured evaluation frameworks; optimized output quality, consistency, and relevance to enhance automated responses across chatbot and marketing workflows, improving scalability and reducing manual intervention.
+- Developed standardized reporting frameworks and a Business Requirements Document (BRD) to define workflow logic, KPIs, and data definitions; enabled consistent performance tracking, trend analysis, and more reliable decision-making for cross-functional stakeholders. 
 </div>
 
 <div class="timeline-item">
-### Success Chess School (Chess Instructor)  
-<p class="date">September 2021 – May 2023 | Fremont, CA </p>
+### Beats by Dre- Data Analyst & Consumer Insights Intern  
+<p class="date">June 2024 – August 2024 | Remote</p>
+- Analyzed 500+ customer reviews using natrual language processing (NLP) techniques in Python to extract sentiment, themes, and risk signals; translated unstructured feedback into actionable insights on customer preferences, product quality, and drivers of purchasing behavior.
+- Built and executed a structured data pre-processing pipeline (cleaning, tokenization, normalization) to transform raw text into analyzable datasets; improved downstream usability and enabled consistent feature extraction for analysis.
+- Implemented data validation and quality checks to ensure consistency and reliability across review datasets; produced 10+ targeted visualizations to surface key trends and support data-driven marketing and product decisions.
+- Synthesized insights on consumer priorities (e.g., sound quality, design, price sensitivity) and aligned findings with campaign strategy; contributed to a 15% improvement in targeted marketing effectiveness by refining segmentation and messaging. 
+</div>
+
+<div class="timeline-item">
+### Success Chess School- Chess Instructor 
+<p class="date">September 2021 – May 2023 | Fremont, CA</p>
 - Mentored 150+ students over the course of two years, emphasizing strategic thinking and sportsmanship, resulting in consistent performance improvement and higher student retention.  
-- Authored an instructional chess book tailored for beginners, integrating puzzles and detailed analyses of 15 fundamental openings to reinforce strategic learning and critical thinking.
-- Organized 10+ tournaments, leveraging a custom-built Excel-based matchmaking system that automatically paired participants by analyzing ELO ratings and skill levels (beginner, intermediate, advanced).
-- Conducted outreach, resulting in 20 % year-over-year (YoY) increase in registrations—all while fostering an engaging, supportive, and competitive academic environment.  
+- Authored an instructional chess book tailored for beginners, integrating puzzles and detailed analyses of 15 fundamental openings to reinforce strategic learning and critical thinking.  
+- Organized 10+ tournaments, leveraging a custom-built Excel-based matchmaking system that automatically paired participants by analyzing ELO ratings and skill levels (beginner, intermediate, advanced).  
+- Conducted outreach, resulting in a 20 % year-over-year (YoY) increase in registrations—all while fostering an engaging, supportive, and competitive academic environment.  
+</div>
+
+<div class="timeline-item">
+### Giraffe Learning Center- Math & Chess Instructor 
+<p class="date">June 2023 – June 2024 | Fremont, CA</p>
+- Taught middle school students Prealgebra–Geometry at Giraffe Learning Center’s summer and after-school programs: developed comprehensive LaTeX-based homework assignments and exams to reinforce core concepts and assess learning outcomes.  
+- Coached chess: developed and delivered a structured curriculum covering opening principles, tactics, and endgame techniques; provided one-on-one game analysis and feedback; organized skill-matched tournaments.  
+- Administered differentiated assessments and progress reports: analyzed results to tailor individualized learning plans and improve student outcomes.  
 </div>
 </div>
 
@@ -123,32 +139,34 @@ format:
 ## Volunteer & Leadership
 
 <div class="timeline-item">
-### American Allegiance of Education (Co-Founder)  
-<p class="date">May 2023 – October 2024 | Fremont, CA </p>
-- Co-founded the American Allegiance of Education, a non-profit organization dedicated to promoting education and innovation through technology-focused initiatives, including organizing international events for aspiring developers and students.  
-- Volunteered as a lead organizer for a global hackathon, coordinating efforts across teams to create an inclusive and engaging event that attracted 155 participants from multiple countries.  
-- Successfully raised \$16,419 in sponsorships and prizes by engaging with corporate sponsors and educational institutions, securing funding and resources that significantly increased the event’s impact and reach.  
-- Took the initiative to recruit and organize a panel of expert judges, creating volunteer opportunities for industry professionals to participate and evaluate innovative projects.  
-- Provided mentorship and guidance to participants throughout the hackathon, fostering a collaborative and supportive environment to help participants develop their skills and showcase their projects.  
+### American Allegiance of Education- Co-Founder (Project Lead)
+<p class="date">May 2023 – October 2024 | Fremont, CA</p>
+- Co-founded non-profit organization focused on scaling access to technology education; led strategy and execution of international initiatives using tools such as Google Workspace (Docs, Sheets), Notion, and Slack to manage operations and communication.
+- Designed and executed the end-to-end experience for a 155-participant global hackathon, leveraging social media platforms such as Instagram, LinkedIn, and email outreach tools (Gmail, Mail merge) to launch multi-channel marketing campaigns, track engagement, and optimize participant conversion.
+- Secured $16,419 in corporate sponsorships by building structured partnership tiers and conducting targeted outreach; used Google Sheets/Excel to track sponsor pipelines, manage negotiations, and monitor funding progress and ROI.
+- Coordinated cross-functional stakeholders (marketing, operations, sponsors, judges) by managing timelines and deliverables ensuring smooth execution and real-time alignment across teams.
+- Recruited and onboarded 8 industry judges from MAANG, Fortune 500 firms, and top universities; standardized evaluation workflows and criteria to ensure consistent and data-driven judging. Also mentored participants throughout the event lifecycle, providing structured feedback and guidance--utilizing Zoom and Discord to facilitate collaboration, Q&A sessions, and real-time support.
 </div>
 
 <div class="timeline-item">
-### Washington High School (Math Center Volunteer)
-<p class="date">August 2018 – June 2021 | Fremont CA</p>
-- Taught range of subjects (Prealgebra-Precalculus, AP Calculus BC) after school and during free-block periods, adapting lessons to diverse learning needs.  
+### Washington High School- Math Center Volunteer 
+<p class="date">August 2018 – June 2021 | Fremont, CA</p>
+- Taught range of subjects (Prealgebra–Precalculus, AP Calculus BC) after school and during free-block periods, adapting lessons to diverse learning needs.  
 - Helped design quizzes, assisted in exam corrections, and developed tailored exercises to reinforce learning—improving average student performance by at least one letter grade—all within a supportive, engaging environment.  
 </div>
 </div>
 
 <div class="timeline skills">
-## Skills
+## Skills & Additional Info
 
 <div class="timeline-item">
-- **Languages:**
-  - **Advanced:** Python, SQL, R  
-  - **Intermediate:** Java, C++, MATLAB
-- **Tools:** Git, Pandas, NumPy, scikit-learn, MS Office, LaTeX
-- **Statistical Methods:** Multivariate Data Analysis, Generalized Linear Models (GLMs), ANOVA, A/B Testing 
+- **Programming Languages:**  
+  - **Intermediate Proficiency:** Python, SQL, R, TeX.
+  - **Basic Proficiency:** Java, C++, MATLAB.  
+- **Business & AI Tools (Proficient):** MS Office Suite (Word, Excel, PowerPoint, Outlook), Google (Suite) Workspace (Sheets, Slides, Docs), PowerBI, GPT-5, Gemini-3.
+- **Statistical Methods:** A/B (Hypothesis) Testing, Quality Improvement, GLMs, ANOVA.
+- **Other:** Project Management, Prompt Engineering, Detail-oriented, Effective Communication (Verbal & Written), Quick Learner, Adaptable.  
+- **Citizenship:** U.S. Citizen.  
 </div>
 </div>
 

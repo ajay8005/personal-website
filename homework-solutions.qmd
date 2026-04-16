@@ -16,7 +16,7 @@ STAT 151A at UC Berkeley focuses on modern statistical inference and linear mo
 
 Students learn to implement and interpret these models, assess assumptions, and address common pitfalls (e.g., confounding, omitted variables, high-leverage points).
 
-> Solutions written by Ajay Sharma to theoretical exercises assigned throughout the semester.
+> Solutions written by Ajay Sharma to *theoretical exercises* assigned throughout the semester. *Computational exercises* have *not* been shown.
 
 -   [Homework 1](homework/STAT_151A_Homework_1_Solutions.pdf)\
 -   [Homework 2](homework/STAT_151A_Homework_2_Solutions.pdf)\
@@ -35,7 +35,7 @@ STAT 154 at UC Berkeley covers a comprehensive set of foundational and advanced
 -   **Methods:** Kernel methods, regularization, sample splitting, resampling methods, and cross-validation.
 -   **Advanced topics:** Statistical learning and optimization theory; bagging and boosting; tree-based models; neural networks; Bayesian modeling; online learning and bandit problems..
 
-> Solutions written by Ajay Sharma to theoretical exercises assigned throughout the semester.
+> Solutions written by Ajay Sharma to *theoretical exercises* assigned throughout the semester. *Computational exercises* have *not* been shown. More to be posted soon.
 
 -   [Homework 1](homework/STAT_154_HW_1_Solutions.pdf)
 -   [Homework 2](homework/STAT_154_HW_2_Solutions.pdf)

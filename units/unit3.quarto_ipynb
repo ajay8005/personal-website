@@ -1,0 +1,72 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"Unit 3: More\"\n",
+        "format:\n",
+        "  html:\n",
+        "    code-fold: show\n",
+        "    code-tools: true\n",
+        "    include-before-body:\n",
+        "     - file: macros.md\n",
+        "  pdf: \n",
+        "    include-before-body:\n",
+        "     - file: macros.tex\n",
+        "---\n",
+        "\n",
+        "This is an example of using qmd as the source document with pdf as one target. I've taken out the qmd stuff that doesn't seem to render to pdf.\n",
+        "\n",
+        "## Evaluated Python code chunk, with a plot"
+      ],
+      "id": "86ad1263"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "import numpy as np\n",
+        "x = np.random.normal(size=100)\n",
+        "import matplotlib.pyplot as plt\n",
+        "plt.hist(x)\n",
+        "plt.show()\n",
+        "np.mean(x)"
+      ],
+      "id": "a084ed0c",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## LaTeX\n",
+        "\n",
+        "$$\n",
+        "\\theta = \\int_0^\\infty f(x,\\theta)d\\theta\n",
+        "$$\n",
+        "\n",
+        "## LaTeX macro\n",
+        "\n",
+        "> **Warning**: need to look back at this as having `include-before-body` in the yaml causes extra space at top of page.\n",
+        "\n",
+        "$$\n",
+        "A = X \\trans Y\n",
+        "$$"
+      ],
+      "id": "9cbfb465"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "C:\\Users\\Arun\\AppData\\Local\\Programs\\Python\\Python313\\share\\jupyter\\kernels\\python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

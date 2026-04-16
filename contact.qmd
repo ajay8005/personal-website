@@ -1,33 +1,133 @@
 ---
 title: "Contact & Tutoring Services"
+format:
+  html:
+    theme: cosmo
+    toc: false
 ---
+
+<style>
+.section-box {
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 14px;
+  padding: 22px 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+}
+
+.contact-box {
+  background: #f8fbff;
+  border: 1px solid #d9e6ff;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.service-card {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #1a73e8;
+  color: white !important;
+  padding: 14px 28px;
+  font-size: 17px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.cta-button:hover {
+  background-color: #155dc1;
+}
+</style>
+
+## 📞 Contact Information
+
+<div class="contact-box">
 
 - ✉️ **Email:** ajay [dot] sharma [at] berkeley [dot] edu  
 - 📞 **Phone:** (510) 575-8812  
 - 🔗 **LinkedIn:** [Ajay Sharma](https://linkedin.com/in/asharma2718)
 
----
-
-## 📝 Form
-
-<iframe src="https://forms.gle/GeZmA57AJ2xswG828"
-        width="100%" height="800"
-        frameborder="0" marginheight="0" marginwidth="0">
-  Loading…
-</iframe>
+</div>
 
 ---
 
-## Tutoring Services & Discussion  
-Please feel free to set up an appointment so we can discuss, and to download a PDF of my [tutoring flyer](tutoring flyer.pdf) for additional information!
+## 🎓 Work With A&S Educational Consulting
+
+At **A&S Educational Consulting**, we help students build strong applications, improve academic performance, and plan for long-term success.
+
+<div class="service-grid">
+
+<div class="service-card">
+<strong>✍️ College Essay Revision</strong><br>
+Develop compelling, authentic essays with structured feedback.
+</div>
+
+<div class="service-card">
+<strong>📚 Coursework Tutoring</strong><br>
+STEM support (Math/Stats/CS & ML), including college-level coursework up to senior-level, focused on deep understanding.
+</div>
+
+<div class="service-card">
+<strong>🧭 Academic Planning</strong><br>
+Strategic guidance for high school success and college readiness.
+</div>
+
+<div class="service-card">
+<strong>📈 SAT & AP Prep</strong><br>
+Targeted strategies to improve test performance.
+</div>
+
+<div class="service-card">
+<strong>🌱 Foundations (Middle School)</strong><br>
+Build strong fundamentals in math, problem-solving, and study habits to prepare for advanced coursework.
+</div>
+
+<div class="service-card">
+<strong>⚙️ Custom Package</strong><br>
+Personalized programs combining tutoring, test prep, and advising based on individual goals and timelines.
+</div>
+
+</div>
+
+<div style="text-align: center; margin-top: 20px;">
+  <a href="https://www.aseduconsulting.com/" target="_blank" class="cta-button">
+    Visit A&S Educational Consulting
+  </a>
+</div>
+
+---
+
+## 📄 Tutoring Flyer
+
+<div style="text-align: center;">
+  <a href="tutoring flyer.pdf" target="_blank" class="cta-button" style="background-color:#198754;">
+    Download Flyer
+  </a>
+</div>
+
+---
+
+## 📅 Schedule a Meeting
 
 <!-- Calendly inline widget begin -->
 <div class="calendly-inline-widget"
      data-url="https://calendly.com/ajay-sharma-berkeley"
      style="min-width:320px;height:700px;">
 </div>
-<script type="text/javascript"
-        src="https://assets.calendly.com/assets/external/widget.js"
-        async>
-</script>
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 <!-- Calendly inline widget end -->

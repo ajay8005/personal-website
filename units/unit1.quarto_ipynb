@@ -1,0 +1,137 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"Unit 1: Intro\"\n",
+        "format:\n",
+        "  html:\n",
+        "    code-fold: show\n",
+        "    code-tools: true\n",
+        "    include-before-body:\n",
+        "     - file: macros.md\n",
+        "---\n",
+        "\n",
+        "This is an example of using qmd as the source document.\n",
+        "\n",
+        "\n",
+        "## Evaluated Python code chunk, with a plot"
+      ],
+      "id": "922170df"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "import numpy as np\n",
+        "x = np.random.normal(size=100)\n",
+        "import matplotlib.pyplot as plt\n",
+        "plt.hist(x)\n",
+        "plt.show()\n",
+        "np.mean(x)"
+      ],
+      "id": "069637b5",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## $\\LaTeX$\n",
+        "\n",
+        "$$\n",
+        "\\theta = \\int_0^\\infty f(x,\\theta)d\\theta\n",
+        "$$\n",
+        "\n",
+        "## $\\LaTeX$ macro\n",
+        "\n",
+        "> **Warning**: need to look back at this as having `include-before-body` in the yaml causes extra space at top of page.\n",
+        "\n",
+        "$$\n",
+        "A = X \\trans Y\n",
+        "$$\n",
+        "\n",
+        "## Styled div via direct html\n",
+        "\n",
+        "::: {.border}\n",
+        "This content can be styled via the border class.\n",
+        ":::\n",
+        "\n",
+        "## A callout\n",
+        "\n",
+        "::: {.callout-tip}\n",
+        "## Tip with Title\n",
+        "\n",
+        "This is an example of a callout with a title.\n",
+        ":::\n",
+        "\n",
+        "## Tabset \n",
+        "\n",
+        "::: {.panel-tabset}\n",
+        "## R\n",
+        "\n",
+        "This code is not executed.\n",
+        "\n",
+        "```{.r}\n",
+        "fizz_buzz <- function(fbnums = 1:50) {\n",
+        "  output <- dplyr::case_when(\n",
+        "    fbnums %% 15 == 0 ~ \"FizzBuzz\",\n",
+        "    fbnums %% 3 == 0 ~ \"Fizz\",\n",
+        "    fbnums %% 5 == 0 ~ \"Buzz\",\n",
+        "    TRUE ~ as.character(fbnums)\n",
+        "  )\n",
+        "  print(output)\n",
+        "}\n",
+        "\n",
+        "fizz_buzz(3)\n",
+        "```\n",
+        "\n",
+        "## Python\n",
+        "\n",
+        "This code is executed."
+      ],
+      "id": "595e37d9"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "def fizz_buzz(num):\n",
+        "  if num % 15 == 0:\n",
+        "    print(\"FizzBuzz\")\n",
+        "  elif num % 5 == 0:\n",
+        "    print(\"Buzz\")\n",
+        "  elif num % 3 == 0:\n",
+        "    print(\"Fizz\")\n",
+        "  else:\n",
+        "    print(num)\n",
+        "    \n",
+        "fizz_buzz(3)"
+      ],
+      "id": "f74e63ed",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        ":::"
+      ],
+      "id": "55661267"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "C:\\Users\\Arun\\AppData\\Local\\Programs\\Python\\Python313\\share\\jupyter\\kernels\\python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

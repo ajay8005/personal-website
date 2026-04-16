@@ -1,24 +1,28 @@
 ---
 title: "Ajay Sharma"
-subtitle: "Double Major: Statistics & Applied Math (Data Science) • UC Berkeley ’25"
+subtitle: "Double Major: B.A. Statistics & B.A. Applied Math (Data Science Emphasis) • UC Berkeley ’25"
 format:
   html:
     theme: cosmo
 ---
 
 <div style="text-align: center;">
-![](assets/gradpic.jpg){width=70% .rounded}
+![](assets/new grad pic.jpg){width=60% .rounded}
 </div>
 
 
 
 ## About Me
 
-I’m Ajay Sharma, a statistician and machine‐learning enthusiast who loves turning data into insight. After earning my B.S. in Statistics & Applied Mathematics (Data Science) from UC Berkeley, I’ve spent my days studying theoretical statistics and developing predictive models—including exploratory analyses of financial time series—while teaching a wide range of courses: AP Calculus BC, AP Statistics, AP Computer Science A, college‐level Multivariable Calculus, Discrete Mathematics, Probability Theory… and even chess! I firmly believe that deep comprehension arises from blending theory and application, and I’m dedicated to translating advanced technical material into an approachable, inspiring form.
+I’m Ajay Sharma, a recent UC Berkeley graduate in Statistics and Applied Mathematics (Data Science emphasis) with a strong interest in applying data to drive real-world decisions. My experience spans analytics, operations, and cross-functional problem solving—from building automated data pipelines and conducting structured analyses to supporting decision-making and clear reporting. I enjoy working in fast-paced environments where I can take ambiguous problems, break them down, and turn them into measurable outcomes.
 
-When I’m not writing code or teaching, I work on my second book (course reader)—a dive into computational data analysis and a prelude to theoretical machine learning. Outside of work, you’ll often find me at the gym, on the running trail, or simply hanging out with friends and family. Whether I’m coaching students or planning my next data science project, I’m driven by curiosity, collaboration, and the joy of lifelong learning.
+Alongside my technical work, I’ve led and executed large-scale initiatives, including organizing a 155-participant global hackathon, coordinating teams, and managing end-to-end execution across stakeholders. I’ve also contributed to data-driven projects through internships and independent work, including building tools to automate data collection and improve analysis efficiency. In parallel, I work as a math and computer science instructor and am a published chess book author, experiences that have strengthened my ability to communicate complex ideas in a clear and approachable way.
 
-- 🔭 Currently: Exploring statistical modeling, pedagogy, and teaching.
+When I’m not analyzing data, building models, or writing code, I’m working on my second book—a course reader on computational data analysis as a bridge into theoretical machine learning. Outside of work, you’ll often find me at the gym or on the running trail—a big part of my life after losing over 120 pounds (from 285 to 155 lbs)—or simply spending time with friends and family. Whether I’m mentoring students or exploring my next data-driven project, I’m driven by curiosity, collaboration, and a constant desire to improve. 
+
+Go Bears!
+
+- 🔭 Currently: Research in theoretical statistics, statistical modeling & machine learning, and teaching.
 - 📄 [Resume](resume.qmd) 
 - 💼 Projects: [Web Applications](webapp.qmd), [Data Science & Software](projects.qmd), [Books](books.qmd)  
 - 🎓 [Berkeley Coursework](berkeley-coursework.qmd)  
