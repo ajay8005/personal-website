@@ -7,7 +7,7 @@ format:
 ---
 
 <div style="text-align: center;">
-![](assets/new grad pic.jpg){width=60% .rounded}
+![](assets/new-grad-pic.jpg){width=60% .rounded}
 </div>
 
 
