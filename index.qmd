@@ -1,6 +1,6 @@
 ---
 title: "Ajay Sharma"
-subtitle: "Double Major: B.A. Statistics & B.A. Applied Math (Data Science Emphasis) • UC Berkeley ’25"
+subtitle: "B.A. Statistics & B.A. Applied Math (Data Science Emphasis) • UC Berkeley ’25"
 format:
   html:
     theme: cosmo
