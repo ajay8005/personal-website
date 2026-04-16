@@ -160,13 +160,13 @@ format:
 ## Skills & Additional Info
 
 <div class="timeline-item">
+- **Citizenship:** U.S. Citizen.
 - **Programming Languages:**  
   - **Intermediate Proficiency:** Python, SQL, R, TeX.
   - **Basic Proficiency:** Java, C++, MATLAB.  
 - **Business & AI Tools (Proficient):** MS Office Suite (Word, Excel, PowerPoint, Outlook), Google (Suite) Workspace (Sheets, Slides, Docs), PowerBI, GPT-5, Gemini-3.
 - **Statistical Methods:** A/B (Hypothesis) Testing, Quality Improvement, GLMs, ANOVA.
-- **Other:** Project Management, Prompt Engineering, Detail-oriented, Effective Communication (Oral & Written), Quick Learner, Adaptable.  
-- **Citizenship:** U.S. Citizen.  
+- **Other:** Project Management, Prompt Engineering, Quality Control, Detail-oriented, Effective Communication (Oral & Written), Quick Learner, Adaptable.  
 </div>
 </div>
 
