@@ -1,5 +1,8 @@
 project:
   type: website
+  render:
+    - "*.qmd"
+    - "!reader/*"
 
 website:
   site-url: https://ajay8005.github.io/personal-website/
