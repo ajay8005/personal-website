@@ -24,7 +24,7 @@ Go Bears!
 
 - 🔭 Currently: Research in theoretical statistics, statistical modeling & machine learning, and teaching.
 - 📄 [Resume](resume.qmd) 
-- 💼 Projects: [Web Applications](webapp.qmd), [Data Science & Software](projects.qmd), [Books](books.qmd)  
+- 💼 Projects: [Web Applications](webapp.qmd), [Data Science & Software](projects.qmd), [Books](book.qmd)  
 - 🎓 [Berkeley Coursework](berkeley-coursework.qmd)  
 - ✉️ [Contact Me](contact.qmd)
 
