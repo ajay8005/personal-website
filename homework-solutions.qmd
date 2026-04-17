@@ -1,44 +1,268 @@
 ---
 title: "Select Homework Solutions"
-editor: visual
+format:
+  html:
+    theme: cosmo
+    toc: false
 ---
 
-## STAT 151A: Linear Modelling (Theory & Applications)
+<style>
+.page-intro {
+  background: linear-gradient(135deg, #f8fbff 0%, #eef5ff 100%);
+  border: 1px solid #dbe7ff;
+  border-radius: 18px;
+  padding: 24px 26px;
+  margin-bottom: 28px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+}
 
-STAT 151A at UC Berkeley focuses on modern statistical inference and linear modeling, emphasizing both theoretical foundations and practical applications. Topics include:
+.course-box {
+  background: rgba(255,255,255,0.92);
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 28px 30px;
+  margin-bottom: 28px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.05);
+}
 
--   **Matrix Formulation of Linear Regression**
--   **Hypothesis Testing for Linear Models**
--   **Model Assessment and Selection**
--   **Regularization Methods (Ridge, LASSO, Elastic Net)**
--   **Outlier Detection and Robust Regression**
--   **Generalized Linear Models (GLMs)**
+.course-box h2 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  color: #003262;
+  font-weight: 800;
+}
 
-Students learn to implement and interpret these models, assess assumptions, and address common pitfalls (e.g., confounding, omitted variables, high-leverage points).
+.course-desc {
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
 
-> Solutions written by Ajay Sharma to *theoretical exercises* assigned throughout the semester. *Computational exercises* have *not* been shown.
+.topic-grid-stat151a {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 18px 0 20px 0;
+}
 
--   [Homework 1](homework/STAT_151A_Homework_1_Solutions.pdf)\
--   [Homework 2](homework/STAT_151A_Homework_2_Solutions.pdf)\
--   [Homework 3](homework/STAT_151A_Homework_3_Solutions.pdf)\
--   [Homework 4](homework/STAT_151A_Homework_4_Solutions.pdf)\
--   [Homework 5](homework/STAT_151A_Homework_5_Solutions.pdf)\
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 25px 0;
+}
 
-------------------------------------------------------------------------
+.topic-card {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+}
 
-## STAT 154/254: Modern Statistical Prediction & Machine Learning
+.topic-label {
+  font-weight: 800;
+  color: #003262;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 18px;
+  border-bottom: 2px solid #FDB515;
+  padding-bottom: 8px;
+  text-align: center; /* Centering the title */
+  width: 100%;
+}
 
-STAT 154/254 at UC Berkeley covers a comprehensive set of foundational and advanced machine learning topics:
+/* FIX: This forces the bullet points to render and align correctly */
+.topic-text ul {
+  margin: 0;
+  padding-left: 25px !important; /* Essential to make room for bullets */
+  list-style-type: disc !important;
+  display: block !important;
+}
 
--   **Core tasks:** Regression, classification, dimension reduction, and clustering.
--   **Algorithms:** Solving linear systems, gradient descent, Newton’s method, power iteration for eigenvalue problems, and the EM algorithm.
--   **Methods:** Kernel methods, regularization, sample splitting, resampling methods, and cross-validation.
--   **Advanced topics:** Statistical learning and optimization theory, bagging and boosting, tree-based models, neural networks, Bayesian modeling, online learning and bandit problems.
+.topic-text li {
+  display: list-item !important; /* Forces browser to show the bullet marker */
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #003262;
+  text-align: left; /* Keeps the list content readable */
+}
 
-> Solutions written by Ajay Sharma to *theoretical exercises* assigned throughout the semester. *Computational exercises* have *not* been shown. More to be posted soon.
+.note-box {
+  background: rgba(253, 181, 21, 0.12);
+  border-left: 5px solid #FDB515;
+  border-radius: 12px;
+  padding: 16px 18px;
+  margin: 20px 0 22px 0;
+  line-height: 1.7;
+}
 
--   [Homework 1](homework/STAT_154_HW_1_Solutions.pdf)
--   [Homework 2](homework/STAT_154_HW_2_Solutions.pdf)
--   [Homework 3](homework/STAT_154_HW_3_Solutions.pdf)
--   [Homework 4](homework/STAT_154_HW_4_Solutions.pdf)
--   [Homework 5](homework/STAT_154_HW_5_Solutions.pdf)
+.hw-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.hw-btn {
+  display: block;
+  background: white;
+  border: 1px solid #dbe3ea;
+  border-radius: 12px;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none !important;
+  color: #003262 !important;
+  font-weight: 700;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.hw-btn:hover {
+  background: #003262;
+  color: #FDB515 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+@media (max-width: 900px) {
+  .topic-grid,
+  .topic-grid-stat151a {
+    grid-template-columns: 1fr;
+  }
+
+  .topic-card {
+    min-height: unset;
+  }
+}
+</style>
+
+
+<div class="page-intro">
+
+This page collects selected **theoretical homework solutions** from courses I took at **UC Berkeley**. The goal is to showcase the mathematical and statistical reasoning behind these assignments in a clean, accessible format.
+
+</div>
+
+<div class="course-box">
+
+## STAT 151A: Linear Modelling (Theory & Applications)
+
+<div class="course-desc">
+STAT 151A at UC Berkeley focuses on modern statistical inference and linear modeling, emphasizing both theoretical foundations and practical applications.
+</div>
+
+<style>
+/* Ensuring the list styling is consistent across all course boxes */
+.topic-text ul {
+  margin: 0;
+  padding-left: 25px !important; 
+  list-style-type: disc !important;
+  display: block !important;
+}
+
+.topic-text li {
+  display: list-item !important;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #003262;
+  text-align: left;
+}
+</style>
+```{=html}
+<div class="topic-grid">
+  <div class="topic-card">
+    <div class="topic-label">Fundamentals</div>
+    <div class="topic-text">
+      <ul>
+        <li><strong>Linear Algebra:</strong> Matrix formulation of the General Linear Model and OLS estimation.</li>
+        <li><strong>Inference:</strong> Hypothesis testing, confidence intervals, and the Gauss-Markov theorem.</li>
+        <li><strong>Diagnostics:</strong> Model assessment, residual analysis, and identifying high-leverage points.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="topic-card">
+    <div class="topic-label">Advanced Inference</div>
+    <div class="topic-text">
+      <ul>
+        <li><strong>Regularization:</strong> Shrinkage methods including Ridge regression, LASSO, and Elastic Net.</li>
+        <li><strong>Extensions:</strong> Generalized Linear Models (GLMs) for non-normal response variables.</li>
+        <li><strong>Robustness:</strong> Outlier detection, influential observations, and robust regression techniques.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+```
+
+<div class="course-desc">
+Students learn to implement and interpret these models, assess assumptions, and address common pitfalls such as confounding, omitted variables, and high-leverage points.
+</div>
+
+<div class="note-box">
+Solutions written by Ajay Sharma to <em>theoretical exercises</em> assigned throughout the semester. <em>Computational exercises</em> have <em>not</em> been shown.
+</div>
+
+<div class="hw-grid">
+  <a class="hw-btn" href="homework/STAT_151A_Homework_1_Solutions.pdf" target="_blank">Homework 1</a>
+  <a class="hw-btn" href="homework/STAT_151A_Homework_2_Solutions.pdf" target="_blank">Homework 2</a>
+  <a class="hw-btn" href="homework/STAT_151A_Homework_3_Solutions.pdf" target="_blank">Homework 3</a>
+  <a class="hw-btn" href="homework/STAT_151A_Homework_4_Solutions.pdf" target="_blank">Homework 4</a>
+  <a class="hw-btn" href="homework/STAT_151A_Homework_5_Solutions.pdf" target="_blank">Homework 5</a>
+</div>
+
+</div>
+
+<div class="course-box">
+
+## STAT 154/254: Modern Statistical Prediction & Machine Learning
+
+<div class="course-desc">
+STAT 154/254 at UC Berkeley covers a comprehensive set of foundational and advanced machine learning topics, blending statistical learning ideas with optimization and computation.
+</div>
+
+```{=html}
+<div class="topic-grid">
+  <div class="topic-card">
+    <div class="topic-label" style="text-align:center; width:100%;">Basic Topics</div>
+    <div class="topic-text" style="text-align:left; width:100%;">
+      <ul style="margin:0; padding-left:20px;">
+        <li><strong>Tasks:</strong> Regression, classification, dimension reduction, and clustering.</li>
+        <li><strong>Algorithms:</strong> Solving linear systems, gradient descent, Newton’s method, power iteration for eigenvalue problems, and EM algorithms.</li>
+        <li><strong>Others:</strong> Kernel methods, regularization, sample splitting, resampling methods, and cross-validation.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="topic-card">
+    <div class="topic-label" style="text-align:center; width:100%;">Advanced Topics</div>
+    <div class="topic-text" style="text-align:left; width:100%;">
+      <ul style="margin:0; padding-left:20px;">
+        <li>Statistical learning theory and optimization theory.</li>
+        <li>Bagging and boosting, tree-based models, neural networks, and Bayesian models.</li>
+        <li>Online learning and bandit problems.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+```
+
+
+<div class="course-desc">
+The course emphasizes both mathematical understanding and algorithmic structure, with topics ranging from solving linear systems to modern predictive modeling.
+</div>
+
+<div class="note-box">
+Solutions written by Ajay Sharma to <em>theoretical exercises</em> assigned throughout the semester. <em>Computational exercises</em> have <em>not</em> been shown. More will be posted soon.
+</div>
+
+<div class="hw-grid">
+  <a class="hw-btn" href="homework/STAT_154_HW_1_Solutions.pdf" target="_blank">Homework 1</a>
+  <a class="hw-btn" href="homework/STAT_154_HW_2_Solutions.pdf" target="_blank">Homework 2</a>
+  <a class="hw-btn" href="homework/STAT_154_HW_3_Solutions.pdf" target="_blank">Homework 3</a>
+  <a class="hw-btn" href="homework/STAT_154_HW_4_Solutions.pdf" target="_blank">Homework 4</a>
+  <a class="hw-btn" href="homework/STAT_154_HW_5_Solutions.pdf" target="_blank">Homework 5</a>
+</div>
+
+</div>
