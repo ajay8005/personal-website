@@ -77,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 
-<body class="nav-sidebar docked quarto-light">
+<body class="nav-sidebar docked fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -200,19 +200,7 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#computer-science-cdss" id="toc-computer-science-cdss" class="nav-link active" data-scroll-target="#computer-science-cdss">Computer Science (CDSS)</a></li>
-  <li><a href="#data-science-statistics-cdss" id="toc-data-science-statistics-cdss" class="nav-link" data-scroll-target="#data-science-statistics-cdss">Data Science &amp; Statistics (CDSS)</a></li>
-  <li><a href="#mathematics-ls" id="toc-mathematics-ls" class="nav-link" data-scroll-target="#mathematics-ls">Mathematics (L&amp;S)</a></li>
-  <li><a href="#business-berkeley-haas" id="toc-business-berkeley-haas" class="nav-link" data-scroll-target="#business-berkeley-haas">Business (Berkeley Haas)</a></li>
-  <li><a href="#environmental-economics-policy-rcnr" id="toc-environmental-economics-policy-rcnr" class="nav-link" data-scroll-target="#environmental-economics-policy-rcnr">Environmental Economics &amp; Policy (RCNR)</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -235,68 +223,309 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<style>
+html {
+  scroll-behavior: smooth;
+}
+
+.page-intro {
+  background: linear-gradient(135deg, #f8fbff 0%, #eef5ff 100%);
+  border: 1px solid #dbe7ff;
+  border-radius: 18px;
+  padding: 24px 26px;
+  margin-bottom: 28px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+}
+
+.page-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.side-menu {
+  position: sticky;
+  top: 24px;
+  background: rgba(255,255,255,0.94);
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 18px 16px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.05);
+}
+
+.side-menu-title {
+  font-weight: 800;
+  color: #003262;
+  margin-bottom: 12px;
+  font-size: 1.02rem;
+}
+
+.side-menu a {
+  display: block;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  text-decoration: none !important;
+  color: #003262 !important;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.side-menu a:hover {
+  background: #003262;
+  color: #FDB515 !important;
+}
+
+.content-column {
+  min-width: 0;
+}
+
+.section-box {
+  background: rgba(255,255,255,0.94);
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 28px 30px;
+  margin-bottom: 28px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.05);
+  scroll-margin-top: 24px;
+}
+
+.section-box h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: #003262;
+  font-weight: 800;
+}
+
+.course-list {
+  display: grid;
+  gap: 16px;
+}
+
+.course-card {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 18px 20px;
+}
+
+.course-title {
+  font-weight: 800;
+  color: #003262;
+  margin-bottom: 8px;
+  line-height: 1.45;
+}
+
+.course-desc {
+  line-height: 1.8;
+  color: #22384d;
+}
+
+@media (max-width: 900px) {
+  .page-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .side-menu {
+    position: static;
+  }
+
+  .section-box {
+    padding: 22px 20px;
+  }
+
+  .course-card {
+    padding: 16px 16px;
+  }
+}
+</style>
+<div class="page-intro">
 <p>Below is a selection of courses I’ve completed at UC Berkeley, with descriptions from the official course catalog.</p>
+</div>
+<div class="page-layout">
+<div class="side-menu">
+<div class="side-menu-title">
+Departments
+</div>
+<p><a href="#computer-science">Computer Science</a> <a href="#data-science-statistics">Data Science &amp; Statistics</a> <a href="#mathematics">Mathematics</a> <a href="#business">Business</a> <a href="#environmental-economics-policy">Environmental Economics &amp; Policy</a></p>
+</div>
+<div class="content-column">
+<div id="computer-science" class="section-box">
 <section id="computer-science-cdss" class="level2">
 <h2 class="anchored" data-anchor-id="computer-science-cdss">Computer Science (CDSS)</h2>
-<ul>
-<li><p><strong>CS 61A: Structure &amp; Interpretation of Computer Programs</strong><br>
-An introduction to programming and computer science focused on abstraction techniques as means to manage program complexity. Techniques include procedural abstraction; control abstraction using recursion, higher-order functions, generators, and streams; data abstraction using interfaces, objects, classes, and generic operators; and language abstraction using interpreters and macros. The course exposes students to programming paradigms, including functional, object-oriented, and declarative approaches. It includes an introduction to asymptotic analysis of algorithms. There are several significant programming projects.</p></li>
-<li><p><strong>CS 61B: Data Structures &amp; Algorithms</strong><br>
-Fundamental dynamic data structures, including linear lists, queues, trees, and other linked structures; arrays strings, and hash tables. Storage management. Elementary principles of software engineering. Abstract data types. Algorithms for sorting and searching. Introduction to the Java programming language.</p></li>
-</ul>
+<div class="course-list">
+<div class="course-card">
+<div class="course-title">
+CS 61A: Structure &amp; Interpretation of Computer Programs
+</div>
+<div class="course-desc">
+<p>An introduction to programming and computer science focused on abstraction techniques as means to manage program complexity. Techniques include procedural abstraction; control abstraction using recursion, higher-order functions, generators, and streams; data abstraction using interfaces, objects, classes, and generic operators; and language abstraction using interpreters and macros. The course exposes students to programming paradigms, including functional, object-oriented, and declarative approaches. It includes an introduction to asymptotic analysis of algorithms. There are several significant programming projects.</p>
+</div>
+</div>
+<div class="course-card">
+<div class="course-title">
+CS 61B: Data Structures &amp; Algorithms
+</div>
+<div class="course-desc">
+<p>Fundamental dynamic data structures, including linear lists, queues, trees, and other linked structures; arrays strings, and hash tables. Storage management. Elementary principles of software engineering. Abstract data types. Algorithms for sorting and searching. Introduction to the Java programming language.</p>
+</div>
+</div>
+</div>
 </section>
+</div>
+<div id="data-science-statistics" class="section-box">
 <section id="data-science-statistics-cdss" class="level2">
 <h2 class="anchored" data-anchor-id="data-science-statistics-cdss">Data Science &amp; Statistics (CDSS)</h2>
-<ul>
-<li><p><strong>DATA 100: Principles &amp; Techniques of Data Science</strong><br>
-Students in Data 100 explore the data science lifecycle, including question formulation, data collection and cleaning, exploratory data analysis and visualization, statistical inference and prediction, and decision-making.​ The class focuses on quantitative critical thinking​ and key principles and techniques needed to carry out this cycle. These include languages for transforming, querying and analyzing data; algorithms for machine learning methods including regression, classification and clustering; principles behind creating informative data visualizations; statistical concepts of measurement error and prediction; and techniques for scalable data processing.</p></li>
-<li><p><strong>STAT 133: Concepts in Computing with Data</strong><br>
-An introduction to computationally intensive applied statistics. Topics include organization and use of databases, visualization and graphics, statistical learning and data mining, model validation procedures, and the presentation of results. This course uses R as its primary computing language.</p></li>
-<li><p><strong>STAT 134: Probability Theory</strong><br>
-An introduction to probability, emphasizing concepts and applications. Conditional expectation, independence, laws of large numbers. Discrete and continuous random variables. Central Limit Theorem. Selected topics such as the Poisson process, Markov chains, characteristic functions.</p></li>
-<li><p><strong>STAT 135: Mathematical Statistics</strong><br>
-A comprehensive survey course in statistical theory and methodology. Topics include descriptive statistics, maximum likelihood estimation, non-parametric methods, introduction to optimality, goodness-of-fit tests, analysis of variance, bootstrap and computer-intensive methods and least squares estimation. The laboratory includes computer-based data-analytic applications to science and engineering.</p></li>
-<li><p><strong>STAT 151A: Linear Modelling (Theory &amp; Applications)</strong><br>
-A coordinated treatment of linear and generalized linear models and their application. Linear regression, analysis of variance and covariance, random effects, design and analysis of experiments, quality improvement, log-linear models for discrete multivariate data, model selection, robustness, graphical techniques, productive use of computers, in-depth case studies. This course uses Python as its primary computing language.</p></li>
-<li><p><strong>STAT 154/254: Modern Statistical Prediction &amp; Machine Learning</strong><br>
-Theory and practice of statistical prediction. Contemporary methods as extensions of classical methods. Topics: optimal prediction rules, the curse of dimensionality, empirical risk, linear regression and classification, basis expansions, regularization, splines, the bootstrap, model selection, classification and regression trees, boosting, support vector machines. Computational efficiency versus predictive performance. Emphasis on experience with real data and assessing statistical assumptions. This course uses Python as its primary computing language.</p></li>
-<li><p><strong>STAT 165/265: Forecasting</strong><br>
-This practically-oriented class will provide students with tools to make good forecasts, including Fermi estimates, calibration training, base rates, scope sensitivity, and power laws. Other topics include: time series analysis, exponential smoothing, and forecast evaluation. This course uses Python as its primary computing language.</p></li>
-</ul>
+<div class="course-list">
+<div class="course-card">
+<div class="course-title">
+DATA 100: Principles &amp; Techniques of Data Science
+</div>
+<div class="course-desc">
+<p>Students in Data 100 explore the data science lifecycle, including question formulation, data collection and cleaning, exploratory data analysis and visualization, statistical inference and prediction, and decision-making.​ The class focuses on quantitative critical thinking​ and key principles and techniques needed to carry out this cycle. These include languages for transforming, querying and analyzing data; algorithms for machine learning methods including regression, classification and clustering; principles behind creating informative data visualizations; statistical concepts of measurement error and prediction; and techniques for scalable data processing.</p>
+</div>
+</div>
+<div class="course-card">
+<div class="course-title">
+STAT 133: Concepts in Computing with Data
+</div>
+<div class="course-desc">
+<p>An introduction to computationally intensive applied statistics. Topics include organization and use of databases, visualization and graphics, statistical learning and data mining, model validation procedures, and the presentation of results. This course uses R as its primary computing language.</p>
+</div>
+</div>
+<div class="course-card">
+<div class="course-title">
+STAT 134: Probability Theory
+</div>
+<div class="course-desc">
+<p>An introduction to probability, emphasizing concepts and applications. Conditional expectation, independence, laws of large numbers. Discrete and continuous random variables. Central Limit Theorem. Selected topics such as the Poisson process, Markov chains, characteristic functions.</p>
+</div>
+</div>
+<div class="course-card">
+<div class="course-title">
+STAT 135: Mathematical Statistics
+</div>
+<div class="course-desc">
+<p>A comprehensive survey course in statistical theory and methodology. Topics include descriptive statistics, maximum likelihood estimation, non-parametric methods, introduction to optimality, goodness-of-fit tests, analysis of variance, bootstrap and computer-intensive methods and least squares estimation. The laboratory includes computer-based data-analytic applications to science and engineering.</p>
+</div>
+</div>
+<div class="course-card">
+<div class="course-title">
+STAT 151A: Linear Modelling (Theory &amp; Applications)
+</div>
+<div class="course-desc">
+<p>A coordinated treatment of linear and generalized linear models and their application. Linear regression, analysis of variance and covariance, random effects, design and analysis of experiments, quality improvement, log-linear models for discrete multivariate data, model selection, robustness, graphical techniques, productive use of computers, in-depth case studies. This course uses Python as its primary computing language.</p>
+</div>
+</div>
+<div class="course-card">
+<div class="course-title">
+STAT 154/254: Modern Statistical Prediction &amp; Machine Learning
+</div>
+<div class="course-desc">
+<p>Theory and practice of statistical prediction. Contemporary methods as extensions of classical methods. Topics: optimal prediction rules, the curse of dimensionality, empirical risk, linear regression and classification, basis expansions, regularization, splines, the bootstrap, model selection, classification and regression trees, boosting, support vector machines. Computational efficiency versus predictive performance. Emphasis on experience with real data and assessing statistical assumptions. This course uses Python as its primary computing language.</p>
+</div>
+</div>
+<div class="course-card">
+<div class="course-title">
+STAT 165/265: Forecasting
+</div>
+<div class="course-desc">
+<p>This practically-oriented class will provide students with tools to make good forecasts, including Fermi estimates, calibration training, base rates, scope sensitivity, and power laws. Other topics include: time series analysis, exponential smoothing, and forecast evaluation. This course uses Python as its primary computing language.</p>
+</div>
+</div>
+</div>
 </section>
+</div>
+<div id="mathematics" class="section-box">
 <section id="mathematics-ls" class="level2">
 <h2 class="anchored" data-anchor-id="mathematics-ls">Mathematics (L&amp;S)</h2>
-<ul>
-<li><p><strong>MATH 110: Abstract Linear Algebra</strong><br>
-Matrices, vector spaces, linear transformations, inner products, determinants. Eigenvectors. QR factorization. Quadratic forms and Rayleigh’s principle. Jordan canonical form, applications. Linear functionals.</p></li>
-<li><p><strong>MATH 128A: Numerical Analysis</strong><br>
-Programming for numerical calculations, round-off error, approximation and interpolation, numerical quadrature, and solution of ordinary differential equations. This course uses MATLAB as its primary programming language.</p></li>
-<li><p><strong>MATH 113: Abstract Algebra</strong><br>
-Sets and relations. The integers, congruences, and the Fundamental Theorem of Arithmetic. Groups and their factor groups. Commutative rings, ideals, and quotient fields. The theory of polynomials: Euclidean algorithm and unique factorizations. The Fundamental Theorem of Algebra. Fields and field extensions.</p></li>
-<li><p><strong>MATH 104: Real Analysis</strong><br>
-The real number system. Sequences, limits, and continuous functions in R and R. The concept of a metric space. Uniform convergence, interchange of limit operations. Infinite series. Mean value theorem and applications. The Riemann integral.</p></li>
-<li><p><strong>MATH H185: Honors Complex Analysis</strong><br>
-Honors section corresponding to Math 185 for exceptional students with strong mathematical inclination and motivation. Emphasis is on rigor, depth, and hard problems.</p></li>
-</ul>
+<div class="course-list">
+<div class="course-card">
+<div class="course-title">
+MATH 110: Abstract Linear Algebra
+</div>
+<div class="course-desc">
+<p>Matrices, vector spaces, linear transformations, inner products, determinants. Eigenvectors. QR factorization. Quadratic forms and Rayleigh’s principle. Jordan canonical form, applications. Linear functionals.</p>
+</div>
+</div>
+<div class="course-card">
+<div class="course-title">
+MATH 128A: Numerical Analysis
+</div>
+<div class="course-desc">
+<p>Programming for numerical calculations, round-off error, approximation and interpolation, numerical quadrature, and solution of ordinary differential equations. This course uses MATLAB as its primary programming language.</p>
+</div>
+</div>
+<div class="course-card">
+<div class="course-title">
+MATH 113: Abstract Algebra
+</div>
+<div class="course-desc">
+<p>Sets and relations. The integers, congruences, and the Fundamental Theorem of Arithmetic. Groups and their factor groups. Commutative rings, ideals, and quotient fields. The theory of polynomials: Euclidean algorithm and unique factorizations. The Fundamental Theorem of Algebra. Fields and field extensions.</p>
+</div>
+</div>
+<div class="course-card">
+<div class="course-title">
+MATH 104: Real Analysis
+</div>
+<div class="course-desc">
+<p>The real number system. Sequences, limits, and continuous functions in R and R. The concept of a metric space. Uniform convergence, interchange of limit operations. Infinite series. Mean value theorem and applications. The Riemann integral.</p>
+</div>
+</div>
+<div class="course-card">
+<div class="course-title">
+MATH H185: Honors Complex Analysis
+</div>
+<div class="course-desc">
+<p>Honors section corresponding to Math 185 for exceptional students with strong mathematical inclination and motivation. Emphasis is on rigor, depth, and hard problems.</p>
+</div>
+</div>
+</div>
 </section>
+</div>
+<div id="business" class="section-box">
 <section id="business-berkeley-haas" class="level2">
 <h2 class="anchored" data-anchor-id="business-berkeley-haas">Business (Berkeley Haas)</h2>
-<ul>
-<li><p><strong>UGBA 102A: Financial Accounting</strong><br>
-The identification, measurement, and reporting of financial effects of events on enterprises, with a particular emphasis on business organization. Preparation and interpretation of balance sheets, income statements, and statements of cash flows.</p></li>
-<li><p><strong>UGBA 104: Introduction to Business Analytics</strong><br>
-This course provides an introduction to several quantitative methods used to facilitate complex decision-making in business, with applications in many different industries, at different levels in the organization, and with different scopes of decisions. The power of the methods covered in this class is further enhanced by implementing them in spreadsheet software, which allows complex problems to be approached and solved in a straightforward and understandable manner.</p></li>
-</ul>
+<div class="course-list">
+<div class="course-card">
+<div class="course-title">
+UGBA 102A: Financial Accounting
+</div>
+<div class="course-desc">
+<p>The identification, measurement, and reporting of financial effects of events on enterprises, with a particular emphasis on business organization. Preparation and interpretation of balance sheets, income statements, and statements of cash flows.</p>
+</div>
+</div>
+<div class="course-card">
+<div class="course-title">
+UGBA 104: Introduction to Business Analytics
+</div>
+<div class="course-desc">
+<p>This course provides an introduction to several quantitative methods used to facilitate complex decision-making in business, with applications in many different industries, at different levels in the organization, and with different scopes of decisions. The power of the methods covered in this class is further enhanced by implementing them in spreadsheet software, which allows complex problems to be approached and solved in a straightforward and understandable manner.</p>
+</div>
+</div>
+</div>
 </section>
+</div>
+<div id="environmental-economics-policy" class="section-box">
 <section id="environmental-economics-policy-rcnr" class="level2">
 <h2 class="anchored" data-anchor-id="environmental-economics-policy-rcnr">Environmental Economics &amp; Policy (RCNR)</h2>
-<ul>
-<li><strong>ENVECON 105: Data Tools for Sustainability &amp; the Environment</strong><br>
-This course introduces students to data analysis for use in addressing sustainable business and policy questions. By the end of this course, students will be able to analyze real-world data within the Jupyter/Python programming environment. It will focus on real-world applications such as the White House’s environmental justice proposals; emissions monitoring; and assessing plastic waste for the Government of Indonesia.</li>
-</ul>
-
-
+<div class="course-list">
+<div class="course-card">
+<div class="course-title">
+ENVECON 105: Data Tools for Sustainability &amp; the Environment
+</div>
+<div class="course-desc">
+<p>This course introduces students to data analysis for use in addressing sustainable business and policy questions. By the end of this course, students will be able to analyze real-world data within the Jupyter/Python programming environment. It will focus on real-world applications such as the White House’s environmental justice proposals; emissions monitoring; and assessing plastic waste for the Government of Indonesia.</p>
+</div>
+</div>
+</div>
 </section>
+</div>
+</div>
+</div>
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -77,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 
-<body class="nav-sidebar docked quarto-light">
+<body class="nav-sidebar docked fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -200,16 +200,7 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#stat-151a-linear-modelling-theory-applications" id="toc-stat-151a-linear-modelling-theory-applications" class="nav-link active" data-scroll-target="#stat-151a-linear-modelling-theory-applications">STAT&nbsp;151A: Linear Modelling (Theory&nbsp;&amp;&nbsp;Applications)</a></li>
-  <li><a href="#stat-154254-modern-statistical-prediction-machine-learning" id="toc-stat-154254-modern-statistical-prediction-machine-learning" class="nav-link" data-scroll-target="#stat-154254-modern-statistical-prediction-machine-learning">STAT&nbsp;154/254: Modern Statistical Prediction &amp; Machine Learning</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -232,57 +223,235 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="stat-151a-linear-modelling-theory-applications" class="level2">
-<h2 class="anchored" data-anchor-id="stat-151a-linear-modelling-theory-applications">STAT&nbsp;151A: Linear Modelling (Theory&nbsp;&amp;&nbsp;Applications)</h2>
-<p>STAT&nbsp;151A at UC&nbsp;Berkeley focuses on modern statistical inference and linear modeling, emphasizing both theoretical foundations and practical applications. Topics include:</p>
-<ul>
-<li><strong>Matrix Formulation of Linear Regression</strong></li>
-<li><strong>Hypothesis Testing for Linear Models</strong></li>
-<li><strong>Model Assessment and Selection</strong></li>
-<li><strong>Regularization Methods (Ridge, LASSO, Elastic Net)</strong></li>
-<li><strong>Outlier Detection and Robust Regression</strong></li>
-<li><strong>Generalized Linear Models (GLMs)</strong></li>
-</ul>
-<p>Students learn to implement and interpret these models, assess assumptions, and address common pitfalls (e.g., confounding, omitted variables, high-leverage points).</p>
-<blockquote class="blockquote">
+<style>
+.page-intro {
+  background: linear-gradient(135deg, #f8fbff 0%, #eef5ff 100%);
+  border: 1px solid #dbe7ff;
+  border-radius: 18px;
+  padding: 24px 26px;
+  margin-bottom: 28px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+}
+
+.course-box {
+  background: rgba(255,255,255,0.92);
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 28px 30px;
+  margin-bottom: 28px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.05);
+}
+
+.course-box h2 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  color: #003262;
+  font-weight: 800;
+}
+
+.course-desc {
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.topic-grid-stat151a {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 18px 0 20px 0;
+}
+
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 25px 0;
+}
+
+.topic-card {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+}
+
+.topic-label {
+  font-weight: 800;
+  color: #003262;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 18px;
+  border-bottom: 2px solid #FDB515;
+  padding-bottom: 8px;
+  text-align: center; /* Centering the title */
+  width: 100%;
+}
+
+/* FIX: This forces the bullet points to render and align correctly */
+.topic-text ul {
+  margin: 0;
+  padding-left: 25px !important; /* Essential to make room for bullets */
+  list-style-type: disc !important;
+  display: block !important;
+}
+
+.topic-text li {
+  display: list-item !important; /* Forces browser to show the bullet marker */
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #003262;
+  text-align: left; /* Keeps the list content readable */
+}
+
+.note-box {
+  background: rgba(253, 181, 21, 0.12);
+  border-left: 5px solid #FDB515;
+  border-radius: 12px;
+  padding: 16px 18px;
+  margin: 20px 0 22px 0;
+  line-height: 1.7;
+}
+
+.hw-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.hw-btn {
+  display: block;
+  background: white;
+  border: 1px solid #dbe3ea;
+  border-radius: 12px;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none !important;
+  color: #003262 !important;
+  font-weight: 700;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.hw-btn:hover {
+  background: #003262;
+  color: #FDB515 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+@media (max-width: 900px) {
+  .topic-grid,
+  .topic-grid-stat151a {
+    grid-template-columns: 1fr;
+  }
+
+  .topic-card {
+    min-height: unset;
+  }
+}
+</style>
+<div class="page-intro">
+<p>This page collects selected <strong>theoretical homework solutions</strong> from courses I took at <strong>UC Berkeley</strong>. The goal is to showcase the mathematical and statistical reasoning behind these assignments in a clean, accessible format.</p>
+</div>
+<section id="stat-151a-linear-modelling-theory-applications" class="level2 course-box">
+<h2 class="anchored" data-anchor-id="stat-151a-linear-modelling-theory-applications">STAT 151A: Linear Modelling (Theory &amp; Applications)</h2>
+<div class="course-desc">
+<p>STAT 151A at UC Berkeley focuses on modern statistical inference and linear modeling, emphasizing both theoretical foundations and practical applications.</p>
+</div>
+<style>
+/* Ensuring the list styling is consistent across all course boxes */
+.topic-text ul {
+  margin: 0;
+  padding-left: 25px !important; 
+  list-style-type: disc !important;
+  display: block !important;
+}
+
+.topic-text li {
+  display: list-item !important;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #003262;
+  text-align: left;
+}
+</style>
+<div class="topic-grid">
+  <div class="topic-card">
+    <div class="topic-label">Fundamentals</div>
+    <div class="topic-text">
+      <ul>
+        <li><strong>Linear Algebra:</strong> Matrix formulation of the General Linear Model and OLS estimation.</li>
+        <li><strong>Inference:</strong> Hypothesis testing, confidence intervals, and the Gauss-Markov theorem.</li>
+        <li><strong>Diagnostics:</strong> Model assessment, residual analysis, and identifying high-leverage points.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="topic-card">
+    <div class="topic-label">Advanced Inference</div>
+    <div class="topic-text">
+      <ul>
+        <li><strong>Regularization:</strong> Shrinkage methods including Ridge regression, LASSO, and Elastic Net.</li>
+        <li><strong>Extensions:</strong> Generalized Linear Models (GLMs) for non-normal response variables.</li>
+        <li><strong>Robustness:</strong> Outlier detection, influential observations, and robust regression techniques.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="course-desc">
+<p>Students learn to implement and interpret these models, assess assumptions, and address common pitfalls such as confounding, omitted variables, and high-leverage points.</p>
+</div>
+<div class="note-box">
 <p>Solutions written by Ajay Sharma to <em>theoretical exercises</em> assigned throughout the semester. <em>Computational exercises</em> have <em>not</em> been shown.</p>
-</blockquote>
-<ul>
-<li><a href="homework/STAT_151A_Homework_1_Solutions.pdf">Homework&nbsp;1</a><br>
-</li>
-<li><a href="homework/STAT_151A_Homework_2_Solutions.pdf">Homework&nbsp;2</a><br>
-</li>
-<li><a href="homework/STAT_151A_Homework_3_Solutions.pdf">Homework&nbsp;3</a><br>
-</li>
-<li><a href="homework/STAT_151A_Homework_4_Solutions.pdf">Homework&nbsp;4</a><br>
-</li>
-<li><a href="homework/STAT_151A_Homework_5_Solutions.pdf">Homework&nbsp;5</a><br>
-</li>
-</ul>
-<hr>
+</div>
+<div class="hw-grid">
+<p><a class="hw-btn" href="homework/STAT_151A_Homework_1_Solutions.pdf" target="_blank">Homework 1</a> <a class="hw-btn" href="homework/STAT_151A_Homework_2_Solutions.pdf" target="_blank">Homework 2</a> <a class="hw-btn" href="homework/STAT_151A_Homework_3_Solutions.pdf" target="_blank">Homework 3</a> <a class="hw-btn" href="homework/STAT_151A_Homework_4_Solutions.pdf" target="_blank">Homework 4</a> <a class="hw-btn" href="homework/STAT_151A_Homework_5_Solutions.pdf" target="_blank">Homework 5</a></p>
+</div>
 </section>
-<section id="stat-154254-modern-statistical-prediction-machine-learning" class="level2">
-<h2 class="anchored" data-anchor-id="stat-154254-modern-statistical-prediction-machine-learning">STAT&nbsp;154/254: Modern Statistical Prediction &amp; Machine Learning</h2>
-<p>STAT&nbsp;154/254 at UC Berkeley covers a comprehensive set of foundational and advanced machine learning topics:</p>
-<ul>
-<li><strong>Core tasks:</strong> Regression, classification, dimension reduction, and clustering.</li>
-<li><strong>Algorithms:</strong> Solving linear systems, gradient descent, Newton’s method, power iteration for eigenvalue problems, and the EM algorithm.</li>
-<li><strong>Methods:</strong> Kernel methods, regularization, sample splitting, resampling methods, and cross-validation.</li>
-<li><strong>Advanced topics:</strong> Statistical learning and optimization theory, bagging and boosting, tree-based models, neural networks, Bayesian modeling, online learning and bandit problems.</li>
-</ul>
-<blockquote class="blockquote">
-<p>Solutions written by Ajay Sharma to <em>theoretical exercises</em> assigned throughout the semester. <em>Computational exercises</em> have <em>not</em> been shown. More to be posted soon.</p>
-</blockquote>
-<ul>
-<li><a href="homework/STAT_154_HW_1_Solutions.pdf">Homework&nbsp;1</a></li>
-<li><a href="homework/STAT_154_HW_2_Solutions.pdf">Homework&nbsp;2</a></li>
-<li><a href="homework/STAT_154_HW_3_Solutions.pdf">Homework&nbsp;3</a></li>
-<li><a href="homework/STAT_154_HW_4_Solutions.pdf">Homework&nbsp;4</a></li>
-<li><a href="homework/STAT_154_HW_5_Solutions.pdf">Homework&nbsp;5</a></li>
-</ul>
+<section id="stat-154254-modern-statistical-prediction-machine-learning" class="level2 course-box">
+<h2 class="anchored" data-anchor-id="stat-154254-modern-statistical-prediction-machine-learning">STAT 154/254: Modern Statistical Prediction &amp; Machine Learning</h2>
+<div class="course-desc">
+<p>STAT 154/254 at UC Berkeley covers a comprehensive set of foundational and advanced machine learning topics, blending statistical learning ideas with optimization and computation.</p>
+</div>
+<div class="topic-grid">
+  <div class="topic-card">
+    <div class="topic-label" style="text-align:center; width:100%;">Basic Topics</div>
+    <div class="topic-text" style="text-align:left; width:100%;">
+      <ul style="margin:0; padding-left:20px;">
+        <li><strong>Tasks:</strong> Regression, classification, dimension reduction, and clustering.</li>
+        <li><strong>Algorithms:</strong> Solving linear systems, gradient descent, Newton’s method, power iteration for eigenvalue problems, and EM algorithms.</li>
+        <li><strong>Others:</strong> Kernel methods, regularization, sample splitting, resampling methods, and cross-validation.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="topic-card">
+    <div class="topic-label" style="text-align:center; width:100%;">Advanced Topics</div>
+    <div class="topic-text" style="text-align:left; width:100%;">
+      <ul style="margin:0; padding-left:20px;">
+        <li>Statistical learning theory and optimization theory.</li>
+        <li>Bagging and boosting, tree-based models, neural networks, and Bayesian models.</li>
+        <li>Online learning and bandit problems.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="course-desc">
+<p>The course emphasizes both mathematical understanding and algorithmic structure, with topics ranging from solving linear systems to modern predictive modeling.</p>
+</div>
+<div class="note-box">
+<p>Solutions written by Ajay Sharma to <em>theoretical exercises</em> assigned throughout the semester. <em>Computational exercises</em> have <em>not</em> been shown. More will be posted soon.</p>
+</div>
+<div class="hw-grid">
+<p><a class="hw-btn" href="homework/STAT_154_HW_1_Solutions.pdf" target="_blank">Homework 1</a> <a class="hw-btn" href="homework/STAT_154_HW_2_Solutions.pdf" target="_blank">Homework 2</a> <a class="hw-btn" href="homework/STAT_154_HW_3_Solutions.pdf" target="_blank">Homework 3</a> <a class="hw-btn" href="homework/STAT_154_HW_4_Solutions.pdf" target="_blank">Homework 4</a> <a class="hw-btn" href="homework/STAT_154_HW_5_Solutions.pdf" target="_blank">Homework 5</a></p>
+</div>
+</section>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
