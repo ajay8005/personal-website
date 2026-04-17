@@ -137,7 +137,7 @@ Below is a selection of courses I’ve completed at UC Berkeley, with descriptio
   <a href="#computer-science">Computer Science</a>
   <a href="#data-science-statistics">Data Science &amp; Statistics</a>
   <a href="#mathematics">Mathematics</a>
-  <a href="#business">Business</a>
+  <a href="#business">Finance & Business</a>
   <a href="#environmental-economics-policy">Environmental Economics &amp; Policy</a>
 </div>
 
@@ -270,7 +270,7 @@ Honors section corresponding to Math 185 for exceptional students with strong ma
 
 <div id="business" class="section-box">
 
-## Business (Berkeley Haas)
+## Finance &amp; Business (Berkeley Haas)
 
 <div class="course-list">
 
