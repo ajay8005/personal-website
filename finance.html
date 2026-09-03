@@ -45,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-03a0d00fd5ba774dd8e50f606f192499.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-56a7063a21dd4c20fbc96590a1db8d87.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -260,7 +260,9 @@ ul.task-list li input[type="checkbox"] {
 }
 
 .finance-link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   background: #003262;
   color: #FDB515 !important;
   border-radius: 12px;
@@ -276,6 +278,60 @@ ul.task-list li input[type="checkbox"] {
   box-shadow: 0 8px 18px rgba(0, 50, 98, 0.18);
 }
 
+.data-panel {
+  margin: 8px 0 26px;
+  padding: 22px;
+  border: 1px solid #dbe7f2;
+  border-radius: 16px;
+  background: #f8fbff;
+}
+
+.data-panel h3 {
+  margin: 0 0 5px;
+  color: #003262;
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.data-panel > p {
+  margin: 0 0 16px;
+  color: #5b6d7f;
+  line-height: 1.55;
+}
+
+.data-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 11px;
+}
+
+.data-download {
+  display: flex;
+  min-height: 88px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 14px 15px;
+  border: 1px solid #d9e2ec;
+  border-radius: 13px;
+  background: white;
+  color: #003262 !important;
+  font-weight: 750;
+  text-decoration: none !important;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.data-download:hover {
+  transform: translateY(-2px);
+  border-color: #8fb6dd;
+  box-shadow: 0 7px 17px rgba(0, 50, 98, 0.08);
+}
+
+.data-download small {
+  color: #6b7a89;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
 .app-frame {
   width: 100%;
   height: 900px;
@@ -289,6 +345,14 @@ ul.task-list li input[type="checkbox"] {
     padding: 22px 18px;
   }
 
+  .data-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .data-download {
+    min-height: 72px;
+  }
+
   .app-frame {
     height: 760px;
   }
@@ -300,8 +364,19 @@ ul.task-list li input[type="checkbox"] {
 <section id="underwriting-analytics-submission-auditor" class="level2 finance-card">
 <h2 class="anchored" data-anchor-id="underwriting-analytics-submission-auditor">Underwriting Analytics &amp; Submission Auditor</h2>
 <p>An interactive companion to my Crestline quota-share analysis. The application combines portfolio KPIs, loss-ratio reconstruction, geographic concentration, scenario testing, deterministic CSV auditing, methodology, and the complete written report.</p>
-<p><a class="finance-link" href="underwriting-analytics.html" target="_blank" rel="noopener">Open the full-screen application</a></p>
-<p>Core calculations and deterministic memo generation run directly in the browser.</p>
+<p><a class="finance-link" href="underwriting-analytics.html" target="_blank" rel="noopener">Open the full-screen application <i class="bi bi-arrow-up-right"></i></a></p>
+<div class="data-panel">
+<h3 class="anchored">
+Download the de-identified source data
+</h3>
+<p>
+Use the policy bordereaux and loss run in the application’s Submission Auditor. Direct names and transaction-level dates have been removed, and policy and claim IDs have been consistently pseudonymized; the analytical fields and totals are unchanged.
+</p>
+<div class="data-grid">
+<p><a class="data-download" href="crestline-policy-bordereaux.csv" download=""><span><i class="bi bi-filetype-csv"></i> Policy bordereaux</span><small>4,577 policy records</small></a> <a class="data-download" href="crestline-losses.csv" download=""><span><i class="bi bi-filetype-csv"></i> Loss run</span><small>71 claim and aggregate records</small></a> <a class="data-download" href="crestline-program-summary.csv" download=""><span><i class="bi bi-filetype-csv"></i> Program summary</span><small>18 year-and-line records</small></a></p>
+</div>
+</div>
+<p>The browser-based parser recognizes the title rows in the original Excel exports, validates the required columns, and reports actionable errors without sending the uploaded data to a server.</p>
 <iframe class="app-frame" src="underwriting-analytics.html" title="Underwriting Analytics and Submission Auditor" loading="eager">
 </iframe>
 </section>

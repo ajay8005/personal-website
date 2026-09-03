@@ -196,7 +196,7 @@
     "href": "finance.html#underwriting-analytics-submission-auditor",
     "title": "Finance",
     "section": "Underwriting Analytics & Submission Auditor",
-    "text": "Underwriting Analytics & Submission Auditor\nAn interactive companion to my Crestline quota-share analysis. The application combines portfolio KPIs, loss-ratio reconstruction, geographic concentration, scenario testing, deterministic CSV auditing, methodology, and the complete written report.\nOpen the full-screen application\nCore calculations and deterministic memo generation run directly in the browser.",
+    "text": "Underwriting Analytics & Submission Auditor\nAn interactive companion to my Crestline quota-share analysis. The application combines portfolio KPIs, loss-ratio reconstruction, geographic concentration, scenario testing, deterministic CSV auditing, methodology, and the complete written report.\nOpen the full-screen application \n\n\nDownload the de-identified source data\n\n\nUse the policy bordereaux and loss run in the application’s Submission Auditor. Direct names and transaction-level dates have been removed, and policy and claim IDs have been consistently pseudonymized; the analytical fields and totals are unchanged.\n\n\n Policy bordereaux4,577 policy records  Loss run71 claim and aggregate records  Program summary18 year-and-line records\n\n\nThe browser-based parser recognizes the title rows in the original Excel exports, validates the required columns, and reports actionable errors without sending the uploaded data to a server.",
     "crumbs": [
       "Projects",
       "Finance"
