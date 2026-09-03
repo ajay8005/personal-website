@@ -45,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-03a0d00fd5ba774dd8e50f606f192499.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-56a7063a21dd4c20fbc96590a1db8d87.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -80,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 
-<body class="nav-sidebar docked quarto-light">
+<body class="nav-sidebar docked fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -209,32 +209,7 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#education" id="toc-education" class="nav-link active" data-scroll-target="#education">Education</a>
-  <ul class="collapse">
-  <li><a href="#university-of-california-berkeley" id="toc-university-of-california-berkeley" class="nav-link" data-scroll-target="#university-of-california-berkeley">University of California, Berkeley</a></li>
-  </ul></li>
-  <li><a href="#professional-experience" id="toc-professional-experience" class="nav-link" data-scroll-target="#professional-experience">Professional Experience</a>
-  <ul class="collapse">
-  <li><a href="#basis-independent--math-instructor" id="toc-basis-independent--math-instructor" class="nav-link" data-scroll-target="#basis-independent--math-instructor">BASIS Independent- Math Instructor</a></li>
-  <li><a href="#blck-unicrn--ai-business-analyst-intern" id="toc-blck-unicrn--ai-business-analyst-intern" class="nav-link" data-scroll-target="#blck-unicrn--ai-business-analyst-intern">BLCK UNICRN- AI &amp; Business Analyst Intern</a></li>
-  <li><a href="#beats-by-dre--data-analyst-consumer-insights-intern" id="toc-beats-by-dre--data-analyst-consumer-insights-intern" class="nav-link" data-scroll-target="#beats-by-dre--data-analyst-consumer-insights-intern">Beats by Dre- Data Analyst &amp; Consumer Insights Intern</a></li>
-  <li><a href="#success-chess-school--chess-instructor" id="toc-success-chess-school--chess-instructor" class="nav-link" data-scroll-target="#success-chess-school--chess-instructor">Success Chess School- Chess Instructor</a></li>
-  <li><a href="#giraffe-learning-center--math-chess-instructor" id="toc-giraffe-learning-center--math-chess-instructor" class="nav-link" data-scroll-target="#giraffe-learning-center--math-chess-instructor">Giraffe Learning Center- Math &amp; Chess Instructor</a></li>
-  </ul></li>
-  <li><a href="#volunteer-leadership" id="toc-volunteer-leadership" class="nav-link" data-scroll-target="#volunteer-leadership">Volunteer &amp; Leadership</a>
-  <ul class="collapse">
-  <li><a href="#american-allegiance-of-education--co-founder-project-lead" id="toc-american-allegiance-of-education--co-founder-project-lead" class="nav-link" data-scroll-target="#american-allegiance-of-education--co-founder-project-lead">American Allegiance of Education- Co-Founder (Project Lead)</a></li>
-  <li><a href="#washington-high-school--math-center-volunteer" id="toc-washington-high-school--math-center-volunteer" class="nav-link" data-scroll-target="#washington-high-school--math-center-volunteer">Washington High School- Math Center Volunteer</a></li>
-  </ul></li>
-  <li><a href="#skills-additional-info" id="toc-skills-additional-info" class="nav-link" data-scroll-target="#skills-additional-info">Skills &amp; Additional Info</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -258,208 +233,399 @@ ul.task-list li input[type="checkbox"] {
 
 
 <style>
-/* ——————————————————————————
-   Timeline container
-—————————————————————————— */
-.timeline {
-  position: relative;
-  margin: 2em 0;
-  padding-left: 1.5em;
+:root {
+  --resume-blue: #003262;
+  --resume-gold: #FDB515;
+  --resume-green: #18864b;
+  --resume-sky: #2674c8;
+  --resume-purple: #7656a8;
+  --resume-orange: #d9822b;
+  --resume-ink: #22384d;
+  --resume-muted: #657485;
+  --resume-border: #dde6ee;
 }
+
+.resume-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  padding: 32px 34px;
+  margin: 8px 0 30px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, var(--resume-blue) 0%, #0a4f8f 100%);
+  box-shadow: 0 15px 35px rgba(0, 50, 98, 0.18);
+  color: white;
+}
+
+.resume-eyebrow {
+  margin-bottom: 7px;
+  color: var(--resume-gold);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.resume-hero h1 {
+  margin: 0 0 8px;
+  color: white;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.resume-hero p {
+  max-width: 680px;
+  margin: 0;
+  color: #eef6ff;
+  font-size: 1.03rem;
+  line-height: 1.6;
+}
+
+.resume-download {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 13px 19px;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  border-radius: 12px;
+  background: white;
+  color: var(--resume-blue) !important;
+  font-weight: 800;
+  text-decoration: none !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.resume-download:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+}
+
+.timeline {
+  --section-color: var(--resume-sky);
+  position: relative;
+  margin: 0 0 34px;
+  padding: 4px 0 2px 28px;
+}
+
 .timeline::before {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 4px;
-  background: transparent;
+  top: 4px;
+  bottom: 2px;
+  left: 5px;
+  width: 5px;
+  border-radius: 999px;
+  background: var(--section-color);
 }
 
-/* ——————————————————————————
-   Section‐specific line colours
-—————————————————————————— */
-.timeline.education::before   { background: #0f9d58; }
-.timeline.experience::before  { background: #4285f4; }
-.timeline.volunteer::before   { background: #f4b400; }
+.timeline.summary { --section-color: var(--resume-blue); }
+.timeline.education { --section-color: var(--resume-green); }
+.timeline.experience { --section-color: var(--resume-sky); }
+.timeline.additional { --section-color: var(--resume-orange); }
+.timeline.volunteer { --section-color: var(--resume-gold); }
+.timeline.skills { --section-color: var(--resume-purple); }
 
-/* ——————————————————————————
-   Each block on the timeline
-—————————————————————————— */
+.timeline > h2 {
+  margin: 0 0 16px;
+  color: var(--section-color);
+  font-size: 1.45rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
 .timeline-item {
   position: relative;
-  margin-bottom: 1.5em;
-  padding-left: 1.2em;
-  color: #000;
+  margin: 0 0 16px;
+  padding: 22px 24px;
+  border: 1px solid var(--resume-border);
+  border-radius: 17px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 7px 22px rgba(0, 50, 98, 0.055);
+  color: var(--resume-ink);
 }
+
 .timeline-item::before {
   content: "";
   position: absolute;
-  left: -0.25em;
-  top: 0.5em;
-  width: 0.75em;
-  height: 0.75em;
-  background: #fff;
+  top: 27px;
+  left: -29px;
+  width: 13px;
+  height: 13px;
+  border: 3px solid var(--section-color);
   border-radius: 50%;
-  border-width: 3px;
-  border-style: solid;
+  background: white;
 }
 
-/* ——————————————————————————
-   Section‐specific marker colours
-—————————————————————————— */
-.timeline.education  .timeline-item::before { border-color: #0f9d58; }
-.timeline.experience .timeline-item::before { border-color: #4285f4; }
-.timeline.volunteer  .timeline-item::before { border-color: #f4b400; }
+.timeline-item h3 {
+  margin: 0 0 3px;
+  color: var(--resume-blue);
+  font-size: 1.14rem;
+  font-weight: 800;
+}
 
-/* ——————————————————————————
-   Section‐title colours
-—————————————————————————— */
-.timeline.education  > h2 { color: #0f9d58; }
-.timeline.experience > h2 { color: #4285f4; }
-.timeline.volunteer  > h2 { color: #f4b400; }
+.role {
+  margin: 0;
+  color: #344b61;
+  font-weight: 700;
+}
 
-/* ——————————————————————————
-   Dates styling
-—————————————————————————— */
 .date {
-  font-size: 0.9em;
-  color: #666;
-  margin-bottom: 0.5em;
+  display: inline-block;
+  margin: 7px 0 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #f0f5f9;
+  color: var(--resume-muted);
+  font-size: 0.83rem;
+  font-weight: 650;
+}
+
+.timeline-item ul {
+  margin: 10px 0 0;
+  padding-left: 1.25rem;
+}
+
+.timeline-item li {
+  margin-bottom: 8px;
+  line-height: 1.62;
+}
+
+.timeline-item li:last-child {
+  margin-bottom: 0;
+}
+
+.summary-copy {
+  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.skill-card {
+  padding: 15px 16px;
+  border: 1px solid #e5e0ee;
+  border-radius: 13px;
+  background: #fbf9ff;
+  line-height: 1.58;
+}
+
+.skill-card strong {
+  display: block;
+  margin-bottom: 3px;
+  color: #4d3674;
+}
+
+.resume-footer {
+  display: flex;
+  justify-content: center;
+  margin: 34px 0 48px;
+}
+
+@media (max-width: 760px) {
+  .resume-hero {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 26px 22px;
+  }
+
+  .resume-download {
+    width: 100%;
+  }
+
+  .timeline {
+    padding-left: 23px;
+  }
+
+  .timeline-item {
+    padding: 19px 17px;
+  }
+
+  .timeline-item::before {
+    left: -24px;
+  }
+
+  .skill-grid {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
+<div class="resume-hero">
+<div>
+<pre><code>&lt;div class="resume-eyebrow"&gt;Finance · Analytics · Data&lt;/div&gt;
+&lt;h1&gt;Ajay Sharma&lt;/h1&gt;
+&lt;p&gt;UC Berkeley Statistics and Applied Mathematics graduate with experience in financial analysis, forecasting, KPI reporting, data validation, and cross-functional decision support.&lt;/p&gt;</code></pre>
+</div>
+<p><a class="resume-download" href="resume.pdf?v=2026-09-02" download="Ajay_Sharma_Resume.pdf"> <i class="bi bi-download"></i> Download latest résumé </a></p>
+</div>
+<section id="professional-summary" class="level2 timeline summary">
+<h2 class="anchored" data-anchor-id="professional-summary">Professional Summary</h2>
+<div class="timeline-item">
+<p class="summary-copy">
+UC Berkeley Statistics and Applied Mathematics graduate with Financial Accounting and Forecasting coursework, seeking a strategic finance and corporate FP&amp;A role. Experience in financial modeling, variance analysis, KPI tracking, and building clear reports and presentations for leadership, with hands-on fluency in AI tools and workflows.
+</p>
+</div>
+</section>
 <section id="education" class="level2 timeline education">
 <h2 class="anchored" data-anchor-id="education">Education</h2>
 <section id="university-of-california-berkeley" class="level3 timeline-item">
 <h3 class="anchored" data-anchor-id="university-of-california-berkeley">University of California, Berkeley</h3>
-<strong>B.A. Statistics &amp; B.A. Applied Mathematics (Data Science Emphasis)</strong><br>
-
+<p class="role">
+B.A. Statistics (Business Emphasis) &amp; B.A. Applied Mathematics (Data Science Emphasis)
+</p>
 <p class="date">
-August 2023 – August 2025 | Berkeley, CA
+August 2023 - August 2025 · Berkeley, CA
 </p>
 <ul>
-<li><strong><a href="./berkeley-coursework.html">Relevant Coursework</a>:</strong> CS 61A: Structure &amp; Interpretation of Computer Programs, CS 61B: Data Structures &amp; Algorithms, DATA 100: Principles &amp; Techniques of Data Science, STAT 133: Concepts in Computing, STAT 151A: Linear Modelling (Theory &amp; Applications), STAT 154: Modern Statistical Prediction &amp; Machine Learning, STAT 165: Forecasting, UGBA 102A: Financial Accounting, UGBA 104: Business Analytics.<br>
-</li>
+<li><strong><a href="./berkeley-coursework.html">Relevant Coursework</a>:</strong> Business Analytics, Financial Accounting, Principles &amp; Techniques of Data Science, Forecasting, Linear Modeling, Concepts in Computing with Data, and Modern Statistical Prediction &amp; Machine Learning.</li>
 </ul>
 </section>
 </section>
 <section id="professional-experience" class="level2 timeline experience">
 <h2 class="anchored" data-anchor-id="professional-experience">Professional Experience</h2>
-<section id="basis-independent--math-instructor" class="level3 timeline-item">
-<h3 class="anchored" data-anchor-id="basis-independent--math-instructor">BASIS Independent- Math Instructor</h3>
+<section id="crestline-quota-share-reinsurance-case-study" class="level3 timeline-item">
+<h3 class="anchored" data-anchor-id="crestline-quota-share-reinsurance-case-study">Crestline Quota-Share Reinsurance Case Study</h3>
+<p class="role">
+Financial Analysis Project
+</p>
 <p class="date">
-August 2025 – Present | Fremont, CA
+July 2026 - August 2026 · Fremont, CA
 </p>
 <ul>
-<li>Taught 100+ students across Algebra II, Geometry, and Pre-Calculus, developing structured lesson plans, assessments, and targeted interventions; applied data-informed instruction to track performance trends and improve outcomes, resulting in 81%+ of students exceeding standard on BASIS network’s high-stakes comprehensive exam.</li>
-<li>Integrated LLM-powered learning workflows (e.g., GPT-5, Google Gemini) to generate adaptive practice problems, real-time feedback, and personalized explanations; combined with performance data to tailor instruction, increasing student engagement and participation by 20% within two weeks.</li>
-<li>Designed and led three advanced math courses from the ground up, incorporating proof-based reasoning and college-level concepts; organized school-wide math competitions and enrichment programs, while collaborating with parents to reinforce learning strategies and drive sustained academic growth both in and out of the classroom.</li>
+<li>Evaluated a proposed $1.0M quota-share reinsurance deal (50% cession, 32.5% ceding commission) by rebuilding six years of loss ratios from a 4,577-row policy bordereaux and loss run, deriving a 59% break-even loss ratio to frame the decision.</li>
+<li>Identified data-quality failures using accounting identity checks (written = earned + unearned), uncovering 15 erroneous policy rows, formulaic patterns, and missing IBNR; found that an AI-generated memo understated two loss years by 10-21 percentage points.</li>
+<li>Built an expected loss ratio model (68%, sensitivity band 65-72%) incorporating cost-trend drift and a Poisson-based catastrophe load, then presented findings and defended the methodology to senior reinsurance professionals, recommending restructured terms.</li>
+<li><strong><a href="./finance.html">Explore the interactive underwriting analytics application</a>.</strong></li>
 </ul>
 </section>
-<section id="blck-unicrn--ai-business-analyst-intern" class="level3 timeline-item">
-<h3 class="anchored" data-anchor-id="blck-unicrn--ai-business-analyst-intern">BLCK UNICRN- AI &amp; Business Analyst Intern</h3>
+<section id="basis-independent" class="level3 timeline-item">
+<h3 class="anchored" data-anchor-id="basis-independent">BASIS Independent</h3>
+<p class="role">
+Mathematics Instructor
+</p>
 <p class="date">
-January 2025 – May 2025 | Berkeley, CA
+August 2025 - Present · Fremont, CA
 </p>
 <ul>
-<li>Analyzed user behavior, conversion funnels, and engagement metrics across 50+ accounts and 120+ contacts; identified performance drivers and inefficiencies to inform product and outreach strategy, improving targeting precision and overall engagement outcomes.</li>
-<li>Built and maintained a multi-source data pipeline (AI-powered web scraper) integrating 20+ inputs; implemented validation checks and consistency rules to improve data integrity and reporting reliability, reducing manual reconciliation and reporting time by 2+ hours per week.</li>
-<li>Designed, tested, and iterated LLM prompts (GPT-5) using structured evaluation frameworks; optimized output quality, consistency, and relevance to enhance automated responses across chatbot and marketing workflows, improving scalability and reducing manual intervention.</li>
-<li>Developed standardized reporting frameworks and a Business Requirements Document (BRD) to define workflow logic, KPIs, and data definitions; enabled consistent performance tracking, trend analysis, and more reliable decision-making for cross-functional stakeholders.</li>
+<li>Earned excellent performance reviews for communication and results while translating complex technical concepts into clear, digestible explanations, helping more than 83% of students exceed standards on BASIS network comprehensive exams.</li>
+<li>Built LLM-assisted learning workflows using ChatGPT and Claude to generate practice materials, standardize feedback, and personalize instruction, improving student engagement by 20%+ across two semesters.</li>
+<li>Developed three advanced mathematics courses from scratch for 100+ students, creating scalable curricula, rigorous assessments, and feedback workflows while coordinating with parents and school leadership to improve student outcomes.</li>
 </ul>
 </section>
-<section id="beats-by-dre--data-analyst-consumer-insights-intern" class="level3 timeline-item">
-<h3 class="anchored" data-anchor-id="beats-by-dre--data-analyst-consumer-insights-intern">Beats by Dre- Data Analyst &amp; Consumer Insights Intern</h3>
+<section id="blck-unicrn" class="level3 timeline-item">
+<h3 class="anchored" data-anchor-id="blck-unicrn">BLCK UNICRN</h3>
+<p class="role">
+AI &amp; Business Analyst Intern
+</p>
 <p class="date">
-June 2024 – August 2024 | Remote
+January 2025 - May 2025 · Berkeley, CA
 </p>
 <ul>
-<li>Analyzed 500+ customer reviews using natrual language processing (NLP) techniques in Python to extract sentiment, themes, and risk signals; translated unstructured feedback into actionable insights on customer preferences, product quality, and drivers of purchasing behavior.</li>
-<li>Built and executed a structured data pre-processing pipeline (cleaning, tokenization, normalization) to transform raw text into analyzable datasets; improved downstream usability and enabled consistent feature extraction for analysis.</li>
-<li>Implemented data validation and quality checks to ensure consistency and reliability across review datasets; produced 10+ targeted visualizations to surface key trends and support data-driven marketing and product decisions.</li>
-<li>Synthesized insights on consumer priorities (e.g., sound quality, design, price sensitivity) and aligned findings with campaign strategy; contributed to a 15% improvement in targeted marketing effectiveness by refining segmentation and messaging.</li>
+<li>Analyzed user behavior and engagement metrics, including conversion rate and average session duration, to identify growth opportunities, support product decisions, and improve targeting strategies across 50+ accounts and 120+ contacts.</li>
+<li>Built a multi-source data pipeline across 20+ inputs to consolidate and validate data, then performed monthly variance analysis on KPIs against plan to identify key drivers, reducing manual reporting time by two hours per week.</li>
+<li>Designed, iterated, and evaluated LLM prompts to improve output quality and relevance, enabling more effective automated responses for custom-built chatbot and marketing workflows.</li>
+<li>Developed structured reports and workflow documentation to support planning, performance monitoring, and cross-functional decision-making, ensuring outputs were accurate, timely, and clear for stakeholder review.</li>
 </ul>
 </section>
-<section id="success-chess-school--chess-instructor" class="level3 timeline-item">
-<h3 class="anchored" data-anchor-id="success-chess-school--chess-instructor">Success Chess School- Chess Instructor</h3>
+<section id="beats-by-dre" class="level3 timeline-item">
+<h3 class="anchored" data-anchor-id="beats-by-dre">Beats by Dre</h3>
+<p class="role">
+Data &amp; Consumer Insights Analyst Intern
+</p>
 <p class="date">
-September 2021 – May 2023 | Fremont, CA
+June 2024 - August 2024 · Fremont, CA
 </p>
 <ul>
-<li>Mentored 150+ students over the course of two years, emphasizing strategic thinking and sportsmanship, resulting in consistent performance improvement and higher student retention.<br>
-</li>
-<li>Authored an instructional chess book tailored for beginners, integrating puzzles and detailed analyses of 15 fundamental openings to reinforce strategic learning and critical thinking.<br>
-</li>
-<li>Organized 10+ tournaments, leveraging a custom-built Excel-based matchmaking system that automatically paired participants by analyzing ELO ratings and skill levels (beginner, intermediate, advanced).<br>
-</li>
-<li>Conducted outreach, resulting in a 20 % year-over-year (YoY) increase in registrations—all while fostering an engaging, supportive, and competitive academic environment.<br>
-</li>
+<li>Analyzed 500+ customer reviews using natural language processing techniques in Python to identify patterns, pain points, product-quality concerns, and risk signals influencing purchasing behavior.</li>
+<li>Cleaned, tokenized, and validated large-scale unstructured review data, ensuring quality and consistency that enabled 10+ distinct visualizations informing tailored marketing campaigns and communication strategy.</li>
+<li>Identified actionable insights on consumer priorities, including sound quality, design, and price sensitivity, contributing to a 15% improvement in targeted marketing by refining campaign messaging and audience alignment.</li>
 </ul>
 </section>
-<section id="giraffe-learning-center--math-chess-instructor" class="level3 timeline-item">
-<h3 class="anchored" data-anchor-id="giraffe-learning-center--math-chess-instructor">Giraffe Learning Center- Math &amp; Chess Instructor</h3>
+</section>
+<section id="additional-teaching-experience" class="level2 timeline additional">
+<h2 class="anchored" data-anchor-id="additional-teaching-experience">Additional Teaching Experience</h2>
+<section id="giraffe-learning-center" class="level3 timeline-item">
+<h3 class="anchored" data-anchor-id="giraffe-learning-center">Giraffe Learning Center</h3>
+<p class="role">
+Mathematics &amp; Chess Instructor
+</p>
 <p class="date">
-June 2023 – June 2024 | Fremont, CA
+June 2023 - June 2024 · Fremont, CA
 </p>
 <ul>
-<li>Taught middle school students Prealgebra–Geometry at Giraffe Learning Center’s summer and after-school programs: developed comprehensive LaTeX-based homework assignments and exams to reinforce core concepts and assess learning outcomes.<br>
-</li>
-<li>Coached chess: developed and delivered a structured curriculum covering opening principles, tactics, and endgame techniques; provided one-on-one game analysis and feedback; organized skill-matched tournaments.<br>
-</li>
-<li>Administered differentiated assessments and progress reports: analyzed results to tailor individualized learning plans and improve student outcomes.<br>
-</li>
+<li>Taught Prealgebra through Geometry in summer and after-school programs, developing LaTeX-based homework, examinations, differentiated assessments, and progress reports.</li>
+<li>Delivered a structured chess curriculum, provided individual game analysis, and organized skill-matched tournaments.</li>
+</ul>
+</section>
+<section id="success-chess-school" class="level3 timeline-item">
+<h3 class="anchored" data-anchor-id="success-chess-school">Success Chess School</h3>
+<p class="role">
+Chess Instructor
+</p>
+<p class="date">
+September 2021 - May 2023 · Fremont, CA
+</p>
+<ul>
+<li>Mentored 150+ students, authored an instructional chess book for beginners, and organized 10+ tournaments using a custom Excel-based ELO matchmaking system.</li>
+<li>Conducted outreach that contributed to a 20% year-over-year increase in registrations while fostering a supportive and competitive learning environment.</li>
 </ul>
 </section>
 </section>
 <section id="volunteer-leadership" class="level2 timeline volunteer">
 <h2 class="anchored" data-anchor-id="volunteer-leadership">Volunteer &amp; Leadership</h2>
-<section id="american-allegiance-of-education--co-founder-project-lead" class="level3 timeline-item">
-<h3 class="anchored" data-anchor-id="american-allegiance-of-education--co-founder-project-lead">American Allegiance of Education- Co-Founder (Project Lead)</h3>
+<section id="american-allegiance-of-education" class="level3 timeline-item">
+<h3 class="anchored" data-anchor-id="american-allegiance-of-education">American Allegiance of Education</h3>
+<p class="role">
+Co-Founder &amp; Project Lead
+</p>
 <p class="date">
-May 2023 – October 2024 | Fremont, CA
+May 2023 - October 2024 · Fremont, CA
 </p>
 <ul>
-<li>Co-founded non-profit organization focused on scaling access to technology education; led strategy and execution of international initiatives using tools such as Google Workspace (Docs, Sheets), Notion, and Slack to manage operations and communication.</li>
-<li>Designed and executed the end-to-end experience for a 155-participant global hackathon, leveraging social media platforms such as Instagram, LinkedIn, and email outreach tools (Gmail, Mail merge) to launch multi-channel marketing campaigns, track engagement, and optimize participant conversion.</li>
-<li>Secured $16,419 in corporate sponsorships by building structured partnership tiers and conducting targeted outreach; used Google Sheets/Excel to track sponsor pipelines, manage negotiations, and monitor funding progress and ROI.</li>
-<li>Coordinated cross-functional stakeholders (marketing, operations, sponsors, judges) by managing timelines and deliverables ensuring smooth execution and real-time alignment across teams.</li>
-<li>Recruited and onboarded 8 industry judges from MAANG, Fortune 500 firms, and top universities; standardized evaluation workflows and criteria to ensure consistent and data-driven judging. Also mentored participants throughout the event lifecycle, providing structured feedback and guidance–utilizing Zoom and Discord to facilitate collaboration, Q&amp;A sessions, and real-time support.</li>
+<li>Co-founded a nonprofit focused on expanding access to technology education and led the strategy and execution of international initiatives.</li>
+<li>Designed and executed a 155-participant global hackathon, coordinating marketing, operations, sponsors, judges, timelines, and deliverables across teams.</li>
+<li>Secured $16,419 in corporate sponsorships, recruited eight industry judges from MAANG companies, Fortune 500 firms, and leading universities, and standardized evaluation workflows.</li>
 </ul>
 </section>
-<section id="washington-high-school--math-center-volunteer" class="level3 timeline-item">
-<h3 class="anchored" data-anchor-id="washington-high-school--math-center-volunteer">Washington High School- Math Center Volunteer</h3>
+<section id="washington-high-school-math-center" class="level3 timeline-item">
+<h3 class="anchored" data-anchor-id="washington-high-school-math-center">Washington High School Math Center</h3>
+<p class="role">
+Volunteer Mathematics Tutor
+</p>
 <p class="date">
-August 2018 – June 2021 | Fremont, CA
+August 2018 - June 2021 · Fremont, CA
 </p>
 <ul>
-<li>Taught range of subjects (Prealgebra–Precalculus, AP Calculus BC) after school and during free-block periods, adapting lessons to diverse learning needs.<br>
-</li>
-<li>Helped design quizzes, assisted in exam corrections, and developed tailored exercises to reinforce learning—improving average student performance by at least one letter grade—all within a supportive, engaging environment.<br>
-</li>
+<li>Taught Prealgebra through AP Calculus BC, adapted lessons to diverse learning needs, and developed targeted exercises that helped improve average student performance by at least one letter grade.</li>
 </ul>
 </section>
 </section>
-<section id="skills-additional-info" class="level2 timeline skills">
-<h2 class="anchored" data-anchor-id="skills-additional-info">Skills &amp; Additional Info</h2>
+<section id="skills-additional-information" class="level2 timeline skills">
+<h2 class="anchored" data-anchor-id="skills-additional-information">Skills &amp; Additional Information</h2>
 <div class="timeline-item">
-<ul>
-<li><strong>Citizenship:</strong> U.S. Citizen.</li>
-<li><strong>Programming Languages:</strong>
-<ul>
-<li><strong>Intermediate Proficiency:</strong> Python, SQL, R, TeX.</li>
-<li><strong>Basic Proficiency:</strong> Java, C++, MATLAB.<br>
-</li>
-</ul></li>
-<li><strong>Business &amp; AI Tools (Proficient):</strong> MS Office Suite (Word, Excel, PowerPoint, Outlook), Google (Suite) Workspace (Sheets, Slides, Docs), PowerBI, GPT-5, Gemini-3.</li>
-<li><strong>Statistical Methods:</strong> A/B (Hypothesis) Testing, Quality Improvement, GLMs, ANOVA.</li>
-<li><strong>Other:</strong> Project Management, Prompt Engineering, Quality Control, Detail-oriented, Effective Communication (Oral &amp; Written), Quick Learner, Adaptable.<br>
-</li>
-</ul>
+<div class="skill-grid">
+<pre><code>&lt;div class="skill-card"&gt;&lt;strong&gt;Citizenship&lt;/strong&gt;U.S. Citizen&lt;/div&gt;
+&lt;div class="skill-card"&gt;&lt;strong&gt;Programming - Intermediate&lt;/strong&gt;Python, SQL, R, TeX&lt;/div&gt;
+&lt;div class="skill-card"&gt;&lt;strong&gt;Programming - Basic&lt;/strong&gt;Java, C++, MATLAB&lt;/div&gt;
+&lt;div class="skill-card"&gt;&lt;strong&gt;Business &amp;amp; Analytics Tools&lt;/strong&gt;Microsoft Office (Word, Excel, PowerPoint, Outlook), Google Workspace (Sheets, Slides, Docs), Power BI&lt;/div&gt;
+&lt;div class="skill-card"&gt;&lt;strong&gt;AI&lt;/strong&gt;LLMs &amp;amp; Prompt Engineering (ChatGPT, Claude, Gemini)&lt;/div&gt;
+&lt;div class="skill-card"&gt;&lt;strong&gt;Data &amp;amp; Version Control&lt;/strong&gt;Git, CSV-based data workflows&lt;/div&gt;
+&lt;div class="skill-card"&gt;&lt;strong&gt;Statistical Methods&lt;/strong&gt;A/B (Hypothesis) Testing, Quality Improvement, GLMs, ANOVA&lt;/div&gt;
+&lt;div class="skill-card"&gt;&lt;strong&gt;Additional Strengths&lt;/strong&gt;Project Management, Quality Control, Detail-Oriented, Effective Written &amp;amp; Oral Communication, Quick Learner, Adaptable&lt;/div&gt;</code></pre>
+</div>
 </div>
 </section>
-<footer style="text-align:center; margin-top:3rem; font-size:2rem;">
-<a href="resume.pdf" target="_blank" style="margin:0 1rem; text-decoration:none;"> <i class="bi bi-file-earmark-person" title="Résumé"></i> </a>
-</footer>
+<div class="resume-footer">
+<p><a class="resume-download" href="resume.pdf?v=2026-09-02" download="Ajay_Sharma_Resume.pdf"> <i class="bi bi-file-earmark-arrow-down"></i> Download latest résumé PDF </a></p>
+</div>
 
 
 
