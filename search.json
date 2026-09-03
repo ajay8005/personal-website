@@ -181,6 +181,38 @@
     ]
   },
   {
+    "objectID": "finance.html",
+    "href": "finance.html",
+    "title": "Finance",
+    "section": "",
+    "text": "This section showcases applied financial analysis, including underwriting economics, risk assessment, scenario modeling, and data-quality validation.",
+    "crumbs": [
+      "Projects",
+      "Finance"
+    ]
+  },
+  {
+    "objectID": "finance.html#underwriting-analytics-submission-auditor",
+    "href": "finance.html#underwriting-analytics-submission-auditor",
+    "title": "Finance",
+    "section": "Underwriting Analytics & Submission Auditor",
+    "text": "Underwriting Analytics & Submission Auditor\nAn interactive companion to my Crestline quota-share analysis. The application combines portfolio KPIs, loss-ratio reconstruction, geographic concentration, scenario testing, deterministic CSV auditing, methodology, and the complete written report.\nOpen the full-screen application\nCore calculations and deterministic memo generation run directly in the browser.",
+    "crumbs": [
+      "Projects",
+      "Finance"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "",
+    "section": "",
+    "text": "Ajay Sharma\n    B.A. Statistics & B.A. Applied Mathematics (Data Science Emphasis)\n    UC Berkeley ’25\n  \n  \n\n\n\n  \n\n\n\n  About Me\n\n  I’m Ajay Sharma, a recent UC Berkeley graduate in Statistics and Applied Mathematics (Data Science emphasis) with a strong interest in applying data to drive real-world decisions. My experience spans analytics, operations, and cross-functional problem solving—from building automated data pipelines and conducting structured analyses to supporting decision-making and clear reporting. I enjoy working in fast-paced environments where I can take ambiguous problems, break them down, and turn them into measurable outcomes.\n\n  Alongside my technical work, I’ve led and executed large-scale initiatives, including organizing a 155-participant global hackathon, coordinating teams, and managing end-to-end execution across stakeholders. I’ve also contributed to data-driven projects through internships and independent work, including building tools to automate data collection and improve analysis efficiency. In parallel, I work as a math and computer science instructor and am a published chess book author, experiences that have strengthened my ability to communicate complex ideas in a clear and approachable way.\n\n  \n    “From large-scale initiatives to personal transformation, I try to approach every challenge with curiosity, discipline, and long-term thinking.”\n  \n\n  When I’m not analyzing data, building models, or writing code, I’m working on my second book—a course reader on computational data analysis as a bridge into theoretical machine learning. Outside of work, you’ll often find me at the gym or on the running trail—a big part of my life after losing over 120 pounds (from 285 to 155 lbs)—or simply spending time with friends and family. Whether I’m mentoring students or exploring my next data-driven project, I’m driven by curiosity, collaboration, and a constant desire to improve.\n\n  Go Bears!\n\n  \n    📈 Finance & Underwriting\n    📄 Resume\n    💼 Web Applications\n    🧠 Data Science & Software\n    📚 Books\n    🎓 Berkeley Coursework\n    ✉️ Contact Me\n  \n\n\n\n   Resume\n   GitHub\n   LinkedIn",
+    "crumbs": [
+      "About Me"
+    ]
+  },
+  {
     "objectID": "resume.html",
     "href": "resume.html",
     "title": "Resume",
@@ -228,16 +260,6 @@
     "text": "Skills & Additional Info\n\n\nCitizenship: U.S. Citizen.\nProgramming Languages:\n\nIntermediate Proficiency: Python, SQL, R, TeX.\nBasic Proficiency: Java, C++, MATLAB.\n\n\nBusiness & AI Tools (Proficient): MS Office Suite (Word, Excel, PowerPoint, Outlook), Google (Suite) Workspace (Sheets, Slides, Docs), PowerBI, GPT-5, Gemini-3.\nStatistical Methods: A/B (Hypothesis) Testing, Quality Improvement, GLMs, ANOVA.\nOther: Project Management, Prompt Engineering, Quality Control, Detail-oriented, Effective Communication (Oral & Written), Quick Learner, Adaptable.",
     "crumbs": [
       "Resume"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "",
-    "section": "",
-    "text": "Ajay Sharma\n    B.A. Statistics & B.A. Applied Mathematics (Data Science Emphasis)\n    UC Berkeley ’25\n  \n  \n\n\n\n  \n\n\n\n  About Me\n\n  I’m Ajay Sharma, a recent UC Berkeley graduate in Statistics and Applied Mathematics (Data Science emphasis) with a strong interest in applying data to drive real-world decisions. My experience spans analytics, operations, and cross-functional problem solving—from building automated data pipelines and conducting structured analyses to supporting decision-making and clear reporting. I enjoy working in fast-paced environments where I can take ambiguous problems, break them down, and turn them into measurable outcomes.\n\n  Alongside my technical work, I’ve led and executed large-scale initiatives, including organizing a 155-participant global hackathon, coordinating teams, and managing end-to-end execution across stakeholders. I’ve also contributed to data-driven projects through internships and independent work, including building tools to automate data collection and improve analysis efficiency. In parallel, I work as a math and computer science instructor and am a published chess book author, experiences that have strengthened my ability to communicate complex ideas in a clear and approachable way.\n\n  \n    “From large-scale initiatives to personal transformation, I try to approach every challenge with curiosity, discipline, and long-term thinking.”\n  \n\n  When I’m not analyzing data, building models, or writing code, I’m working on my second book—a course reader on computational data analysis as a bridge into theoretical machine learning. Outside of work, you’ll often find me at the gym or on the running trail—a big part of my life after losing over 120 pounds (from 285 to 155 lbs)—or simply spending time with friends and family. Whether I’m mentoring students or exploring my next data-driven project, I’m driven by curiosity, collaboration, and a constant desire to improve.\n\n  Go Bears!\n\n  \n    📄 Resume\n    💼 Web Applications\n    🧠 Data Science & Software\n    📚 Books\n    🎓 Berkeley Coursework\n    ✉️ Contact Me\n  \n\n\n\n   Resume\n   GitHub\n   LinkedIn",
-    "crumbs": [
-      "About Me"
     ]
   },
   {
