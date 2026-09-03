@@ -3,6 +3,7 @@ project:
   render:
     - index.qmd
     - resume.qmd
+    - finance.qmd
     - projects.qmd
     - webapp.qmd
     - book.qmd
@@ -11,6 +12,8 @@ project:
     - contact.qmd
     - license.qmd
     - data.qmd
+  resources:
+    - underwriting-analytics.html
 
 website:
   site-url: https://ajay8005.github.io/personal-website/
@@ -29,6 +32,7 @@ website:
       - href: resume.qmd
       - section: "Projects"
         contents:
+          - finance.qmd
           - webapp.qmd
           - projects.qmd
           - book.qmd

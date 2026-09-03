@@ -267,6 +267,7 @@ body {
   <p><strong>Go Bears!</strong></p>
 
   <div class="btn-grid">
+    <a href="finance.qmd" class="nav-btn">📈 Finance &amp; Underwriting</a>
     <a href="resume.qmd" class="nav-btn">📄 Resume</a>
     <a href="webapp.qmd" class="nav-btn">💼 Web Applications</a>
     <a href="projects.qmd" class="nav-btn">🧠 Data Science &amp; Software</a>
