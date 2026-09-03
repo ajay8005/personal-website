@@ -15,6 +15,12 @@ project:
   resources:
     - underwriting-analytics.html
     - resume.pdf
+    - House_Price_Predictor(1).pdf
+    - Spam_and_Ham_Email_Classifier.pdf
+    - 2048.pdf
+    - Percolation.pdf
+    - NGordnet__Wordnet_.pdf
+    - BYOW.pdf
 
 website:
   site-url: https://ajay8005.github.io/personal-website/
