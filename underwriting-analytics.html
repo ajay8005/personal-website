@@ -183,7 +183,7 @@
   </div>
 
   <div class="btns">
-    <button class="btn ghost" onclick="loadSample()">Load Crestline sample</button>
+    <button class="btn ghost" onclick="loadSourceData()">Load Crestline source data</button>
     <button class="btn" onclick="runAudit()">Run audit</button>
     <button class="btn ghost" id="memoBtn" onclick="draftMemo()" disabled>Generate memo</button>
     <button class="btn ghost" id="aiBtn" onclick="aiPolish()" disabled>Enhance with AI</button>
@@ -482,6 +482,7 @@ scen();
 
 /* ---------- CSV parsing (quote-aware, no dependencies) ---------- */
 function parseCSV(text){
+  text=String(text).replace(/^\uFEFF/,'');           /* strip Excel's UTF-8 BOM */
   const rows=[]; let row=[],cur='',q=false;
   for(let i=0;i<text.length;i++){const ch=text[i];
     if(q){ if(ch=='"'){ if(text[i+1]=='"'){cur+='"';i++;} else q=false; } else cur+=ch; }
@@ -490,8 +491,18 @@ function parseCSV(text){
     else if(ch=='\n'||ch=='\r'){ if(cur!==''||row.length){row.push(cur);rows.push(row);row=[];cur='';} if(ch=='\r'&&text[i+1]=='\n')i++; }
     else cur+=ch;}
   if(cur!==''||row.length){row.push(cur);rows.push(row);}
-  const hdr=rows.shift().map(h=>h.trim());
-  return rows.filter(r=>r.length>1).map(r=>{const o={};hdr.forEach((h,i)=>o[h]=(r[i]||'').trim());return o;});
+  /* Header detection: real exports carry title lines above the header, so take the
+     first row that contains "Program Year" rather than assuming row 1 is the header. */
+  const norm=h=>String(h).replace(/^\uFEFF/,'').replace(/\s+/g,' ').trim();
+  let hi=rows.findIndex(r=>r.some(c=>/^program\s*year$/i.test(norm(c))));
+  if(hi<0) hi=0;
+  const hdr=rows[hi].map(norm);
+  /* Keep only data rows: Program Year must be a four-digit year. This drops title lines,
+     blank lines, TOTAL rows and trailing notes that Excel exports include. */
+  const yi=hdr.findIndex(h=>/^program\s*year$/i.test(h));
+  return rows.slice(hi+1)
+    .filter(r=>r.length>1 && yi>=0 && /^\d{4}$/.test(String(r[yi]||'').trim()))
+    .map(r=>{const o={};hdr.forEach((h,i)=>o[h]=(r[i]||'').trim());return o;});
 }
 
 /* ---------- auditor ---------- */
@@ -502,17 +513,34 @@ function readFile(inp,target,statusId){const f=inp.files[0];if(!f)return;const r
   r.onload=e=>{document.getElementById(target).value=e.target.result;
     const s=document.getElementById(statusId); s.textContent=f.name+' loaded'; s.className='status ok';};
   r.readAsText(f);}
-function loadSample(){bdxIn.value=SAMPLE_BDX;lossIn.value=SAMPLE_LOSS;
-  sBdx.textContent='Crestline sample loaded';sBdx.className='status ok';
-  sLoss.textContent='Crestline sample loaded';sLoss.className='status ok';}
+async function loadSourceData(){
+  sBdx.textContent='Loading policy bordereaux…';sBdx.className='status';
+  sLoss.textContent='Loading loss run…';sLoss.className='status';
+  try{
+    const [b,l]=await Promise.all([
+      fetch('crestline-policy-bordereaux.csv'),
+      fetch('crestline-losses.csv')
+    ]);
+    if(!b.ok||!l.ok)throw new Error('source data unavailable');
+    bdxIn.value=await b.text();lossIn.value=await l.text();
+    sBdx.textContent='Crestline policy bordereaux loaded';sBdx.className='status ok';
+    sLoss.textContent='Crestline loss run loaded';sLoss.className='status ok';
+  }catch(e){
+    bdxIn.value=SAMPLE_BDX;lossIn.value=SAMPLE_LOSS;
+    sBdx.textContent='Embedded sample loaded';sBdx.className='status ok';
+    sLoss.textContent='Embedded sample loaded';sLoss.className='status ok';
+  }
+}
 
+function showErr(msg){findings.innerHTML='<div class="finding flag"><span class="dot"></span><div><b>Could not run the audit</b><div class="d">'+msg+'</div></div></div>';tables.innerHTML='';}
 function runAudit(){
-  const bt=bdxIn.value.trim(); if(!bt){alert('Upload or paste a policy bordereaux CSV, or load the sample.');return;}
-  let bdx; try{bdx=parseCSV(bt);}catch(e){alert('Could not parse the bordereaux CSV.');return;}
+  const bt=bdxIn.value.trim(); if(!bt){showErr('Upload or paste a policy bordereaux CSV, or load the sample.');return;}
+  let bdx; try{bdx=parseCSV(bt);}catch(e){showErr('Could not parse the bordereaux CSV.');return;}
+  if(!bdx.length){showErr('No policy rows found. Check that the file has a header row containing "Program Year" and one row per policy.');return;}
   const req=['Program Year','Policy No.','State','TIV ($)','Written Prem ($)','Collected Prem ($)','Earned Prem ($)','Unearned Prem ($)'];
   const missing=req.filter(c=>!(c in (bdx[0]||{})));
-  if(missing.length){alert('Bordereaux is missing columns: '+missing.join(', '));return;}
-  const losses=lossIn.value.trim()?parseCSV(lossIn.value.trim()):[];
+  if(missing.length){showErr('Bordereaux is missing columns: '+missing.join(', ')+'. Found: '+Object.keys(bdx[0]).join(', '));return;}
+  let losses=[]; if(lossIn.value.trim()){try{losses=parseCSV(lossIn.value.trim());}catch(e){showErr('Could not parse the loss run CSV.');return;}}
   const F=[];
   const idF=bdx.filter(r=>Math.abs(Nv(r['Written Prem ($)'])-Nv(r['Earned Prem ($)'])-Nv(r['Unearned Prem ($)']))>0.5);
   const gap=idF.reduce((s,r)=>s+Nv(r['Written Prem ($)'])-Nv(r['Earned Prem ($)'])-Nv(r['Unearned Prem ($)']),0);
@@ -543,10 +571,10 @@ function runAudit(){
       F.push({flag:sd<0.002,t:'ALAE to indemnity uniformity',
         d:`Mean ${(m*100).toFixed(2)}%, sd ${(sd*100).toFixed(3)}%.`+(sd<0.002?' Identical handling ratios on every claim indicate formulaic or generated data.':'')});}
     const open=losses.filter(r=>String(r['Status']).includes('Open'));
-    const rr=open.filter(r=>Nv(r['Paid Losses ($)'])>0).map(r=>Nv(r['Case Reserve ($)'])/Nv(r['Paid Losses ($)']));
+    const rr=open.filter(r=>Nv(r['Paid Losses ($)'])>0&&Nv(r['Case Reserve ($)'])>0).map(r=>Nv(r['Case Reserve ($)'])/Nv(r['Paid Losses ($)']));  /* aggregate/attritional rows carry no reserve; exclude them from the uniformity test */
     if(rr.length>2){const m=rr.reduce((a,b)=>a+b,0)/rr.length, sd=Math.sqrt(rr.reduce((s,x)=>s+(x-m)**2,0)/rr.length);
       F.push({flag:sd<0.01,t:'Open claim reserves',
-        d:`${open.length} open claims; reserve over paid mean ${(m*100).toFixed(1)}%`+(sd<0.01?' with near-zero dispersion: formula, not adjuster judgment. No IBNR provision found.':'.')});}
+        d:`${open.length} open rows, ${rr.length} carrying reserves; reserve over paid mean ${(m*100).toFixed(2)}%`+(sd<0.01?' with near-zero dispersion: formula, not adjuster judgment. No IBNR provision found.':'.')});}
     const inc={};losses.forEach(r=>{const y=r['Program Year'];inc[y]=(inc[y]||0)+Nv(r['Incurred Losses ($)']);});
     lrT=ys.map(y=>({y,ep:by[y].e,inc:inc[y]||0,lr:by[y].e?(inc[y]||0)/by[y].e:0}));
   }

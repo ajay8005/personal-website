@@ -14,6 +14,9 @@ project:
     - data.qmd
   resources:
     - underwriting-analytics.html
+    - crestline-policy-bordereaux.csv
+    - crestline-losses.csv
+    - crestline-program-summary.csv
     - resume.pdf
     - House_Price_Predictor(1).pdf
     - Spam_and_Ham_Email_Classifier.pdf
