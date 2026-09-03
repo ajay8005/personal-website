@@ -395,16 +395,16 @@ format:
 ## Skills & Additional Information
 
 <div class="timeline-item">
-  <div class="skill-grid">
-    <div class="skill-card"><strong>Citizenship</strong>U.S. Citizen</div>
-    <div class="skill-card"><strong>Programming - Intermediate</strong>Python, SQL, R, TeX</div>
-    <div class="skill-card"><strong>Programming - Basic</strong>Java, C++, MATLAB</div>
-    <div class="skill-card"><strong>Business &amp; Analytics Tools</strong>Microsoft Office (Word, Excel, PowerPoint, Outlook), Google Workspace (Sheets, Slides, Docs), Power BI</div>
-    <div class="skill-card"><strong>AI</strong>LLMs &amp; Prompt Engineering (ChatGPT, Claude, Gemini)</div>
-    <div class="skill-card"><strong>Data &amp; Version Control</strong>Git, CSV-based data workflows</div>
-    <div class="skill-card"><strong>Statistical Methods</strong>A/B (Hypothesis) Testing, Quality Improvement, GLMs, ANOVA</div>
-    <div class="skill-card"><strong>Additional Strengths</strong>Project Management, Quality Control, Detail-Oriented, Effective Written &amp; Oral Communication, Quick Learner, Adaptable</div>
-  </div>
+<div class="skill-grid">
+<div class="skill-card"><strong>Citizenship</strong>U.S. Citizen</div>
+<div class="skill-card"><strong>Programming - Intermediate</strong>Python, SQL, R, TeX</div>
+<div class="skill-card"><strong>Programming - Basic</strong>Java, C++, MATLAB</div>
+<div class="skill-card"><strong>Business &amp; Analytics Tools</strong>Microsoft Office (Word, Excel, PowerPoint, Outlook), Google Workspace (Sheets, Slides, Docs), Power BI</div>
+<div class="skill-card"><strong>AI</strong>LLMs &amp; Prompt Engineering (ChatGPT, Claude, Gemini)</div>
+<div class="skill-card"><strong>Data &amp; Version Control</strong>Git, CSV-based data workflows</div>
+<div class="skill-card"><strong>Statistical Methods</strong>A/B (Hypothesis) Testing, Quality Improvement, GLMs, ANOVA</div>
+<div class="skill-card"><strong>Additional Strengths</strong>Project Management, Quality Control, Detail-Oriented, Effective Written &amp; Oral Communication, Quick Learner, Adaptable</div>
+</div>
 </div>
 
 </div>

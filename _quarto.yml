@@ -14,6 +14,7 @@ project:
     - data.qmd
   resources:
     - underwriting-analytics.html
+    - resume.pdf
 
 website:
   site-url: https://ajay8005.github.io/personal-website/
