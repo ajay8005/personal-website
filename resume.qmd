@@ -233,14 +233,14 @@ format:
 </style>
 
 <div class="resume-hero">
-  <div>
-    <div class="resume-eyebrow">Finance · Analytics · Data</div>
-    <h1>Ajay Sharma</h1>
-    <p>UC Berkeley Statistics and Applied Mathematics graduate with experience in financial analysis, forecasting, KPI reporting, data validation, and cross-functional decision support.</p>
-  </div>
-  <a class="resume-download" href="resume.pdf?v=2026-09-02" download="Ajay_Sharma_Resume.pdf">
-    <i class="bi bi-download"></i> Download latest résumé
-  </a>
+<div>
+<div class="resume-eyebrow">Finance · Analytics · Data</div>
+<h1>Ajay Sharma</h1>
+<p>UC Berkeley Statistics and Applied Mathematics graduate with experience in financial analysis, forecasting, KPI reporting, data validation, and cross-functional decision support.</p>
+</div>
+<a class="resume-download" href="resume.pdf?v=2026-09-02" download="Ajay_Sharma_Resume.pdf">
+<i class="bi bi-download"></i> Download latest résumé
+</a>
 </div>
 
 <div class="timeline summary">
@@ -402,7 +402,7 @@ format:
 <div class="skill-card"><strong>Business &amp; Analytics Tools</strong>Microsoft Office (Word, Excel, PowerPoint, Outlook), Google Workspace (Sheets, Slides, Docs), Power BI</div>
 <div class="skill-card"><strong>AI</strong>LLMs &amp; Prompt Engineering (ChatGPT, Claude, Gemini)</div>
 <div class="skill-card"><strong>Data &amp; Version Control</strong>Git, CSV-based data workflows</div>
-<div class="skill-card"><strong>Statistical Methods</strong>A/B (Hypothesis) Testing, Quality Improvement, GLMs, ANOVA</div>
+<div class="skill-card"><strong>Statistical Methods</strong>A/B (Hypothesis) Testing, Linear &amp; Generalized Linear Models, ANOVA/ANCOVA, Maximum Likelihood Estimation, Bootstrap Methods, Model Selection &amp; Diagnostics, Quality Improvement</div>
 <div class="skill-card"><strong>Additional Strengths</strong>Project Management, Quality Control, Detail-Oriented, Effective Written &amp; Oral Communication, Quick Learner, Adaptable</div>
 </div>
 </div>
