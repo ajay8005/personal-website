@@ -168,6 +168,10 @@ body {
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
+.nav-btn.contact-btn {
+  grid-column: 2;
+}
+
 .bottom-links {
   text-align: center;
   padding: 20px 0 50px 0;
@@ -234,6 +238,10 @@ body {
   .nav-btn {
     min-height: unset;
   }
+
+  .nav-btn.contact-btn {
+    grid-column: auto;
+  }
 }
 </style>
 
@@ -273,12 +281,12 @@ body {
     <a href="projects.qmd" class="nav-btn">🧠 Data Science &amp; Software</a>
     <a href="book.qmd" class="nav-btn">📚 Books</a>
     <a href="berkeley-coursework.qmd" class="nav-btn">🎓 Berkeley Coursework</a>
-    <a href="contact.qmd" class="nav-btn">✉️ Contact Me</a>
+    <a href="contact.qmd" class="nav-btn contact-btn">✉️ Contact Me</a>
   </div>
 </div>
 
 <div class="bottom-links">
-  <a href="resume.pdf" target="_blank"><i class="bi bi-file-earmark-person"></i> Resume</a>
+  <a href="resume.pdf?v=2026-09-02" download="Ajay_Sharma_Resume.pdf"><i class="bi bi-file-earmark-person"></i> Download Resume</a>
   <a href="https://github.com/ajay8005" target="_blank"><i class="bi bi-github"></i> GitHub</a>
   <a href="https://linkedin.com/in/asharma2718" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a>
 </div>
