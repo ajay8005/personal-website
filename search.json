@@ -217,7 +217,7 @@
     "href": "resume.html",
     "title": "Resume",
     "section": "",
-    "text": "&lt;div class=\"resume-eyebrow\"&gt;Finance · Analytics · Data&lt;/div&gt;\n&lt;h1&gt;Ajay Sharma&lt;/h1&gt;\n&lt;p&gt;UC Berkeley Statistics and Applied Mathematics graduate with experience in financial analysis, forecasting, KPI reporting, data validation, and cross-functional decision support.&lt;/p&gt;\n\n  Download latest résumé",
+    "text": "Finance · Analytics · Data\n\n\n\nUC Berkeley Statistics and Applied Mathematics graduate with experience in financial analysis, forecasting, KPI reporting, data validation, and cross-functional decision support.\n\n\n  Download latest résumé",
     "crumbs": [
       "Resume"
     ]
@@ -277,7 +277,7 @@
     "href": "resume.html#skills-additional-information",
     "title": "Resume",
     "section": "Skills & Additional Information",
-    "text": "Skills & Additional Information\n\n\n\nCitizenshipU.S. Citizen\n\n\nProgramming - IntermediatePython, SQL, R, TeX\n\n\nProgramming - BasicJava, C++, MATLAB\n\n\nBusiness & Analytics ToolsMicrosoft Office (Word, Excel, PowerPoint, Outlook), Google Workspace (Sheets, Slides, Docs), Power BI\n\n\nAILLMs & Prompt Engineering (ChatGPT, Claude, Gemini)\n\n\nData & Version ControlGit, CSV-based data workflows\n\n\nStatistical MethodsA/B (Hypothesis) Testing, Quality Improvement, GLMs, ANOVA\n\n\nAdditional StrengthsProject Management, Quality Control, Detail-Oriented, Effective Written & Oral Communication, Quick Learner, Adaptable",
+    "text": "Skills & Additional Information\n\n\n\nCitizenshipU.S. Citizen\n\n\nProgramming - IntermediatePython, SQL, R, TeX\n\n\nProgramming - BasicJava, C++, MATLAB\n\n\nBusiness & Analytics ToolsMicrosoft Office (Word, Excel, PowerPoint, Outlook), Google Workspace (Sheets, Slides, Docs), Power BI\n\n\nAILLMs & Prompt Engineering (ChatGPT, Claude, Gemini)\n\n\nData & Version ControlGit, CSV-based data workflows\n\n\nStatistical MethodsA/B (Hypothesis) Testing, Linear & Generalized Linear Models, ANOVA/ANCOVA, Maximum Likelihood Estimation, Bootstrap Methods, Model Selection & Diagnostics, Quality Improvement\n\n\nAdditional StrengthsProject Management, Quality Control, Detail-Oriented, Effective Written & Oral Communication, Quick Learner, Adaptable",
     "crumbs": [
       "Resume"
     ]
