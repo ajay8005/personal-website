@@ -287,73 +287,7 @@
     "href": "projects.html",
     "title": "Data Science & Software",
     "section": "",
-    "text": "Welcome to my projects showcase! Each of the following projects demonstrates a different set of skills in data science, machine learning, and software engineering. You can view a rendered explanation for each one directly on this page.",
-    "crumbs": [
-      "Projects",
-      "Data Science & Software"
-    ]
-  },
-  {
-    "objectID": "projects.html#house-price-predictor",
-    "href": "projects.html#house-price-predictor",
-    "title": "Data Science & Software",
-    "section": "🏠 House Price Predictor",
-    "text": "🏠 House Price Predictor\nOverview:\nA supervised learning project focused on predicting house prices using regression models and feature engineering.",
-    "crumbs": [
-      "Projects",
-      "Data Science & Software"
-    ]
-  },
-  {
-    "objectID": "projects.html#ham-spam-email-classifier",
-    "href": "projects.html#ham-spam-email-classifier",
-    "title": "Data Science & Software",
-    "section": "📧 Ham & Spam Email Classifier",
-    "text": "📧 Ham & Spam Email Classifier\nOverview:\nA machine learning classifier built to detect spam emails using natural language processing (NLP) and logistic regression.",
-    "crumbs": [
-      "Projects",
-      "Data Science & Software"
-    ]
-  },
-  {
-    "objectID": "projects.html#game",
-    "href": "projects.html#game",
-    "title": "Data Science & Software",
-    "section": "🎮 2048 Game",
-    "text": "🎮 2048 Game\nOverview:\nA full implementation of the classic 2048 puzzle game with logic for tile merging, movement, and winning conditions.",
-    "crumbs": [
-      "Projects",
-      "Data Science & Software"
-    ]
-  },
-  {
-    "objectID": "projects.html#percolation-simulation",
-    "href": "projects.html#percolation-simulation",
-    "title": "Data Science & Software",
-    "section": "💧 Percolation Simulation",
-    "text": "💧 Percolation Simulation\nOverview:\nA simulation of percolation thresholds using union-find data structures. Useful for modeling fluid flow through porous media.",
-    "crumbs": [
-      "Projects",
-      "Data Science & Software"
-    ]
-  },
-  {
-    "objectID": "projects.html#ngordnet-wordnet-based-language-explorer",
-    "href": "projects.html#ngordnet-wordnet-based-language-explorer",
-    "title": "Data Science & Software",
-    "section": "🌐 NGordnet (WordNet-based Language Explorer)",
-    "text": "🌐 NGordnet (WordNet-based Language Explorer)\nOverview:\nAn interactive system for exploring word frequencies, hierarchies, and semantic trends over time using WordNet data.",
-    "crumbs": [
-      "Projects",
-      "Data Science & Software"
-    ]
-  },
-  {
-    "objectID": "projects.html#build-your-own-world-byow",
-    "href": "projects.html#build-your-own-world-byow",
-    "title": "Data Science & Software",
-    "section": "🗺️ Build Your Own World (BYOW)",
-    "text": "🗺️ Build Your Own World (BYOW)\nOverview:\nA tile-based game engine that allows procedurally generated maps, avatar movement, and save/load functionality.",
+    "text": "Selected Technical Work\n\n\nFrom predictive models to interactive software systems.\n\n\nA collection of projects spanning machine learning, natural language processing, algorithms, simulation, and software engineering. Each brief explains the problem, implementation, and technical decisions behind the result.\n\n\n6 featured projectsPython & JavaMachine learningAlgorithms & data structures\n\n\n\n\n\n\n🏠\n\n\nPredictive Modeling\n\n\n\nHouse Price Predictor\n\n\nA supervised-learning project that predicts residential prices through regression modeling, exploratory analysis, and thoughtful feature engineering.\n\n\nPythonRegressionFeature Engineering\n\n\nView project brief \n\n\n\n\n\n✉️\n\n\nNatural Language Processing\n\n\n\nHam & Spam Email Classifier\n\n\nA text-classification pipeline that distinguishes spam from legitimate email using language features and logistic regression.\n\n\nPythonNLPLogistic Regression\n\n\nView project brief \n\n\n\n\n\n🎮\n\n\nSoftware Engineering\n\n\n\n2048 Game\n\n\nA complete implementation of the classic puzzle game, including tile movement, merge rules, game-state transitions, and win detection.\n\n\nJavaObject-Oriented DesignGame Logic\n\n\nView project brief \n\n\n\n\n\n💧\n\n\nAlgorithms & Simulation\n\n\n\nPercolation Simulation\n\n\nA computational model of percolation thresholds that uses union-find structures and repeated simulation to study connectivity in porous systems.\n\n\nJavaUnion-FindMonte Carlo\n\n\nView project brief \n\n\n\n\n\n🌐\n\n\nData Structures\n\n\n\nNGordnet Language Explorer\n\n\nAn interactive system for exploring word frequencies, semantic relationships, and hierarchical connections using historical language data and WordNet.\n\n\nJavaGraphsWordNet\n\n\nView project brief \n\n\n\n\n\n🗺️\n\n\nProcedural Systems\n\n\n\nBuild Your Own World\n\n\nA tile-based game engine featuring procedurally generated environments, avatar navigation, deterministic world creation, and save/load persistence.\n\n\nJavaProcedural GenerationPersistence\n\n\nView project brief",
     "crumbs": [
       "Projects",
       "Data Science & Software"
