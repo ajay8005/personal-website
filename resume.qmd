@@ -276,7 +276,7 @@ format:
 
 <div class="timeline-item">
 
-### Crestline Quota-Share Reinsurance Case Study
+### Crestline Risk-Transfer Deal Analysis
 
 <p class="role">Financial Analysis Project</p>
 <p class="date">July 2026 - August 2026 · Fremont, CA</p>
