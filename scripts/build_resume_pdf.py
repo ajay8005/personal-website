@@ -1,171 +1,101 @@
-"""Build the downloadable PDF from the website's canonical resume.qmd.
-
+"""Build the one-page PDF from resume.qmd, using the supplied sample's layout.
 Run: python scripts/build_resume_pdf.py [source.qmd] [output.pdf]
-Requires reportlab. Contact details are retained from the original résumé PDF.
+Requires reportlab, pypdf, and Liberation Serif (or RESUME_FONT_DIR).
+The website retains full history; the PDF selects its four principal roles.
 """
 from pathlib import Path
-import html
-import re
-import sys
-import os
-
+import html, os, re, sys
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_CENTER, TA_RIGHT
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
-from reportlab.platypus import (
-    SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle,
-    KeepTogether, PageBreak, HRFlowable,
-)
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, KeepTogether, HRFlowable
+from pypdf import PdfReader
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / 'resume.qmd'
-OUTPUT = Path(sys.argv[2]) if len(sys.argv) > 2 else ROOT / 'resume.pdf'
+SOURCE = Path(sys.argv[1]) if len(sys.argv)>1 else ROOT/'resume.qmd'
+OUTPUT = Path(sys.argv[2]) if len(sys.argv)>2 else ROOT/'resume.pdf'
 BASE = 'https://ajay8005.github.io/personal-website/'
-BLUE = colors.HexColor('#003262')
-INK = colors.HexColor('#172533')
-MUTED = colors.HexColor('#536575')
-WIDTH = A4[0] - 88  # account for the document frame's 6-point inner padding
-
-# Embed fonts so the PDF looks the same in browsers and downloaded viewers.
-FONT_DIR = Path(os.environ.get('RESUME_FONT_DIR', '/usr/share/fonts/truetype/liberation2'))
-if not (FONT_DIR / 'LiberationSerif-Regular.ttf').exists():
-    FONT_DIR = Path(os.environ.get('CODEX_PRIMARY_RUNTIME_ROOT', '/opt/codex/runtimes/codex-primary-runtime')) / 'dependencies/native/libreoffice-headless/libreoffice/share/fonts/truetype'
-for name, filename in [('Resume', 'LiberationSerif-Regular.ttf'),
-                       ('Resume-Bold', 'LiberationSerif-Bold.ttf'),
-                       ('Resume-Italic', 'LiberationSerif-Italic.ttf'),
-                       ('Resume-BoldItalic', 'LiberationSerif-BoldItalic.ttf')]:
-    pdfmetrics.registerFont(TTFont(name, str(FONT_DIR / filename)))
-pdfmetrics.registerFontFamily('Resume', normal='Resume', bold='Resume-Bold',
-                              italic='Resume-Italic', boldItalic='Resume-BoldItalic')
-
+WIDTH = A4[0]-76
+FONT_DIR = Path(os.environ.get('RESUME_FONT_DIR','/usr/share/fonts/truetype/liberation2'))
+if not (FONT_DIR/'LiberationSerif-Regular.ttf').exists():
+    FONT_DIR = Path(os.environ.get('CODEX_PRIMARY_RUNTIME_ROOT','/opt/codex/runtimes/codex-primary-runtime'))/'dependencies/native/libreoffice-headless/libreoffice/share/fonts/truetype'
+for name, file in [('Resume','LiberationSerif-Regular.ttf'),('Resume-Bold','LiberationSerif-Bold.ttf'),('Resume-Italic','LiberationSerif-Italic.ttf'),('Resume-BoldItalic','LiberationSerif-BoldItalic.ttf')]:
+    pdfmetrics.registerFont(TTFont(name,str(FONT_DIR/file)))
+pdfmetrics.registerFontFamily('Resume',normal='Resume',bold='Resume-Bold',italic='Resume-Italic',boldItalic='Resume-BoldItalic')
+body = ParagraphStyle('Body',fontName='Resume',fontSize=9.7,leading=10.8,spaceAfter=0)
+bullet = ParagraphStyle('Bullet',parent=body,leftIndent=9,bulletIndent=0,spaceAfter=1.7)
+heading = ParagraphStyle('Heading',parent=body,fontName='Resume-Bold',fontSize=10.1,leading=11.5)
+right_bold = ParagraphStyle('RightBold',parent=heading,alignment=TA_RIGHT)
+right = ParagraphStyle('Right',parent=body,alignment=TA_RIGHT)
+section_style = ParagraphStyle('Section',parent=body,fontSize=13.2,leading=14.4,spaceBefore=9,spaceAfter=1,keepWithNext=True)
 
 def markup(text):
-    text = html.unescape(text.strip())
-    text = re.sub(r'<[^>]+>', '', text)
-    text = html.escape(text)
-    text = re.sub(r'\[([^]]+)\]\(([^)]+)\)',
-                  lambda m: '<link href="' + BASE + m[2].replace('.qmd', '.html') + '">' + m[1] + '</link>', text)
-    text = re.sub(r'\*\*(.*?)\*\*', r'<b>\1</b>', text)
-    return text
+    text = html.escape(re.sub(r'<[^>]+>','',html.unescape(text.strip())))
+    text = re.sub(r'\[([^]]+)\]\(([^)]+)\)',lambda m:'<link href="'+BASE+m[2].replace('.qmd','.html')+'">'+m[1]+'</link>',text)
+    return re.sub(r'\*\*(.*?)\*\*',r'<b>\1</b>',text)
 
-
-body = ParagraphStyle('Body', fontName='Resume', fontSize=10,
-                      leading=11.8, textColor=INK, spaceAfter=2)
-bullet = ParagraphStyle('Bullet', parent=body, leftIndent=9, bulletIndent=0,
-                        spaceAfter=2.3)
-role_style = ParagraphStyle('Role', parent=body, fontName='Resume-Italic',
-                            fontSize=9.5, leading=10.8, spaceAfter=2)
-date_style = ParagraphStyle('Date', parent=role_style, alignment=TA_RIGHT,
-                            textColor=MUTED)
-heading_style = ParagraphStyle('Heading', parent=body, fontName='Resume-Bold',
-                               fontSize=10.8, leading=12.5, textColor=BLUE,
-                               spaceAfter=0)
-section_style = ParagraphStyle('Section', parent=heading_style, fontSize=12,
-                               leading=14, spaceBefore=9, spaceAfter=3,
-                               keepWithNext=True)
-skill_style = ParagraphStyle('Skill', parent=body, fontSize=10, leading=12.5,
-                             spaceAfter=0)
-
-
-def p(text, style=body):
-    return Paragraph(markup(text), style)
-
+def para(text,style=body):
+    return Paragraph(markup(text),style)
 
 def section(title):
-    return [p(title.upper(), section_style), HRFlowable(width='100%', thickness=.6,
-            color=BLUE, spaceAfter=5)]
+    return [para(title,section_style),HRFlowable(width='100%',thickness=.45,color=colors.black,spaceAfter=2)]
 
+def row(left,right_text,left_style=body,right_style=right,split=.78):
+    t=Table([[Paragraph(left,left_style),para(right_text,right_style)]],colWidths=[WIDTH*split,WIDTH*(1-split)])
+    t.setStyle(TableStyle([('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),0),('RIGHTPADDING',(0,0),(-1,-1),0),('TOPPADDING',(0,0),(-1,-1),0),('BOTTOMPADDING',(0,0),(-1,-1),0)]))
+    return t
 
 def entry(block):
-    title = re.search(r'^### (.+)$', block, re.M)[1]
-    role = re.search(r'<p class="role">(.*?)</p>', block)[1]
-    date = html.unescape(re.search(r'<p class="date">(.*?)</p>', block)[1])
-    dates, location = date.split(' · ', 1)
-    # Use a full-width title so long degree/project names never collide with dates.
-    header = p(title, heading_style)
-    metadata = Table([[p(role, role_style), p(dates + ' | ' + location, date_style)]],
-                     colWidths=[WIDTH * .54, WIDTH * .46])
-    metadata.setStyle(TableStyle([('VALIGN', (0, 0), (-1, -1), 'TOP'),
-                                 ('LEFTPADDING', (0, 0), (-1, -1), 0),
-                                 ('RIGHTPADDING', (0, 0), (-1, -1), 0),
-                                 ('TOPPADDING', (0, 0), (-1, -1), 1),
-                                 ('BOTTOMPADDING', (0, 0), (-1, -1), 0)]))
-    bullets = [Paragraph(markup(t), bullet, bulletText='•')
-               for t in re.findall(r'^- (.+)$', block, re.M)]
-    return [KeepTogether([header, metadata] + bullets), Spacer(1, 3)]
+    title=re.search(r'^### (.+)$',block,re.M)[1]
+    role=re.search(r'<p class="role">(.*?)</p>',block)[1]
+    dates,location=html.unescape(re.search(r'<p class="date">(.*?)</p>',block)[1]).split(' · ',1)
+    for month,short in [('January','Jan'),('February','Feb'),('March','Mar'),('April','Apr'),('June','Jun'),('July','Jul'),('August','Aug'),('September','Sep'),('October','Oct'),('November','Nov'),('December','Dec')]:
+        dates=dates.replace(month,short)
+    role=markup(role)
+    if title.startswith('Crestline'):
+        role+=' (<link href="'+BASE+'finance.html"><i>Interactive Dashboard</i></link>)'
+    lines=[row(markup(title),dates,heading,right_bold,.70),row(role,location,split=.86),Spacer(1,3)]
+    for b in re.findall(r'^- (.+)$',block,re.M):
+        if 'Explore the interactive' not in b:
+            lines.append(Paragraph(markup(b),bullet,bulletText='•'))
+    return [KeepTogether(lines),Spacer(1,4)]
 
+def footer(canvas,doc):
+    canvas.setFont('Resume',8)
+    canvas.drawCentredString(A4[0]/2,15,str(doc.page))
 
-def skills(block):
-    cards = re.findall(r'<div class="skill-card">(.*?)</div>', block, re.S)
-    assert len(cards) == 8, 'Expected exactly eight skill categories'
-    cells = []
-    for card in cards:
-        title = re.search(r'<strong>(.*?)</strong>', card, re.S)[1]
-        content = re.sub(r'<strong>.*?</strong>', '', card, count=1, flags=re.S)
-        items = re.findall(r'<li>(.*?)</li>', content, re.S)
-        plain = re.sub(r'<ul>.*?</ul>', '', content, flags=re.S).strip()
-        text = '<font color="#003262"><b>' + markup(title) + '</b></font>'
-        if plain:
-            text += '<br/>' + markup(plain)
-        for item in items:
-            text += '<br/>• ' + markup(item)
-        cells.append(Paragraph(text, skill_style))
-    table = Table([cells[i:i+2] for i in range(0, 8, 2)], colWidths=[WIDTH/2]*2)
-    table.setStyle(TableStyle([
-        ('VALIGN', (0, 0), (-1, -1), 'TOP'),
-        ('BACKGROUND', (0, 0), (-1, -1), colors.HexColor('#F5F8FB')),
-        ('BOX', (0, 0), (-1, -1), .4, colors.HexColor('#D7E1EB')),
-        ('INNERGRID', (0, 0), (-1, -1), .4, colors.HexColor('#D7E1EB')),
-        ('LEFTPADDING', (0, 0), (-1, -1), 10),
-        ('RIGHTPADDING', (0, 0), (-1, -1), 10),
-        ('TOPPADDING', (0, 0), (-1, -1), 8),
-        ('BOTTOMPADDING', (0, 0), (-1, -1), 8),
-    ]))
-    return table
-
-
-def footer(canvas, doc):
-    canvas.saveState()
-    canvas.setStrokeColor(colors.HexColor('#D7E1EB'))
-    canvas.line(38, 31, A4[0]-38, 31)
-    canvas.setFont('Resume', 8)
-    canvas.setFillColor(MUTED)
-    canvas.drawString(38, 20, 'Ajay Sharma | Resume')
-    canvas.drawRightString(A4[0]-38, 20, str(doc.page))
-    canvas.restoreState()
-
-
-source = SOURCE.read_text(encoding='utf-8')
-assert not re.search(r'\bTeX\b', source), 'Use LaTeX in the canonical website source'
-parts = re.split(r'^## (.+)$', source, flags=re.M)
-sections = dict(zip(parts[1::2], parts[2::2]))
-story = [Paragraph('AJAY SHARMA', ParagraphStyle('Name', fontName='Resume-Bold',
-          fontSize=23, leading=26, alignment=TA_CENTER, textColor=BLUE)),
-    Paragraph('(510) 575-8812 | <link href="mailto:ajay.sharma@berkeley.edu">ajay.sharma@berkeley.edu</link>',
-              ParagraphStyle('Contact', parent=body, fontSize=9.5, leading=12, alignment=TA_CENTER)),
-    Paragraph('<link href="https://www.linkedin.com/in/asharma2718">linkedin.com/in/asharma2718</link> | '
-              '<link href="'+BASE+'">ajay8005.github.io/personal-website</link>',
-              ParagraphStyle('Links', parent=body, fontSize=9.5, leading=12, alignment=TA_CENTER))]
-
-for title, block in sections.items():
-    if title == 'Additional Teaching Experience':
-        if isinstance(story[-1], Spacer):
-            story.pop()
-        story += [PageBreak(), p('AJAY SHARMA', heading_style), Spacer(1, 2)]
-    story += section(title)
-    if title == 'Professional Summary':
-        story.append(p(re.search(r'<p class="summary-copy">(.*?)</p>', block)[1]))
-    elif title == 'Skills & Additional Information':
-        story.append(skills(block))
-    else:
-        for item in re.split(r'(?=^### )', block, flags=re.M)[1:]:
-            story += entry(item)
-
-OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-doc = SimpleDocTemplate(str(OUTPUT), pagesize=A4, rightMargin=38, leftMargin=38,
-        topMargin=32, bottomMargin=40, title='Ajay Sharma - Resume', author='Ajay Sharma')
-doc.build(story, onFirstPage=footer, onLaterPages=footer)
-print(OUTPUT)
+source=SOURCE.read_text(encoding='utf-8')
+assert not re.search(r'\bTeX\b',source)
+parts=re.split(r'^## (.+)$',source,flags=re.M)
+sections=dict(zip(parts[1::2],parts[2::2]))
+story=[Paragraph('AJAY SHARMA',ParagraphStyle('Name',parent=body,fontSize=24,leading=25,alignment=TA_CENTER)),
+    Paragraph('Phone: (510) 575-8812 &nbsp; | &nbsp; Email: <link href="mailto:ajay.sharma@berkeley.edu">ajay.sharma@berkeley.edu</link> &nbsp; | &nbsp; LinkedIn: <link href="https://www.linkedin.com/in/asharma2718">linkedin.com/in/asharma2718</link>',ParagraphStyle('Contact',parent=body,fontSize=9.2,leading=10.3,alignment=TA_CENTER)),
+    Paragraph('Website: <link href="'+BASE+'">ajay8005.github.io/personal-website</link>',ParagraphStyle('Website',parent=body,fontSize=9.2,leading=10.3,alignment=TA_CENTER))]
+story+=section('SUMMARY')
+story.append(Paragraph(markup(re.search(r'<p class="summary-copy">(.*?)</p>',sections['Professional Summary'])[1]),bullet,bulletText='•'))
+story+=section('EDUCATION')
+for item in re.split(r'(?=^### )',sections['Education'],flags=re.M)[1:]:
+    story+=entry(item)
+story+=section('EXPERIENCE')
+for item in re.split(r'(?=^### )',sections['Professional Experience'],flags=re.M)[1:]:
+    story+=entry(item)
+story+=section('SKILLS')
+# Concise phrasing of the website's eight categories, without its card layout.
+skills=[
+    '<b>Finance &amp; Business Tools:</b> Microsoft Office, Google Workspace, Power BI; Excel formulas, PivotTables, lookups, conditional formatting.',
+    '<b>Financial Analysis:</b> Budget vs. Actual Analysis, KPI Reporting, Forecasting, Financial Modeling, Sensitivity Analysis.',
+    '<b>Programming:</b> Intermediate: Python, SQL, R, LaTeX; Basic: Java, C++, MATLAB.',
+    '<b>AI &amp; Data Tools:</b> LLMs &amp; Prompt Engineering (ChatGPT, Claude, Gemini), Git, CSV-based data workflows.',
+    '<b>Statistical Methods:</b> Hypothesis Testing, Linear &amp; Generalized Linear Models, ANOVA/ANCOVA, Maximum Likelihood Estimation, Bootstrap Methods, Model Selection &amp; Diagnostics, Quality Improvement.',
+    '<b>Additional:</b> U.S. Citizen; Project Management, Quality Control, Detail-Oriented, Written &amp; Oral Communication, Quick Learner, Adaptable.',
+]
+story.extend(Paragraph(s,bullet,bulletText='•') for s in skills)
+OUTPUT.parent.mkdir(parents=True,exist_ok=True)
+doc=SimpleDocTemplate(str(OUTPUT),pagesize=A4,leftMargin=32,rightMargin=32,topMargin=24,bottomMargin=27,title='Ajay Sharma - Resume',author='Ajay Sharma')
+doc.build(story,onFirstPage=footer,onLaterPages=footer)
+pages=len(PdfReader(OUTPUT).pages)
+print(f'{OUTPUT}: {pages} page(s)')
+assert pages==1,'Resume must remain one page; revise spacing before publishing.'

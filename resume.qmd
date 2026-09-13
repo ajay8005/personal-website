@@ -238,7 +238,7 @@ format:
 <h1>Ajay Sharma</h1>
 <p>UC Berkeley Statistics and Applied Mathematics graduate with experience in financial analysis, forecasting, KPI reporting, data validation, and cross-functional decision support.</p>
 </div>
-<a class="resume-download" href="resume.pdf?v=2026-09-13-sync" download="Ajay_Sharma_Resume.pdf">
+<a class="resume-download" href="resume.pdf?v=2026-09-13-onepage" download="Ajay_Sharma_Resume.pdf">
 <i class="bi bi-download"></i> Download latest résumé
 </a>
 </div>
@@ -422,7 +422,7 @@ Microsoft Office (Word, Excel, PowerPoint, Outlook), Google Workspace (Sheets, S
 </div>
 
 <div class="resume-footer">
-  <a class="resume-download" href="resume.pdf?v=2026-09-13-sync" download="Ajay_Sharma_Resume.pdf">
+  <a class="resume-download" href="resume.pdf?v=2026-09-13-onepage" download="Ajay_Sharma_Resume.pdf">
     <i class="bi bi-file-earmark-arrow-down"></i> Download latest résumé PDF
   </a>
 </div>
