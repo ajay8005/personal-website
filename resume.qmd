@@ -397,8 +397,13 @@ format:
 <div class="timeline-item">
 <div class="skill-grid">
 <div class="skill-card"><strong>Citizenship</strong>U.S. Citizen</div>
-<div class="skill-card"><strong>Programming - Intermediate</strong>Python, SQL, R, TeX</div>
-<div class="skill-card"><strong>Programming - Basic</strong>Java, C++, MATLAB</div>
+<div class="skill-card">
+<strong>Programming</strong>
+<ul>
+<li><b>Intermediate:</b> Python, SQL, R, TeX</li>
+<li><b>Basic:</b> Java, C++, MATLAB</li>
+</ul>
+</div>
 <div class="skill-card">
 <strong>Finance &amp; Business Tools</strong>
 Microsoft Office (Word, Excel, PowerPoint, Outlook), Google Workspace (Sheets, Slides, Docs), Power BI
@@ -410,6 +415,7 @@ Microsoft Office (Word, Excel, PowerPoint, Outlook), Google Workspace (Sheets, S
 <div class="skill-card"><strong>Data &amp; Version Control</strong>Git, CSV-based data workflows</div>
 <div class="skill-card"><strong>Statistical Methods</strong>A/B (Hypothesis) Testing, Linear &amp; Generalized Linear Models, ANOVA/ANCOVA, Maximum Likelihood Estimation, Bootstrap Methods, Model Selection &amp; Diagnostics, Quality Improvement</div>
 <div class="skill-card"><strong>Additional Strengths</strong>Project Management, Quality Control, Detail-Oriented, Effective Written &amp; Oral Communication, Quick Learner, Adaptable</div>
+<div class="skill-card"><strong>Financial Analysis</strong>Budget vs. Actual Analysis, KPI Reporting, Forecasting, Financial Modeling, Sensitivity Analysis</div>
 </div>
 </div>
 
