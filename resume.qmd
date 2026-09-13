@@ -399,7 +399,13 @@ format:
 <div class="skill-card"><strong>Citizenship</strong>U.S. Citizen</div>
 <div class="skill-card"><strong>Programming - Intermediate</strong>Python, SQL, R, TeX</div>
 <div class="skill-card"><strong>Programming - Basic</strong>Java, C++, MATLAB</div>
-<div class="skill-card"><strong>Business &amp; Analytics Tools</strong>Microsoft Office (Word, Excel, PowerPoint, Outlook), Google Workspace (Sheets, Slides, Docs), Power BI</div>
+<div class="skill-card">
+<strong>Finance &amp; Business Tools</strong>
+Microsoft Office (Word, Excel, PowerPoint, Outlook), Google Workspace (Sheets, Slides, Docs), Power BI
+<ul>
+<li>Excel: formulas, PivotTables, lookup functions, and conditional formatting.</li>
+</ul>
+</div>
 <div class="skill-card"><strong>AI</strong>LLMs &amp; Prompt Engineering (ChatGPT, Claude, Gemini)</div>
 <div class="skill-card"><strong>Data &amp; Version Control</strong>Git, CSV-based data workflows</div>
 <div class="skill-card"><strong>Statistical Methods</strong>A/B (Hypothesis) Testing, Linear &amp; Generalized Linear Models, ANOVA/ANCOVA, Maximum Likelihood Estimation, Bootstrap Methods, Model Selection &amp; Diagnostics, Quality Improvement</div>
