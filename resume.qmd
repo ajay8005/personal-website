@@ -305,13 +305,13 @@ format:
 
 ### BLCK UNICRN
 
-<p class="role">AI &amp; Business Analyst Intern</p>
+<p class="role">AI &amp; Financial Analyst Intern</p>
 <p class="date">January 2025 - May 2025 · Berkeley, CA</p>
 
-- Analyzed user behavior and engagement metrics, including conversion rate and average session duration, to identify growth opportunities, support product decisions, and improve targeting strategies across 50+ accounts and 120+ contacts.
-- Built a multi-source data pipeline across 20+ inputs to consolidate and validate data, then performed monthly variance analysis on KPIs against plan to identify key drivers, reducing manual reporting time by two hours per week.
-- Designed, iterated, and evaluated LLM prompts to improve output quality and relevance, enabling more effective automated responses for custom-built chatbot and marketing workflows.
-- Developed structured reports and workflow documentation to support planning, performance monitoring, and cross-functional decision-making, ensuring outputs were accurate, timely, and clear for stakeholder review.
+- Analyzed customer and engagement metrics (conversion rate, average session duration) to identify and quantify growth drivers, support product decisions, and improve targeting strategies across 50+ accounts and 120+ contacts.
+- Built multi-source data pipeline across 20+ inputs to consolidate and validate actuals, then performed monthly budget vs-actual variance analysis on KPIs against plan to explain key drivers, reducing manual reporting time by 2 hours/week.
+- Designed, iterated, and evaluated LLM prompts (GPT-4o) to improve output quality and accuracy, enabling reliable automated responses for a custom-built chatbot and marketing workflows.
+- Authored a Business Requirements Document and workflow documentation to align cross-functional stakeholders on planning, monitoring, and decision-making, ensuring outputs were accurate, timely, and clear for leadership review.
 
 </div>
 
