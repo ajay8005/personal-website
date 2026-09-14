@@ -238,7 +238,7 @@ format:
 <h1>Ajay Sharma</h1>
 <p>UC Berkeley Statistics and Applied Mathematics graduate with experience in financial analysis, forecasting, KPI reporting, data validation, and cross-functional decision support.</p>
 </div>
-<a class="resume-download" href="resume.pdf?v=2026-09-14-cm" download="Ajay_Sharma_Resume.pdf">
+<a class="resume-download" href="resume.pdf?v=2026-09-14-singleline" download="Ajay_Sharma_Resume.pdf">
 <i class="bi bi-download"></i> Download latest résumé
 </a>
 </div>
@@ -248,7 +248,7 @@ format:
 ## Professional Summary
 
 <div class="timeline-item">
-<p class="summary-copy">UC Berkeley Statistics and Applied Mathematics graduate with Financial Accounting and Forecasting coursework, seeking a strategic finance and corporate FP&amp;A role. Experience in financial modeling, variance analysis, KPI tracking, and building clear reports and presentations for leadership, with hands-on fluency in AI tools and workflows.</p>
+<p class="summary-copy">UC Berkeley Statistics and Applied Mathematics graduate interested in strategic finance, FP&amp;A, and business analytics. Experience in financial modeling, variance analysis, KPI reporting, and data validation, supported by Financial Accounting and Forecasting coursework.</p>
 </div>
 
 </div>
@@ -422,7 +422,7 @@ Microsoft Office (Word, Excel, PowerPoint, Outlook), Google Workspace (Sheets, S
 </div>
 
 <div class="resume-footer">
-  <a class="resume-download" href="resume.pdf?v=2026-09-14-cm" download="Ajay_Sharma_Resume.pdf">
+  <a class="resume-download" href="resume.pdf?v=2026-09-14-singleline" download="Ajay_Sharma_Resume.pdf">
     <i class="bi bi-file-earmark-arrow-down"></i> Download latest résumé PDF
   </a>
 </div>
