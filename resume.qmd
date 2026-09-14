@@ -238,7 +238,7 @@ format:
 <h1>Ajay Sharma</h1>
 <p>UC Berkeley Statistics and Applied Mathematics graduate with experience in financial analysis, forecasting, KPI reporting, data validation, and cross-functional decision support.</p>
 </div>
-<a class="resume-download" href="resume.pdf?v=2026-09-13-onepage" download="Ajay_Sharma_Resume.pdf">
+<a class="resume-download" href="resume.pdf?v=2026-09-14-cm" download="Ajay_Sharma_Resume.pdf">
 <i class="bi bi-download"></i> Download latest résumé
 </a>
 </div>
@@ -264,7 +264,7 @@ format:
 <p class="role">B.A. Statistics (Business Emphasis) &amp; B.A. Applied Mathematics (Data Science Emphasis)</p>
 <p class="date">August 2023 - August 2025 · Berkeley, CA</p>
 
-- **[Relevant Coursework](berkeley-coursework.qmd):** Business Analytics, Financial Accounting, Principles & Techniques of Data Science, Forecasting, Linear Modeling, Concepts in Computing with Data, and Modern Statistical Prediction & Machine Learning.
+- **[Relevant Coursework](berkeley-coursework.qmd):** Financial Accounting, Forecasting, Business Analytics, Probability Theory, Mathematical Statistics, Principles & Techniques of Data Science, Linear Modeling, Concepts in Computing with Data, and Modern Statistical Prediction & Machine Learning.
 
 </div>
 
@@ -283,7 +283,7 @@ format:
 
 - Evaluated a proposed $1.0M quota-share reinsurance deal (50% cession, 32.5% ceding commission) by rebuilding six years of loss ratios from a 4,577-row policy bordereaux and loss run, deriving a 59% break-even loss ratio to frame the decision.
 - Identified data-quality failures using accounting identity checks (written = earned + unearned), uncovering 15 erroneous policy rows, formulaic patterns, and missing IBNR; found that an AI-generated memo understated two loss years by 10-21 percentage points.
-- Built an expected loss ratio model (68%, sensitivity band 65-72%) incorporating cost-trend drift and a Poisson-based catastrophe load, then presented findings and defended the methodology to senior reinsurance professionals, recommending restructured terms.
+- Built an expected loss ratio model (68%, sensitivity band 65-72%) with cost-trend drift and a Poisson-based catastrophe load; presented findings and defended the methodology to senior reinsurance professionals, recommending restructured terms.
 - **[Explore the interactive underwriting analytics application](finance.qmd).**
 
 </div>
@@ -295,7 +295,7 @@ format:
 <p class="role">Mathematics Instructor</p>
 <p class="date">August 2025 - Present · Fremont, CA</p>
 
-- Earned excellent performance reviews for communication and results while translating complex technical concepts into clear, digestible explanations, helping more than 83% of students exceed standards on BASIS network comprehensive exams.
+- Earned excellent performance reviews for communication and results by translating complex concepts into clear explanations, helping more than 83% of students exceed standards on BASIS network comprehensive exams.
 - Built LLM-assisted learning workflows using ChatGPT and Claude to generate practice materials, standardize feedback, and personalize instruction, improving student engagement by 20%+ across two semesters.
 - Developed three advanced mathematics courses from scratch for 100+ students, creating scalable curricula, rigorous assessments, and feedback workflows while coordinating with parents and school leadership to improve student outcomes.
 
@@ -422,7 +422,7 @@ Microsoft Office (Word, Excel, PowerPoint, Outlook), Google Workspace (Sheets, S
 </div>
 
 <div class="resume-footer">
-  <a class="resume-download" href="resume.pdf?v=2026-09-13-onepage" download="Ajay_Sharma_Resume.pdf">
+  <a class="resume-download" href="resume.pdf?v=2026-09-14-cm" download="Ajay_Sharma_Resume.pdf">
     <i class="bi bi-file-earmark-arrow-down"></i> Download latest résumé PDF
   </a>
 </div>
