@@ -1,84 +1,85 @@
-
 \RequirePackage{fix-cm}
-\documentclass[10pt,a4paper]{article}
-\usepackage[left=0.5in,right=0.5in,top=0.40in,bottom=0.40in]{geometry}
+\documentclass[a4paper,10pt]{article}
+\usepackage[margin=0.5in,top=0.38in,bottom=0.38in]{geometry}
 \usepackage{enumitem}
+\usepackage{titlesec}
 \usepackage{microtype}
 \usepackage[hidelinks]{hyperref}
 \input{glyphtounicode}
 \pdfgentounicode=1
 \renewcommand{\$}{{\fontencoding{OT1}\selectfont\char36}}
-% OT1 Computer Modern: intentionally no font-substitution packages.
+\titleformat{\section}{\normalfont\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{9pt}{4pt}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
-\setlength{\footskip}{14pt}
-\setlist[itemize]{leftmargin=10pt,label=$\bullet$,itemsep=4pt,parsep=0pt,topsep=5pt,partopsep=0pt}
-\hyphenpenalty=10000
-\exhyphenpenalty=10000
+\setlength{\footskip}{15pt}
+\setlist[itemize]{leftmargin=10pt,label=$\bullet$,itemsep=0pt,parsep=0pt,topsep=3pt,partopsep=0pt}
 \emergencystretch=1em
+\hyphenpenalty=800
 \widowpenalty=10000
 \clubpenalty=10000
-\newcommand{\ressection}[1]{\vspace{9pt}{\fontsize{12.5}{13}\selectfont #1}\par\vspace{2pt}\hrule\vspace{5pt}}
 \begin{document}
-\fontsize{10}{12.4}\selectfont
+\fontsize{10}{11.8}\selectfont
 \begin{center}
-{\fontsize{24}{25}\selectfont AJAY SHARMA}\\[-1pt]
-{\fontsize{9}{10}\selectfont Phone: (510) 575-8812 \enspace|\enspace Email: \href{mailto:ajay.sharma@berkeley.edu}{ajay.sharma@berkeley.edu} \enspace|\enspace LinkedIn: \href{https://www.linkedin.com/in/asharma2718}{linkedin.com/in/asharma2718}}\\[-1pt]
-{\fontsize{9}{10}\selectfont Website: \href{https://ajay8005.github.io/personal-website/}{ajay8005.github.io/personal-website}}
+{\fontsize{24.88}{27}\selectfont AJAY SHARMA}\\[-1pt]
+\textsc{Phone:} (510) 575-8812 \, | \,
+\textsc{Email:} \href{mailto:ajay.sharma@berkeley.edu}{ajay.sharma@berkeley.edu} \, | \,
+\textsc{LinkedIn:} \href{https://www.linkedin.com/in/asharma2718/}{linkedin.com/in/asharma2718} \, | \,
+\textsc{Website:} \href{https://ajay8005.github.io/personal-website/}{ajay8005.github.io/personal-website}
 \end{center}
-\vspace{-8pt}
+\vspace{-7pt}
+\section*{SUMMARY}
+\begin{itemize}
+\item UC Berkeley Statistics and Applied Mathematics graduate with Financial Accounting and Forecasting coursework, interested in strategic finance, retail FP\&A, business analytics, overhead spend management, and reporting improvement. Experience in budget-vs-actual variance analysis, Excel/Power BI reports, data queries, and stakeholder presentations.
+\end{itemize}
 
-\ressection{SUMMARY}
-\begin{itemize}\item UC Berkeley Statistics and Applied Mathematics graduate interested in strategic finance, FP\&A, and business analytics. Experience in financial modeling, variance analysis, KPI reporting, and data validation, supported by Financial Accounting and~Forecasting~coursework.\end{itemize}
-\ressection{EDUCATION}
-\noindent\textbf{University of California, Berkeley}\hfill\textbf{Aug 2023 - Aug 2025}\\
-B.A. Statistics (Business Emphasis) \& B.A. Applied Mathematics (Data~Science~Emphasis)\hfill Berkeley, CA
+\section*{EDUCATION}
+\textbf{University of California, Berkeley} \hfill \textbf{Aug 2023 -- Aug 2025}\\
+B.A. Statistics (\textit{Business Emphasis}), B.A. Applied Mathematics (\textit{Data Science Emphasis}) \hfill Berkeley, CA
 \begin{itemize}
-\item \textbf{Coursework:} Financial Accounting, Forecasting, Business Analytics, Probability Theory,~Mathematical~Statistics.
+\item \textbf{Relevant Coursework:} Financial Accounting, Forecasting, Business Analytics, Probability Theory, Linear Modeling, Principles \& Techniques of Data Science, Concepts in Computing, Modern Statistical Prediction \& Machine Learning.
 \end{itemize}
-\vspace{7pt}
-\ressection{EXPERIENCE}
-\noindent\textbf{Crestline Risk-Transfer Deal Analysis}\hfill\textbf{Jul 2026 - Aug 2026}\\
-Financial Analysis Project (\href{https://ajay8005.github.io/personal-website/finance.html}{\textit{Interactive Dashboard}})\hfill Fremont, CA
+
+\section*{EXPERIENCE}
+\textbf{Crestline Risk-Transfer Deal Analysis} \hfill \textbf{Jul 2026 -- Aug 2026}\\
+Financial Analyst \href{https://ajay8005.github.io/personal-website/finance.html}{(\textit{Independent Project, Interactive Dashboard $\nearrow$})} \hfill Fremont, CA
 \begin{itemize}
-\item Evaluated a \$1.0M quota-share deal using 4,577 policy records; calculated a 59\% break-even~loss~ratio.
-\item Found 15 erroneous policy rows and missing IBNR; identified loss-ratio errors of 10-21~percentage~points.
-\item Modeled a 68\% loss ratio (65-72\% range), defended the methodology, and recommended~restructured~terms.
+\item Evaluated a proposed \$1.0M risk-transfer deal (50\% share, 32.5\% commission) by rebuilding 6 years of historical cost ratios from a 4,577-row transaction dataset, deriving a 59\% break-even cost ratio to frame the go/no-go decision.
+\item Identified data-quality failures using accounting identity checks (written = earned + unearned), uncovering 15 erroneous transaction rows, formulaic patterns, missing reserves; found AI-generated memo understated 2 years by 10-21 points.
+\item Built expected cost ratio forecast (68\%, sensitivity band 65-72\%) incorporating cost-trend drift and a Poisson-based tail-risk load; presented and defended the methodology to senior stakeholders, recommending restructured deal terms.
 \end{itemize}
-\vspace{7pt}
-\noindent\textbf{BASIS Independent}\hfill\textbf{Aug 2025 - Present}\\
-Mathematics Instructor\hfill Fremont, CA
+\vspace{3pt}
+\textbf{BASIS Independent} \hfill \textbf{Aug 2025 -- Present}\\
+Mathematics Instructor \hfill Fremont, CA
 \begin{itemize}
-\item Translated complex math into clear lessons; over 83\% of students exceeded BASIS~exam~standards.
-\item Built ChatGPT and Claude learning workflows, improving engagement by 20\%+ across~two~semesters.
-\item Developed three advanced math courses for 100+ students, coordinating curriculum~and~assessments.
+\item Earned excellent performance reviews for communication and results while translating complex technical concepts into clear, digestible explanations, helping over 83\% of students exceed standards on BASIS network comprehensive exams.
+\item Built LLM-assisted learning workflows using GPT and Claude to generate practice materials, standardize feedback, and personalize instruction, improving student engagement by 20\%+ across two semesters.
+\item Developed 3 advanced math courses from scratch for 100+ students, creating scalable curriculum, rigorous assessments, and feedback workflows while coordinating with parents and school leadership to improve student outcomes.
 \end{itemize}
-\vspace{7pt}
-\noindent\textbf{BLCK UNICRN}\hfill\textbf{Jan 2025 - May 2025}\\
-AI \& Financial Analyst Intern\hfill Berkeley, CA
+\vspace{3pt}
+\textbf{BLCK UNICRN} \hfill \textbf{Jan 2025 -- May 2025}\\
+AI \& Financial Analyst Intern \hfill Berkeley, CA
 \begin{itemize}
-\item Analyzed conversion and engagement across 50+ accounts and 120+ contacts to identify~growth~drivers.
-\item Consolidated 20+ data inputs and analyzed budget vs. actual KPIs, saving 2 hours of~weekly~reporting.
-\item Refined GPT-4o prompts to improve accuracy of automated chatbot responses and~marketing~workflows.
-\item Authored a Business Requirements Document and workflows to align stakeholders and~inform~leadership.
+\item Analyzed customer and engagement metrics (conversion rate, average session duration) to identify and quantify growth drivers, support product decisions, and improve targeting strategies across 50+ accounts and 120+ contacts.
+\item \looseness=-1 Built multi-source data pipeline across 20+ inputs to consolidate and validate actuals, then performed monthly budget-vs-actual variance analysis on KPIs against plan to explain key drivers, reducing manual reporting time by 2 hours/week.
+\item Designed, iterated, and evaluated LLM prompts (GPT-4o) to improve output quality and accuracy, enabling reliable automated responses for a custom-built chatbot and marketing workflows.
+\item Authored a Business Requirements Document and workflow documentation to align cross-functional stakeholders on planning, monitoring, and decision-making, ensuring outputs were accurate, timely, and clear for leadership review.
 \end{itemize}
-\vspace{7pt}
-\noindent\textbf{Beats by Dre}\hfill\textbf{Jun 2024 - Aug 2024}\\
-Data \& Consumer Insights~Analyst~Intern\hfill Fremont, CA
+\vspace{3pt}
+\textbf{Beats by Dre} \hfill \textbf{Jun 2024 -- Aug 2024}\\
+Data \& Consumer Insights Analyst Intern \hfill Fremont, CA
 \begin{itemize}
-\item Analyzed 500+ reviews in Python to identify purchasing drivers, product issues, and~risk~signals.
-\item Cleaned and validated review data to produce 10+ visualizations supporting~targeted~marketing.
-\item Identified customer preferences, contributing to a 15\% improvement in~targeted~marketing.
+\item Analyzed 500+ customer reviews using natural language processing (NLP) techniques in Python, to identify patterns, pain points, product quality and risk signals influencing customer purchasing behavior.
+\item Cleaned, tokenized, and validated large-scale unstructured review data, ensuring quality and consistency that enabled 10+ distinct visualizations informing tailored marketing campaigns and communication strategy.
+\item Identified actionable insights on consumer priorities (i.e., sound quality, design, price sensitivity), contributing to a {15\% improvement in targeted marketing} by refining campaign messaging and alignment with audience profiles.
 \end{itemize}
-\vspace{7pt}
-\ressection{SKILLS}
+
+\section*{SKILLS}
 \begin{itemize}
-\item \textbf{Finance \& Business Tools:} MS Office (Excel, PowerPoint, Word), Google Workspace,~Power~BI.
-\item \textbf{Excel:} Formulas, PivotTables, lookup functions,~conditional~formatting.
-\item \textbf{Financial Analysis:} Budget Variance Analysis, KPI Reporting, Forecasting, Modeling,~Sensitivity~Analysis.
-\item \textbf{Programming:} Intermediate: Python, SQL, R, LaTeX; Basic: Java,~C++,~MATLAB.
-\item \textbf{AI \& Data Tools:} LLMs \& Prompt Engineering (ChatGPT, Claude, Gemini), Git, CSV-based~data~workflows.
-\item \textbf{Statistical Methods:} Hypothesis Testing, Regression, ANOVA, Maximum Likelihood, Bootstrap,~Model~Diagnostics.
-\item \textbf{Additional:} U.S. Citizen; Project Management, Quality Control,~Communication,~Adaptability.
+\item \textbf{Finance Tools (Proficient):} MS Office (Excel, PowerPoint, Word), Google G-Suite Applications, Power BI.
+\item \textbf{Programming \& AI Tools (Proficient):} SQL, Python, LLMs \& Prompt Engineering (Claude, ChatGPT).
+\item \textbf{Leadership \& Events:} Co-founded American Allegiance of Education; delivered 155-person global hackathon\\
+(\$16K sponsorships, 8 judges), owning logistics, communications, competing deadlines, and executive briefings.
+\item \textbf{Interest:} Personal investing, web apps (\href{https://ajay8005.github.io/personal-website/webapp.html}{built S\&P 500 Monte Carlo investment simulator}), competitive chess (\href{https://www.amazon.com/Chess-Simplified-Foundations-Modern-Theory/dp/B0GCNCN597}{author}).
 \end{itemize}
 \end{document}
